@@ -1,0 +1,19 @@
+=================
+Dynamis
+=================
+Dat locations of Dynamis areas
+=================
+
+
+ROM/267/112.dat Dynamis Sandoria
+ROM/267/113.dat Dynamis Bastok
+ROM/267/114.dat Dynamis Windurst
+ROM/267/115.dat Dynamis Jeuno
+ROM/267/116.dat Dynamis Beaucedine
+ROM/267/117.dat Dynamis Xarcabard
+ROM/267/118.dat Dynamis Valkurm
+ROM/267/119.dat Dynamis Buburimu
+ROM/267/120.dat Dynamis Qufim
+ROM/267/121.dat Dynamis Tavnazian Map 1
+ROM/267/122.dat Dynamis Tavnazian Map 2
+ROM/267/123.dat Dynamis Tavnazian Map 3

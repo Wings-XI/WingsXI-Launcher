@@ -1,0 +1,124 @@
+##########################################################################
+#
+# Ashita Default Script
+#
+# Comments start with '#'.
+# All commands start with '/'
+#
+##########################################################################
+
+/load xipivot
+/load Dats
+/wait 3
+
+/load WindowerInput
+#/setkey enter down
+/wait 1
+#/setkey enter up
+/wait 3
+
+##########################################################################
+# Load Common Plugins
+##########################################################################
+
+
+/load Addons
+/load Screenshot
+/load Minimap
+/load Shorthand
+/load Ashitacast
+/load Affinity
+/load dressme
+/load duration
+/load Packetflow
+#/load deeps
+#/addon load scoreboard
+
+##########################################################################
+# Load Common Addons
+##########################################################################
+
+/addon load distance
+/addon load fps
+/addon load tparty
+/addon load debuff
+/addon load enternity
+/addon load drawdistance
+/addon load macrofix
+/addon load recast
+/addon load filterless
+/addon load filters
+/addon load instantah
+/addon load find
+/addon load mapdot
+/addon load logs
+/addon load hideconsole
+/addon load findall
+/addon load allmaps
+/addon load partybuffs
+/addon load xivbar
+/addon load barfiller
+/addon load giltracker
+/addon load expmon
+/addon load zoom
+/addon load peekaboo
+#/addon load singlerace 
+/addon load clock
+/addon load checker
+/addon load ibar
+/addon load dinfo
+/addon load debuffed
+/addon load itemwatch
+/addon load hmptimer
+/addon load claimbar
+/addon load noplayername
+
+##########################################################################
+# Set Common Settings
+##########################################################################
+
+#/fps .5
+/fps 2
+/drawdistance setworld 10
+/drawdistance setmob 10
+/drawdistance setentity 10
+/cam d 3
+/cam b 15
+/pivot add Maps-Remapster
+/pivot add WingsXI-Custom
+/pivot add AshenbubsHD
+#/Affinity 63 Only enable this if you know what you are doing and understand how many treads your CPU has
+
+##########################################################################
+# Set Common Keybinds
+##########################################################################
+
+/bind SYSRQ /screenshot hide
+/bind ^v /paste
+/bind F11 /ambient
+/bind F12 /fps show
+/bind ^F1 /input /ta <a10>
+/bind ^F2 /input /ta <a11>
+/bind ^F3 /input /ta <a12>
+/bind ^F4 /input /ta <a13>
+/bind ^F5 /input /ta <a14>
+/bind ^F6 /input /ta <a15>
+/bind !F1 /input /ta <a20>
+/bind !F2 /input /ta <a21>
+/bind !F3 /input /ta <a22>
+/bind !F4 /input /ta <a23>
+/bind !F5 /input /ta <a24>
+/bind !F6 /input /ta <a25>
+/bind ^m /map
+/bind ^c /check
+#/bind !q /wireframe
+/bind !SPACE /jump
+
+
+/wait 60
+/addon load battlemod
+/addon load equipviewer
+
+/addon load renamer
+/wait 1
+/renamer load wings

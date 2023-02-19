@@ -1,0 +1,57 @@
+====================================================================
+SEEKERS OF ADOULIN
+====================================================================
+Dat list of the locations on new Adoulin maps.Only map edits at 
+this time are of Western and Eastern Adoulin with Waypoint Locations.
+---------------------------------------------------------------------
+
+
+
+ROM/292/107.dat Menu Map
+ROM/292/108.dat Western Adoulin
+ROM/292/109.dat Eastern Adoulin
+ROM/292/110.dat Rala Waterways
+ROM/292/111.dat Rala Waterways [U] Map 1
+ROM/292/112.dat Rala Waterways [U] Map 2
+ROM/292/113.dat Rala Waterways [U] Map 3
+ROM/292/114.dat Rala Waterways [U] Map 4
+ROM/292/115.dat Rala Waterways [U] Map 5
+ROM/292/116.dat Rala Waterways [U] Map 6
+ROM/292/117.dat Rala Waterways [U] Map 7
+ROM/292/118.dat Rala Waterways [U] Map 8
+ROM/292/119.dat Rala Waterways [U] Map 9 
+ROM/292/120.dat Rala Waterways [U] Map 10
+ROM/292/121.dat Rala Waterways [U] Map 11
+ROM/292/122.dat Rala Waterways [U] Map 12
+ROM/292/123.dat Rala Waterways [U] Map 13
+ROM/292/124.dat Rala Waterways [U] Map 14
+ROM/292/125.dat Rala Waterways [U] Map 15
+ROM/292/126.dat Yahse Hunting Grounds
+ROM/292/126.dat Ceizak Battlegrounds
+
+ROM/293/0.dat Foret De Hennetiel
+ROM/293/1.dat Morimar Basalt Fields
+ROM/293/2.dat Sih Gates Map 1
+ROM/293/3.dat Sih Gates Map 2
+ROM/293/4.dat Moh Gates Map 1
+ROM/293/5.dat Moh Gates Map 2
+ROM/293/6.dat Cirdas Caverns Map 1
+ROM/293/7.dat Cirdas Caverns Map 2
+ROM/293/8.dat Cirdas Caverns [U] Map 1
+ROM/293/9.dat Cirdas Caverns [U] Map 2
+ROM/293/10.dat Cirdas Caverns [U] Map 3
+ROM/293/11.dat Cirdas Caverns [U] Map 4
+ROM/293/12.dat Cirdas Caverns [U] Map 5
+ROM/293/13.dat Cirdas Caverns [U] Map 6
+ROM/293/14.dat Cirdas Caverns [U] Map 7
+ROM/293/15.dat Cirdas Caverns [U] Map 8
+ROM/293/16.dat Cirdas Caverns [U] Map 9
+ROM/293/17.dat Cirdas Caverns [U] Map 10
+ROM/293/18.dat Cirdas Caverns [U] Map 11
+ROM/293/19.dat Cirdas Caverns [U] Map 12
+ROM/293/20.dat Cirdas Caverns [U] Map 13
+ROM/293/21.dat Cirdas Caverns [U] Map 14
+ROM/293/22.dat Cirdas Caverns [U] Map 15
+ROM/293/23.dat Cirdas Caverns [U] Map 16
+ROM/293/24.dat Cirdas Caverns [U] Map 17
+ROM/293/25.dat Cirdas Caverns [U] Map 18

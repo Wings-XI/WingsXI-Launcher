@@ -1,0 +1,8 @@
+XI Vision Update for March 27th 2013, to include Western and Easter Adoulin maps with waypoint locations.
+
+
+
+Copy the ROM folders to your FFXI directory choosing yes when prompted to overwrite any files. The FFXI directory is usually located at 
+X:\Program Files\PlayOnline\SquareEnix\FINAL FANTASY XI\ or in x64 OS, X:\Program Files (x86)\PlayOnline\SquareEnix\FINAL FANTASY XI\ X in place of your drive label. (Usually C)
+
+*The Steam version of FINAL FANTASY XI is located at X:\Program Files\Steam\steamapps\common\ffxi\SquareEnix\FINAL FANTASY XI and X:\Program Files (x86)\Steam\steamapps\common\ffxi\SquareEnix\FINAL FANTASY XI

@@ -1,0 +1,30 @@
+FISHING YIELD REPORT : [2023-01-19 10:24:18]
+------------
+ZONES
+------------
+	West Sarutabaruta
+	Al Zahbi
+------------
+METRICS
+------------
+	lost: 6
+	attempts: 206
+	yields: 166
+	breaks: 0
+	Success Rate: 80.58%
+	Time Passed: 04:48:30
+	Estimated Value: 1010
+	Yields per Hour: 34.52
+	Value per Hour: 210.05
+	Target Value: 0
+	Target Reached: Yes
+------------
+YIELDS
+------------
+	Monster: 1 @0ea.=(0)
+	Rusty Subligar: 7 @5ea.=(35)
+	Rusty Bucket: 11 @51ea.=(561)
+	Rusty Leggings: 5 @2ea.=(10)
+	Giant Catfish: 1 @2ea.=(2)
+	Pamtam Kelp: 20 @8ea.=(160)
+	Ogre Eel: 121 @2ea.=(242)

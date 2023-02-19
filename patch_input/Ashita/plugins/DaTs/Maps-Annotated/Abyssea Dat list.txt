@@ -1,0 +1,20 @@
+===================
+Abyssea
+===================
+Dat locations of Abyssea zones.
+===================
+
+
+ROM\242\60.DAT Abyssea - Konschtat
+ROM\242\61.DAT Abyssea - Tahrongi
+ROM\242\62.DAT Abyssea - La Theine
+
+
+ROM\254\56.DAT Abyssea - Attohwa
+ROM\254\57.DAT Abyssea - Misareaux
+ROM\254\58.DAT Abyssea - Vunkerl
+
+
+ROM\258\125.DAT Abyssea - Altep
+ROM\258\126.DAT Abyssea - Uleguerand
+ROM\258\127.DAT Abyssea - Grauberg 

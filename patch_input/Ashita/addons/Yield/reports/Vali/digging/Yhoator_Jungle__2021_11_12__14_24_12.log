@@ -1,0 +1,31 @@
+DIGGING YIELD REPORT : [2021-11-12 14:24:12]
+------------
+ZONES
+------------
+	Yhoator_Jungle
+------------
+METRICS
+------------
+	lost: 0
+	attempts: 1974
+	yields: 1288
+	breaks: 0
+	Success Rate: 65.25%
+	Time Passed: 02:47:46
+	Estimated Value: 574789
+	Yields per Hour: 460.64
+	Value per Hour: 205567.30
+	Target Value: 0
+	Target Reached: Yes
+------------
+YIELDS
+------------
+	Mahogany Log: 67 @3927ea.=(263109)
+	Ebony Log: 65 @2169ea.=(140985)
+	Lauan Log: 283 @9ea.=(2547)
+	Petrified Log: 36 @2429ea.=(87444)
+	Bone Chip: 389 @18ea.=(7002)
+	Dryad Root: 162 @235ea.=(38070)
+	Kazham Pineapple: 201 @15ea.=(3015)
+	Coral Fungus: 67 @151ea.=(10117)
+	Reishi Mushroom: 18 @1250ea.=(22500)
