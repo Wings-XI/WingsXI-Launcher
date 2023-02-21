@@ -1,176 +1,291 @@
 --[[
- *	Zone	:: 272
+ *  Zone	:: Dho_Gates
  *  ZoneID	:: 272
- *  Total	:: 166
+ *  Total	:: 281
 ]]--
 
 	mb_data = {}
 
-	mb_data[1] = { nm="N", id="17891472", name="Vo_Worm", mj="4", sj="5", mlvl="105-110", behavior="0", aggro="S,JA", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[2] = { nm="N", id="17891462", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[3] = { nm="N", id="17891463", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[4] = { nm="N", id="17891464", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[5] = { nm="N", id="17891465", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[6] = { nm="N", id="17891468", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[7] = { nm="N", id="17891467", name="Vo_Worm", mj="4", sj="5", mlvl="105-110", behavior="0", aggro="S,JA", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[8] = { nm="N", id="17891469", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[9] = { nm="N", id="17891470", name="Twilight_Bat", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[10] = { nm="N", id="17891471", name="Twilight_Bat", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[11] = { nm="N", id="17891466", name="Vo_Worm", mj="4", sj="5", mlvl="105-110", behavior="0", aggro="S,JA", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[12] = { nm="N", id="17891461", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[13] = { nm="N", id="17891453", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[14] = { nm="N", id="17891459", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[15] = { nm="N", id="17891458", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[16] = { nm="N", id="17891455", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[17] = { nm="N", id="17891454", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[18] = { nm="N", id="17891452", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[19] = { nm="N", id="17891451", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[20] = { nm="N", id="17891450", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[21] = { nm="N", id="17891448", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[22] = { nm="N", id="17891447", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[23] = { nm="N", id="17891473", name="Vo_Worm", mj="4", sj="5", mlvl="105-110", behavior="0", aggro="S,JA", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[24] = { nm="N", id="17891446", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[25] = { nm="N", id="17891460", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[26] = { nm="N", id="17891474", name="Vo_Worm", mj="4", sj="5", mlvl="105-110", behavior="0", aggro="S,JA", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[27] = { nm="N", id="17891491", name="Pungent_Fungus", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[28] = { nm="N", id="17891476", name="Corallitic_Crab", mj="7", sj="7", mlvl="108-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[29] = { nm="N", id="17891445", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[30] = { nm="N", id="17891501", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="105-106", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[31] = { nm="N", id="17891500", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="105-106", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[32] = { nm="N", id="17891499", name="Twilight_Bat", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[33] = { nm="N", id="17891498", name="Twilight_Bat", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[34] = { nm="N", id="17891497", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[35] = { nm="N", id="17891496", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[36] = { nm="N", id="17891495", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[37] = { nm="N", id="17891494", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[38] = { nm="N", id="17891493", name="Vo_Worm", mj="4", sj="5", mlvl="105-110", behavior="0", aggro="S,JA", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[39] = { nm="N", id="17891492", name="Vo_Worm", mj="4", sj="5", mlvl="105-110", behavior="0", aggro="S,JA", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[40] = { nm="N", id="17891490", name="Pungent_Fungus", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[41] = { nm="N", id="17891489", name="Spumous_Slug", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="JA,Sc", links="N", spawntype="0", weak="Ice", note="" }
-	mb_data[42] = { nm="N", id="17891488", name="Spumous_Slug", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="JA,Sc", links="N", spawntype="0", weak="Ice", note="" }
-	mb_data[43] = { nm="N", id="17891487", name="Blight_obdella", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[44] = { nm="N", id="17891486", name="Blight_obdella", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[45] = { nm="N", id="17891485", name="Pungent_Fungus", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[46] = { nm="N", id="17891484", name="Pungent_Fungus", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[47] = { nm="N", id="17891483", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[48] = { nm="N", id="17891482", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[49] = { nm="N", id="17891481", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[50] = { nm="N", id="17891480", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[51] = { nm="N", id="17891479", name="Vo_Worm", mj="4", sj="5", mlvl="105-110", behavior="0", aggro="S,JA", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[52] = { nm="N", id="17891478", name="Vo_Worm", mj="4", sj="5", mlvl="105-110", behavior="0", aggro="S,JA", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[53] = { nm="N", id="17891477", name="Coverime_Gefyrst", mj="5", sj="3", mlvl="108-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[54] = { nm="N", id="17891475", name="Twilight_Bat", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[55] = { nm="N", id="17891444", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[56] = { nm="N", id="17891449", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[57] = { nm="N", id="17891442", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[58] = { nm="N", id="17891362", name="Corallitic_Crab", mj="7", sj="7", mlvl="108-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[59] = { nm="N", id="17891363", name="Corallitic_Crab", mj="7", sj="7", mlvl="108-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[60] = { nm="N", id="17891364", name="Ripsaw_Jagil", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="JA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[61] = { nm="N", id="17891365", name="Ripsaw_Jagil", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="JA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[62] = { nm="N", id="17891366", name="Ripsaw_Jagil", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="JA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[63] = { nm="N", id="17891367", name="Ripsaw_Jagil", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="JA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[64] = { nm="N", id="17891368", name="Duskprowlers", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[65] = { nm="N", id="17891369", name="Duskprowlers", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[66] = { nm="N", id="17891370", name="Duskprowlers", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[67] = { nm="N", id="17891371", name="Duskprowlers", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[68] = { nm="N", id="17891372", name="Blight_obdella", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[69] = { nm="N", id="17891361", name="Corallitic_Crab", mj="7", sj="7", mlvl="108-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[70] = { nm="N", id="17891373", name="Blight_obdella", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[71] = { nm="N", id="17891375", name="Coverime_Gefyrst", mj="5", sj="3", mlvl="108-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[72] = { nm="N", id="17891376", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[73] = { nm="N", id="17891377", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[74] = { nm="N", id="17891378", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[75] = { nm="N", id="17891379", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[76] = { nm="N", id="17891380", name="Kopffussler", mj="2", sj="2", mlvl="108-110", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[77] = { nm="N", id="17891381", name="Kopffussler", mj="2", sj="2", mlvl="108-110", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[78] = { nm="N", id="17891382", name="Kopffussler", mj="2", sj="2", mlvl="108-110", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[79] = { nm="N", id="17891383", name="Kopffussler", mj="2", sj="2", mlvl="108-110", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[80] = { nm="N", id="17891384", name="Ravenous_Craklaw", mj="7", sj="7", mlvl="108-110", behavior="0", aggro="T(H),M", links="N", spawntype="0", weak="???", note="" }
-	mb_data[81] = { nm="N", id="17891385", name="Ravenous_Craklaw", mj="7", sj="7", mlvl="108-110", behavior="0", aggro="T(H),M", links="N", spawntype="0", weak="???", note="" }
-	mb_data[82] = { nm="N", id="17891374", name="Blight_obdella", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[83] = { nm="N", id="17891386", name="Ravenous_Craklaw", mj="7", sj="7", mlvl="108-110", behavior="0", aggro="T(H),M", links="N", spawntype="0", weak="???", note="" }
-	mb_data[84] = { nm="N", id="17891360", name="Corallitic_Crab", mj="7", sj="7", mlvl="108-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[85] = { nm="N", id="17891358", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[86] = { nm="N", id="17891334", name="Knotted_Root", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[87] = { nm="N", id="17891335", name="Knotted_Root", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[88] = { nm="N", id="17891336", name="Velkk_Punisher", mj="6", sj="6", mlvl="113-115", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[89] = { nm="N", id="17891337", name="Velkk_Punisher", mj="6", sj="6", mlvl="113-115", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[90] = { nm="N", id="17891338", name="Trogloptera", mj="1", sj="1", mlvl="113-115", behavior="0", aggro="H", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[91] = { nm="N", id="17891339", name="Velkk_Vaticinator", mj="3", sj="3", mlvl="113-115", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[92] = { nm="N", id="17891340", name="Velkk_Vaticinator", mj="3", sj="3", mlvl="113-115", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[93] = { nm="N", id="17891443", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[94] = { nm="N", id="17891342", name="Knotted_Root", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[95] = { nm="N", id="17891343", name="Knotted_Root", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[96] = { nm="N", id="17891344", name="Velkk_Ravager", mj="1", sj="1", mlvl="113-115", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[97] = { nm="N", id="17891359", name="Whirlwind_Ungeweder", mj="5", sj="3", mlvl="108-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[98] = { nm="N", id="17891345", name="Velkk_Ravager", mj="1", sj="1", mlvl="113-115", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[99] = { nm="N", id="17891347", name="Velkk_Manipulator", mj="4", sj="4", mlvl="113-115", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[100] = { nm="N", id="17891348", name="Velkk_Manipulator", mj="4", sj="4", mlvl="113-115", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[101] = { nm="N", id="17891349", name="Crevice_Tarichuk", mj="1", sj="1", mlvl="113-115", behavior="0", aggro="H", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[102] = { nm="N", id="17891350", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="105-106", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[103] = { nm="N", id="17891351", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="105-106", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[104] = { nm="N", id="17891352", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="105-106", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[105] = { nm="N", id="17891353", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="105-106", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[106] = { nm="N", id="17891354", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[107] = { nm="N", id="17891355", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[108] = { nm="N", id="17891356", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[109] = { nm="N", id="17891357", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[110] = { nm="N", id="17891346", name="Crevice_Tarichuk", mj="1", sj="1", mlvl="113-115", behavior="0", aggro="H", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[111] = { nm="N", id="17891387", name="Ravenous_Craklaw", mj="7", sj="7", mlvl="108-110", behavior="0", aggro="T(H),M", links="N", spawntype="0", weak="???", note="" }
-	mb_data[112] = { nm="N", id="17891341", name="Trogloptera", mj="1", sj="1", mlvl="113-115", behavior="0", aggro="H", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[113] = { nm="N", id="17891389", name="Duskprowlers", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[114] = { nm="N", id="17891418", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="105-106", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[115] = { nm="N", id="17891419", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="105-106", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[116] = { nm="N", id="17891420", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="105-106", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[117] = { nm="N", id="17891421", name="Duskprowlers", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[118] = { nm="N", id="17891422", name="Duskprowlers", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[119] = { nm="N", id="17891423", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[120] = { nm="N", id="17891424", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[121] = { nm="N", id="17891425", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[122] = { nm="N", id="17891426", name="Firth_Umbril", mj="4", sj="4", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[123] = { nm="N", id="17891427", name="Firth_Umbril", mj="4", sj="4", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[124] = { nm="N", id="17891428", name="Firth_Umbril", mj="4", sj="4", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[125] = { nm="N", id="17891417", name="Pungent_Fungus", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[126] = { nm="N", id="17891429", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[127] = { nm="N", id="17891431", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[128] = { nm="N", id="17891432", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[129] = { nm="N", id="17891433", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[130] = { nm="N", id="17891434", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[131] = { nm="N", id="17891435", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[132] = { nm="N", id="17891436", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[133] = { nm="N", id="17891438", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[134] = { nm="N", id="17891439", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[135] = { nm="N", id="17891441", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[136] = { nm="N", id="17891388", name="Duskprowlers", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[137] = { nm="N", id="17891440", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[138] = { nm="N", id="17891430", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[139] = { nm="N", id="17891416", name="Pungent_Fungus", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[140] = { nm="N", id="17891437", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[141] = { nm="N", id="17891414", name="Blight_obdella", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[142] = { nm="N", id="17891393", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[143] = { nm="N", id="17891394", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[144] = { nm="N", id="17891415", name="Blight_obdella", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[145] = { nm="N", id="17891392", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[146] = { nm="N", id="17891390", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[147] = { nm="N", id="17891395", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[148] = { nm="N", id="17891396", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[149] = { nm="N", id="17891397", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[150] = { nm="N", id="17891398", name="Ripsaw_Jagil", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="JA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[151] = { nm="N", id="17891399", name="Ripsaw_Jagil", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="JA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[152] = { nm="N", id="17891400", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[153] = { nm="N", id="17891401", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[154] = { nm="N", id="17891391", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[155] = { nm="N", id="17891403", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[156] = { nm="N", id="17891402", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", behavior="0", aggro="S", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[157] = { nm="N", id="17891412", name="Firth_Umbril", mj="4", sj="4", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[158] = { nm="N", id="17891413", name="Firth_Umbril", mj="4", sj="4", mlvl="105-110", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[159] = { nm="N", id="17891411", name="Septic_Acuex", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H,Sc", links="N", spawntype="0", weak="Fire,Ice,Wind,Earth,Lightning,Light,Dark", note="" }
-	mb_data[160] = { nm="N", id="17891409", name="Septic_Acuex", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H,Sc", links="N", spawntype="0", weak="Fire,Ice,Wind,Earth,Lightning,Light,Dark", note="" }
-	mb_data[161] = { nm="N", id="17891410", name="Septic_Acuex", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="H,Sc", links="N", spawntype="0", weak="Fire,Ice,Wind,Earth,Lightning,Light,Dark", note="" }
-	mb_data[162] = { nm="N", id="17891408", name="Spumous_Slug", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="JA,Sc", links="N", spawntype="0", weak="Ice", note="" }
-	mb_data[163] = { nm="N", id="17891407", name="Spumous_Slug", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="JA,Sc", links="N", spawntype="0", weak="Ice", note="" }
-	mb_data[164] = { nm="N", id="17891406", name="Spumous_Slug", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="JA,Sc", links="N", spawntype="0", weak="Ice", note="" }
-	mb_data[165] = { nm="N", id="17891405", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[166] = { nm="N", id="17891404", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="105-110", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
+	mb_data[1] = { nm="N", id="17879122", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[2] = { nm="N", id="17879127", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[3] = { nm="N", id="17879132", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[4] = { nm="N", id="17879138", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[5] = { nm="N", id="17879143", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[6] = { nm="N", id="17879151", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[7] = { nm="N", id="17883538", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[8] = { nm="N", id="17883539", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[9] = { nm="N", id="17883540", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[10] = { nm="N", id="17883541", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[11] = { nm="N", id="17883542", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[12] = { nm="N", id="17883543", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[13] = { nm="N", id="17883544", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[14] = { nm="N", id="17883545", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[15] = { nm="N", id="17883546", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[16] = { nm="N", id="17883547", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[17] = { nm="N", id="17883548", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[18] = { nm="N", id="17883549", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[19] = { nm="N", id="17883550", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[20] = { nm="N", id="17883551", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[21] = { nm="N", id="17883552", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[22] = { nm="N", id="17883553", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[23] = { nm="N", id="17883554", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[24] = { nm="N", id="17883555", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[25] = { nm="N", id="17883556", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[26] = { nm="N", id="17883557", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[27] = { nm="N", id="17883558", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[28] = { nm="N", id="17883559", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[29] = { nm="N", id="17883560", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[30] = { nm="N", id="17883561", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[31] = { nm="N", id="17883562", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[32] = { nm="N", id="17883563", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[33] = { nm="N", id="17883564", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[34] = { nm="N", id="17883565", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[35] = { nm="N", id="17883566", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[36] = { nm="N", id="17883567", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[37] = { nm="N", id="17883568", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[38] = { nm="N", id="17883569", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[39] = { nm="N", id="17883570", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[40] = { nm="N", id="17883571", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[41] = { nm="N", id="17883572", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[42] = { nm="N", id="17883573", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[43] = { nm="N", id="17883574", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[44] = { nm="N", id="17883575", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[45] = { nm="N", id="17883576", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[46] = { nm="N", id="17883577", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[47] = { nm="N", id="17883578", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[48] = { nm="N", id="17883579", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[49] = { nm="N", id="17883580", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[50] = { nm="N", id="17883581", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[51] = { nm="N", id="17883663", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[52] = { nm="N", id="17883664", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[53] = { nm="N", id="17883665", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[54] = { nm="N", id="17883666", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[55] = { nm="N", id="17883667", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[56] = { nm="N", id="17883668", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[57] = { nm="N", id="17883669", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[58] = { nm="N", id="17883670", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[59] = { nm="N", id="17883671", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[60] = { nm="N", id="17883672", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[61] = { nm="N", id="17883682", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[62] = { nm="N", id="17883683", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[63] = { nm="N", id="17883684", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[64] = { nm="N", id="17883685", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[65] = { nm="N", id="17883695", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[66] = { nm="N", id="17883696", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[67] = { nm="N", id="17883703", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[68] = { nm="N", id="17883704", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[69] = { nm="N", id="17883708", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[70] = { nm="N", id="17883709", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[71] = { nm="N", id="17883710", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[72] = { nm="N", id="17883711", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[73] = { nm="N", id="17883712", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[74] = { nm="N", id="17883713", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[75] = { nm="N", id="17883722", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[76] = { nm="N", id="17883723", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[77] = { nm="N", id="17883724", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[78] = { nm="N", id="17883725", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[79] = { nm="N", id="17883726", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[80] = { nm="N", id="17883727", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[81] = { nm="N", id="17891334", name="Knotted_Root", mj="1", sj="1", mlvl="105-110", aggro="S", links="N", weak="", strong="", respawntime="3600", items="", steal="" }
+	mb_data[82] = { nm="N", id="17891335", name="Knotted_Root", mj="1", sj="1", mlvl="105-110", aggro="S", links="N", weak="", strong="", respawntime="3600", items="", steal="" }
+	mb_data[83] = { nm="N", id="17891336", name="Velkk_Punisher", mj="6", sj="6", mlvl="106-106", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="3600", items="", steal="" }
+	mb_data[84] = { nm="N", id="17891337", name="Trogloptera", mj="1", sj="1", mlvl="106-106", aggro="A,H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="3600", items="", steal="" }
+	mb_data[85] = { nm="N", id="17891338", name="Velkk_Vaticinator", mj="3", sj="3", mlvl="106-106", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="3600", items="", steal="" }
+	mb_data[86] = { nm="N", id="17891339", name="Trogloptera", mj="1", sj="1", mlvl="106-106", aggro="A,H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="3600", items="", steal="" }
+	mb_data[87] = { nm="N", id="17891340", name="Knotted_Root", mj="1", sj="1", mlvl="105-110", aggro="S", links="N", weak="", strong="", respawntime="3600", items="", steal="" }
+	mb_data[88] = { nm="N", id="17891341", name="Knotted_Root", mj="1", sj="1", mlvl="105-110", aggro="S", links="N", weak="", strong="", respawntime="3600", items="", steal="" }
+	mb_data[89] = { nm="N", id="17891342", name="Velkk_Ravager", mj="1", sj="1", mlvl="106-106", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="3600", items="", steal="" }
+	mb_data[90] = { nm="N", id="17891343", name="Crevice_Tarichuk", mj="1", sj="1", mlvl="106-106", aggro="A,H", links="Y", weak="Ice", strong="Wind,Earth,Water", respawntime="3600", items="", steal="" }
+	mb_data[91] = { nm="N", id="17891344", name="Velkk_Manipulator", mj="4", sj="4", mlvl="106-106", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="3600", items="", steal="" }
+	mb_data[92] = { nm="N", id="17891345", name="Crevice_Tarichuk", mj="1", sj="1", mlvl="106-106", aggro="A,H", links="Y", weak="Ice", strong="Wind,Earth,Water", respawntime="3600", items="", steal="" }
+	mb_data[93] = { nm="N", id="17891346", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="121-123", aggro="S", links="Y", weak="Piercing,Ice", strong="Wind", respawntime="0", items="", steal="" }
+	mb_data[94] = { nm="N", id="17891347", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="121-123", aggro="S", links="Y", weak="Piercing,Ice", strong="Wind", respawntime="0", items="", steal="" }
+	mb_data[95] = { nm="N", id="17891348", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="121-123", aggro="S", links="Y", weak="Piercing,Ice", strong="Wind", respawntime="0", items="", steal="" }
+	mb_data[96] = { nm="N", id="17891349", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="121-123", aggro="S", links="Y", weak="Piercing,Ice", strong="Wind", respawntime="0", items="", steal="" }
+	mb_data[97] = { nm="N", id="17891350", name="Ripsaw_Jagil", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[98] = { nm="N", id="17891351", name="Ripsaw_Jagil", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[99] = { nm="N", id="17891352", name="Ripsaw_Jagil", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[100] = { nm="N", id="17891353", name="Velkk_Trampler", mj="6", sj="6", mlvl="121-123", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[101] = { nm="N", id="17891354", name="Velkk_Trampler", mj="6", sj="6", mlvl="121-123", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[102] = { nm="N", id="17891355", name="Velkk_Dreadnought", mj="1", sj="1", mlvl="122-123", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[103] = { nm="N", id="17891356", name="Velkk_Dreadnought", mj="1", sj="1", mlvl="122-123", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[104] = { nm="N", id="17891357", name="Ripsaw_Jagil", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[105] = { nm="N", id="17891358", name="Ripsaw_Jagil", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[106] = { nm="N", id="17891359", name="Ripsaw_Jagil", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[107] = { nm="N", id="17891360", name="Ripsaw_Jagil", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[108] = { nm="N", id="17891361", name="Velkk_Archmagus", mj="4", sj="4", mlvl="122-123", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[109] = { nm="N", id="17891362", name="Velkk_Archmagus", mj="4", sj="4", mlvl="122-123", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[110] = { nm="N", id="17891363", name="Velkk_Cyclonicist", mj="3", sj="3", mlvl="122-123", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[111] = { nm="N", id="17891364", name="Velkk_Cyclonicist", mj="3", sj="3", mlvl="122-123", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[112] = { nm="N", id="17891365", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="121-123", aggro="H", links="Y", weak="Ice", strong="Wind,Earth,Water", respawntime="0", items="", steal="" }
+	mb_data[113] = { nm="N", id="17891366", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="121-123", aggro="H", links="Y", weak="Ice", strong="Wind,Earth,Water", respawntime="0", items="", steal="" }
+	mb_data[114] = { nm="N", id="17891367", name="Spumous_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[115] = { nm="N", id="17891368", name="Spumous_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[116] = { nm="N", id="17891369", name="Spumous_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[117] = { nm="N", id="17891370", name="Septic_Acuex", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="", strong="Melee,Water", respawntime="0", items="", steal="" }
+	mb_data[118] = { nm="N", id="17891371", name="Septic_Acuex", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="", strong="Melee,Water", respawntime="0", items="", steal="" }
+	mb_data[119] = { nm="N", id="17891372", name="Septic_Acuex", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="", strong="Melee,Water", respawntime="0", items="", steal="" }
+	mb_data[120] = { nm="N", id="17891373", name="Firth_Umbril", mj="4", sj="4", mlvl="121-123", aggro="A,S,M", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[121] = { nm="N", id="17891374", name="Firth_Umbril", mj="4", sj="4", mlvl="121-123", aggro="A,S,M", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[122] = { nm="N", id="17891375", name="Blightdella", mj="1", sj="1", mlvl="121-123", aggro="H", links="N", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="0", items="", steal="" }
+	mb_data[123] = { nm="N", id="17891376", name="Blightdella", mj="1", sj="1", mlvl="121-123", aggro="H", links="N", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="0", items="", steal="" }
+	mb_data[124] = { nm="N", id="17891377", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[125] = { nm="N", id="17891378", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[126] = { nm="N", id="17891379", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="121-123", aggro="S", links="Y", weak="Piercing,Ice", strong="Wind", respawntime="0", items="", steal="" }
+	mb_data[127] = { nm="N", id="17891380", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="121-123", aggro="S", links="Y", weak="Piercing,Ice", strong="Wind", respawntime="0", items="", steal="" }
+	mb_data[128] = { nm="N", id="17891381", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="121-123", aggro="S", links="Y", weak="Piercing,Ice", strong="Wind", respawntime="0", items="", steal="" }
+	mb_data[129] = { nm="N", id="17891382", name="Duskprowlers", mj="1", sj="1", mlvl="121-123", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[130] = { nm="N", id="17891383", name="Duskprowlers", mj="1", sj="1", mlvl="121-123", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[131] = { nm="N", id="17891384", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[132] = { nm="N", id="17891385", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[133] = { nm="N", id="17891386", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[134] = { nm="N", id="17891387", name="Firth_Umbril", mj="4", sj="4", mlvl="121-123", aggro="A,S,M", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[135] = { nm="N", id="17891388", name="Firth_Umbril", mj="4", sj="4", mlvl="121-123", aggro="A,S,M", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[136] = { nm="N", id="17891389", name="Firth_Umbril", mj="4", sj="4", mlvl="121-123", aggro="A,S,M", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[137] = { nm="N", id="17891390", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[138] = { nm="N", id="17891391", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[139] = { nm="N", id="17891392", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[140] = { nm="N", id="17891393", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="121-123", aggro="H", links="Y", weak="Ice", strong="Wind,Earth,Water", respawntime="0", items="", steal="" }
+	mb_data[141] = { nm="N", id="17891394", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="121-123", aggro="H", links="Y", weak="Ice", strong="Wind,Earth,Water", respawntime="0", items="", steal="" }
+	mb_data[142] = { nm="N", id="17891395", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[143] = { nm="N", id="17891396", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[144] = { nm="N", id="17891397", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[145] = { nm="N", id="17891398", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[146] = { nm="N", id="17891399", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[147] = { nm="N", id="17891400", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[148] = { nm="N", id="17891401", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[149] = { nm="N", id="17891402", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[150] = { nm="N", id="17891403", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[151] = { nm="N", id="17891404", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[152] = { nm="N", id="17891405", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[153] = { nm="N", id="17891406", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[154] = { nm="N", id="17891407", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[155] = { nm="N", id="17891408", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[156] = { nm="N", id="17891409", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[157] = { nm="N", id="17891410", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[158] = { nm="N", id="17891411", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[159] = { nm="N", id="17891412", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[160] = { nm="N", id="17891413", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[161] = { nm="N", id="17891414", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[162] = { nm="N", id="17891415", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="121-123", aggro="H", links="Y", weak="Ice", strong="Wind,Earth,Water", respawntime="0", items="", steal="" }
+	mb_data[163] = { nm="N", id="17891416", name="Unyielding_Tarichuk", mj="1", sj="1", mlvl="121-123", aggro="H", links="Y", weak="Ice", strong="Wind,Earth,Water", respawntime="0", items="", steal="" }
+	mb_data[164] = { nm="N", id="17891417", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[165] = { nm="N", id="17891418", name="Velkk_Reaver", mj="6", sj="6", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[166] = { nm="N", id="17891419", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[167] = { nm="N", id="17891420", name="Velkk_Berserker", mj="1", sj="1", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[168] = { nm="N", id="17891421", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[169] = { nm="N", id="17891422", name="Velkk_Magus", mj="3", sj="3", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[170] = { nm="N", id="17891423", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[171] = { nm="N", id="17891424", name="Velkk_Stormcaller", mj="4", sj="4", mlvl="105-110", aggro="A,S,Sc", links="Y", weak="Wind", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[172] = { nm="N", id="17891425", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[173] = { nm="N", id="17891426", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[174] = { nm="N", id="17891427", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[175] = { nm="N", id="17891428", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[176] = { nm="N", id="17891429", name="Blightdella", mj="1", sj="1", mlvl="121-123", aggro="H", links="N", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="0", items="", steal="" }
+	mb_data[177] = { nm="N", id="17891430", name="Blightdella", mj="1", sj="1", mlvl="121-123", aggro="H", links="N", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="0", items="", steal="" }
+	mb_data[178] = { nm="N", id="17891431", name="Spumous_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[179] = { nm="N", id="17891432", name="Spumous_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[180] = { nm="N", id="17891433", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[181] = { nm="N", id="17891434", name="Pungent_Fungus", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[182] = { nm="N", id="17891435", name="Void_Worm", mj="4", sj="5", mlvl="121-123", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
+	mb_data[183] = { nm="N", id="17891436", name="Void_Worm", mj="4", sj="5", mlvl="121-123", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
+	mb_data[184] = { nm="N", id="17891437", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[185] = { nm="N", id="17891438", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[186] = { nm="N", id="17891439", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[187] = { nm="N", id="17891440", name="Spinescent_Protuberance", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="Y", weak="Wind,Light", strong="Earth,Dark", respawntime="0", items="", steal="" }
+	mb_data[188] = { nm="N", id="17891441", name="Twilight_Bat", mj="1", sj="1", mlvl="121-123", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[189] = { nm="N", id="17891442", name="Twilight_Bat", mj="1", sj="1", mlvl="121-123", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[190] = { nm="N", id="17891443", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="121-123", aggro="S", links="Y", weak="Piercing,Ice", strong="Wind", respawntime="0", items="", steal="" }
+	mb_data[191] = { nm="N", id="17891444", name="Leafdancer_Twitherym", mj="1", sj="1", mlvl="121-123", aggro="S", links="Y", weak="Piercing,Ice", strong="Wind", respawntime="0", items="", steal="" }
+	mb_data[192] = { nm="N", id="17891445", name="Slinking_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[193] = { nm="N", id="17891446", name="Slinking_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[194] = { nm="N", id="17891447", name="Bloodspattered_Fly", mj="1", sj="1", mlvl="120-123", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[195] = { nm="N", id="17891450", name="Bloodspattered_Fly", mj="1", sj="1", mlvl="120-123", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[196] = { nm="N", id="17891453", name="Bloodspattered_Fly", mj="1", sj="1", mlvl="120-123", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[197] = { nm="N", id="17891466", name="Bloodspattered_Fly", mj="1", sj="1", mlvl="120-123", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[198] = { nm="N", id="17891470", name="Slinking_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[199] = { nm="N", id="17891471", name="Slinking_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[200] = { nm="N", id="17891472", name="Slinking_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[201] = { nm="N", id="17891473", name="Slinking_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[202] = { nm="N", id="17891474", name="Slinking_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[203] = { nm="N", id="17891475", name="Slinking_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[204] = { nm="N", id="17891477", name="Bloodspattered_Fly", mj="1", sj="1", mlvl="120-123", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[205] = { nm="N", id="17891480", name="Bloodspattered_Fly", mj="1", sj="1", mlvl="120-123", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[206] = { nm="N", id="17891485", name="Bloodspattered_Fly", mj="1", sj="1", mlvl="120-123", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[207] = { nm="N", id="17891487", name="Slinking_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[208] = { nm="N", id="17891488", name="Slinking_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[209] = { nm="N", id="17891489", name="Slinking_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[210] = { nm="N", id="17891490", name="Slinking_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[211] = { nm="N", id="17891492", name="Slinking_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[212] = { nm="N", id="17891493", name="Slinking_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[213] = { nm="N", id="17891494", name="Slinking_Slug", mj="1", sj="1", mlvl="121-123", aggro="A,H", links="N", weak="Fire,Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[214] = { nm="N", id="17891506", name="Bloodspattered_Fly", mj="1", sj="1", mlvl="120-123", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[215] = { nm="N", id="17891507", name="Bloodspattered_Fly", mj="1", sj="1", mlvl="120-123", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[216] = { nm="N", id="17891518", name="Bloodspattered_Fly", mj="1", sj="1", mlvl="120-123", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[217] = { nm="N", id="17891519", name="Bloodspattered_Fly", mj="1", sj="1", mlvl="120-123", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[218] = { nm="N", id="17891522", name="Bloodspattered_Fly", mj="1", sj="1", mlvl="120-123", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[219] = { nm="N", id="17891524", name="Bloodspattered_Fly", mj="1", sj="1", mlvl="120-123", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[220] = { nm="N", id="17891525", name="Bloodspattered_Fly", mj="1", sj="1", mlvl="120-123", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[221] = { nm="N", id="17891544", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[222] = { nm="N", id="17891546", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[223] = { nm="N", id="17891547", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[224] = { nm="N", id="17891548", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[225] = { nm="N", id="17891549", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[226] = { nm="N", id="17891550", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[227] = { nm="N", id="17891551", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[228] = { nm="N", id="17891552", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[229] = { nm="N", id="17891558", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[230] = { nm="N", id="17891559", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[231] = { nm="N", id="17891560", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[232] = { nm="N", id="17891561", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[233] = { nm="N", id="17891562", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[234] = { nm="N", id="17891568", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[235] = { nm="N", id="17891569", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[236] = { nm="N", id="17891570", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[237] = { nm="N", id="17891571", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[238] = { nm="N", id="17891572", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[239] = { nm="N", id="17891573", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[240] = { nm="N", id="17891574", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[241] = { nm="N", id="17891575", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[242] = { nm="N", id="17891576", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[243] = { nm="N", id="17891577", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[244] = { nm="N", id="17891578", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[245] = { nm="N", id="17891579", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[246] = { nm="N", id="17891580", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[247] = { nm="N", id="17891581", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[248] = { nm="N", id="17891582", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[249] = { nm="N", id="17891583", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[250] = { nm="N", id="17891584", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[251] = { nm="N", id="17891585", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[252] = { nm="N", id="17891586", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[253] = { nm="N", id="17891587", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[254] = { nm="N", id="17891588", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[255] = { nm="N", id="17891589", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[256] = { nm="N", id="17891590", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[257] = { nm="N", id="17891591", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[258] = { nm="N", id="17891592", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[259] = { nm="N", id="17891593", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[260] = { nm="N", id="17891594", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[261] = { nm="N", id="17891595", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[262] = { nm="N", id="17891596", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[263] = { nm="N", id="17891610", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[264] = { nm="N", id="17891611", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[265] = { nm="N", id="17891612", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[266] = { nm="N", id="17891613", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[267] = { nm="N", id="17891614", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[268] = { nm="N", id="17891615", name="Apex_Bats", mj="1", sj="1", mlvl="128-130", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[269] = { nm="N", id="17891620", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[270] = { nm="N", id="17891621", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[271] = { nm="N", id="17891622", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[272] = { nm="N", id="17891623", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[273] = { nm="N", id="17891624", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[274] = { nm="N", id="17891625", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[275] = { nm="N", id="17891626", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[276] = { nm="N", id="17891627", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[277] = { nm="N", id="17891628", name="Apex_Crab", mj="7", sj="7", mlvl="128-130", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[278] = { nm="N", id="17895430", name="Knotted_Root", mj="1", sj="1", mlvl="105-110", aggro="S", links="N", weak="", strong="", respawntime="3600", items="", steal="" }
+	mb_data[279] = { nm="N", id="17895431", name="Knotted_Root", mj="1", sj="1", mlvl="105-110", aggro="S", links="N", weak="", strong="", respawntime="3600", items="", steal="" }
+	mb_data[280] = { nm="N", id="17895436", name="Knotted_Root", mj="1", sj="1", mlvl="105-110", aggro="S", links="N", weak="", strong="", respawntime="3600", items="", steal="" }
+	mb_data[281] = { nm="N", id="17895437", name="Knotted_Root", mj="1", sj="1", mlvl="105-110", aggro="S", links="N", weak="", strong="", respawntime="3600", items="", steal="" }
 
 	return mb_data;

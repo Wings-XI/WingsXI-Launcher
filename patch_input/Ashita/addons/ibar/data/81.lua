@@ -1,405 +1,540 @@
 --[[
- *	Zone	:: East_Ronfaure_S
+ *  Zone	:: East_Ronfaure_[S]
  *  ZoneID	:: 81
- *  Total	:: 395
+ *  Total	:: 530
 ]]--
 
 	mb_data = {}
 
-	mb_data[1] = { nm="N", id="17109316", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[2] = { nm="N", id="17109056", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[3] = { nm="N", id="17109057", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[4] = { nm="N", id="17109058", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[5] = { nm="N", id="17109059", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[6] = { nm="N", id="17109060", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[7] = { nm="N", id="17109061", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[8] = { nm="N", id="17109062", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[9] = { nm="N", id="17109063", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[10] = { nm="N", id="17109064", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[11] = { nm="N", id="17109055", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[12] = { nm="N", id="17109065", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[13] = { nm="N", id="17109067", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[14] = { nm="N", id="17109068", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[15] = { nm="N", id="17109069", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[16] = { nm="N", id="17109070", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[17] = { nm="N", id="17109071", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[18] = { nm="N", id="17109072", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[19] = { nm="N", id="17109073", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[20] = { nm="N", id="17109074", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[21] = { nm="N", id="17109075", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[22] = { nm="N", id="17109066", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[23] = { nm="N", id="17109054", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[24] = { nm="N", id="17109053", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[25] = { nm="N", id="17109052", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[26] = { nm="N", id="17109031", name="Pugil", mj="1", sj="1", mlvl="14-17", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[27] = { nm="N", id="17109032", name="Pugil", mj="1", sj="1", mlvl="14-17", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[28] = { nm="N", id="17109033", name="Mouse_Bat", mj="1", sj="1", mlvl="14-15", behavior="0", aggro="NA", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[29] = { nm="N", id="17109034", name="Ding_Bats", mj="1", sj="1", mlvl="11-12", behavior="0", aggro="NA", links="N", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[30] = { nm="N", id="17109035", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[31] = { nm="N", id="17109036", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[32] = { nm="N", id="17109037", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[33] = { nm="N", id="17109038", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[34] = { nm="N", id="17109039", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[35] = { nm="N", id="17109040", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[36] = { nm="N", id="17109041", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[37] = { nm="N", id="17109042", name="Mouse_Bat", mj="1", sj="1", mlvl="14-15", behavior="0", aggro="NA", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[38] = { nm="N", id="17109043", name="Mouse_Bat", mj="1", sj="1", mlvl="14-15", behavior="0", aggro="NA", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[39] = { nm="N", id="17109044", name="Ding_Bats", mj="1", sj="1", mlvl="11-12", behavior="0", aggro="NA", links="N", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[40] = { nm="N", id="17109045", name="Ding_Bats", mj="1", sj="1", mlvl="11-12", behavior="0", aggro="NA", links="N", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[41] = { nm="N", id="17109046", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[42] = { nm="N", id="17109047", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[43] = { nm="N", id="17109048", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[44] = { nm="N", id="17109049", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[45] = { nm="N", id="17109050", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[46] = { nm="N", id="17109051", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[47] = { nm="N", id="17109076", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[48] = { nm="N", id="17109077", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[49] = { nm="N", id="17109078", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[50] = { nm="N", id="17109079", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[51] = { nm="N", id="17109102", name="Goblin_Draftee", mj="5", sj="5", mlvl="56-59", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[52] = { nm="N", id="17109103", name="Goblin_Franctireur", mj="8", sj="8", mlvl="56-59", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[53] = { nm="N", id="17109104", name="Goblin_Patrolman", mj="9", sj="9", mlvl="56-59", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[54] = { nm="N", id="17109105", name="Goblin_s_Ladybug", mj="6", sj="6", mlvl="49-52", behavior="0", aggro="S", links="Y", spawntype="128", weak="Piercing,Ice", note="" }
-	mb_data[55] = { nm="N", id="17109106", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[56] = { nm="N", id="17109107", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[57] = { nm="N", id="17109108", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[58] = { nm="N", id="17109109", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[59] = { nm="N", id="17109110", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[60] = { nm="N", id="17109111", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[61] = { nm="N", id="17109112", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[62] = { nm="N", id="17109113", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[63] = { nm="N", id="17109114", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[64] = { nm="N", id="17109115", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[65] = { nm="N", id="17109116", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[66] = { nm="N", id="17109117", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[67] = { nm="N", id="17109118", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[68] = { nm="N", id="17109119", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[69] = { nm="N", id="17109120", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[70] = { nm="N", id="17109121", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[71] = { nm="N", id="17109122", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[72] = { nm="N", id="17109101", name="Goblin_Franctireur", mj="8", sj="8", mlvl="56-59", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[73] = { nm="N", id="17109030", name="Pugil", mj="1", sj="1", mlvl="14-17", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[74] = { nm="N", id="17109100", name="Goblin_Mine", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="T(H)", links="N", spawntype="128", weak="???", note="" }
-	mb_data[75] = { nm="N", id="17109098", name="Goblin_Draftee", mj="5", sj="5", mlvl="56-59", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[76] = { nm="N", id="17109080", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[77] = { nm="N", id="17109081", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[78] = { nm="N", id="17109082", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[79] = { nm="N", id="17109083", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[80] = { nm="N", id="17109084", name="Mouse_Bat", mj="1", sj="1", mlvl="14-15", behavior="0", aggro="NA", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[81] = { nm="N", id="17109085", name="Ding_Bats", mj="1", sj="1", mlvl="11-12", behavior="0", aggro="NA", links="N", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[82] = { nm="N", id="17109086", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[83] = { nm="N", id="17109087", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[84] = { nm="N", id="17109326", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[85] = { nm="N", id="17109088", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[86] = { nm="N", id="17109325", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[87] = { nm="N", id="17109324", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[88] = { nm="N", id="17109089", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[89] = { nm="N", id="17109090", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[90] = { nm="N", id="17109091", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[91] = { nm="N", id="17109092", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[92] = { nm="N", id="17109093", name="Mouse_Bat", mj="1", sj="1", mlvl="14-15", behavior="0", aggro="NA", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[93] = { nm="N", id="17109094", name="Ding_Bats", mj="1", sj="1", mlvl="11-12", behavior="0", aggro="NA", links="N", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[94] = { nm="N", id="17109095", name="Goblin_Patrolman", mj="9", sj="9", mlvl="56-59", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[95] = { nm="N", id="17109096", name="Goblin_s_Ladybug", mj="6", sj="6", mlvl="49-52", behavior="0", aggro="S", links="Y", spawntype="128", weak="Piercing,Ice", note="" }
-	mb_data[96] = { nm="N", id="17109097", name="Goblin_Franctireur", mj="8", sj="8", mlvl="56-59", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[97] = { nm="N", id="17109099", name="Goblin_Skirmisher", mj="11", sj="11", mlvl="56-59", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[98] = { nm="N", id="17109123", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[99] = { nm="N", id="17109029", name="Pugil", mj="1", sj="1", mlvl="14-17", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[100] = { nm="N", id="17109027", name="River_Crab", mj="7", sj="7", mlvl="12-14", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[101] = { nm="N", id="17109381", name="Faygorger_Sheep", mj="1", sj="1", mlvl="0-0", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Fire,Lightning", note="" }
-	mb_data[102] = { nm="N", id="17109380", name="Faygorger_Sheep", mj="1", sj="1", mlvl="0-0", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Fire,Lightning", note="" }
-	mb_data[103] = { nm="N", id="17109379", name="Faygorger_Sheep", mj="1", sj="1", mlvl="0-0", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Fire,Lightning", note="" }
-	mb_data[104] = { nm="N", id="17109378", name="Faygorger_Sheep", mj="1", sj="1", mlvl="0-0", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Fire,Lightning", note="" }
-	mb_data[105] = { nm="N", id="17109377", name="Faygorger_Ram", mj="1", sj="1", mlvl="0-0", behavior="0", aggro="NA", links="N", spawntype="128", weak="???", note="" }
-	mb_data[106] = { nm="N", id="17109376", name="Faygorger_Ram", mj="1", sj="1", mlvl="0-0", behavior="0", aggro="NA", links="N", spawntype="128", weak="???", note="" }
-	mb_data[107] = { nm="N", id="17109375", name="Faytrapper_Vashgash", mj="1", sj="1", mlvl="80-85", behavior="0", aggro="Sc", links="N", spawntype="128", weak="Water", note="" }
-	mb_data[108] = { nm="N", id="17109374", name="Ancilla_Beetle", mj="1", sj="1", mlvl="0-0", behavior="0", aggro="S,Sc", links="Y", spawntype="128", weak="Ice,Light", note="" }
-	mb_data[109] = { nm="N", id="17109373", name="Ancilla_Beetle", mj="1", sj="1", mlvl="0-0", behavior="0", aggro="S,Sc", links="Y", spawntype="128", weak="Ice,Light", note="" }
-	mb_data[110] = { nm="N", id="17109382", name="Yilbegan", mj="1", sj="1", mlvl="90-92", behavior="0", aggro="H", links="Y", spawntype="0", weak="Wind", note="" }
-	mb_data[111] = { nm="N", id="17109372", name="Ancilla_Beetle", mj="1", sj="1", mlvl="0-0", behavior="0", aggro="S,Sc", links="Y", spawntype="128", weak="Ice,Light", note="" }
-	mb_data[112] = { nm="N", id="17109370", name="Ancilla_Beetle", mj="1", sj="1", mlvl="0-0", behavior="0", aggro="S,Sc", links="Y", spawntype="128", weak="Ice,Light", note="" }
-	mb_data[113] = { nm="N", id="17109369", name="Ancilla_Beetle", mj="1", sj="1", mlvl="0-0", behavior="0", aggro="S,Sc", links="Y", spawntype="128", weak="Ice,Light", note="" }
-	mb_data[114] = { nm="N", id="17109368", name="Queenbug", mj="6", sj="6", mlvl="80-85", behavior="0", aggro="S,Sc", links="Y", spawntype="128", weak="Piercing,Ice", note="" }
-	mb_data[115] = { nm="N", id="17109367", name="Dark_Ixion", mj="1", sj="1", mlvl="88-90", behavior="0", aggro="NA", links="N", spawntype="128", weak="???", note="" }
-	mb_data[116] = { nm="N", id="17109366", name="Orcish_Guard", mj="1", sj="1", mlvl="60-60", behavior="0", aggro="S,H,Sc", links="Y", spawntype="128", weak="Water", note="" }
-	mb_data[117] = { nm="N", id="17109365", name="Orcish_Guard", mj="1", sj="1", mlvl="60-60", behavior="0", aggro="S,H,Sc", links="Y", spawntype="128", weak="Water", note="" }
-	mb_data[118] = { nm="N", id="17109364", name="Orcish_Transporter", mj="1", sj="1", mlvl="60-60", behavior="0", aggro="S,H,Sc", links="Y", spawntype="128", weak="Water", note="" }
-	mb_data[119] = { nm="N", id="17109363", name="Goblin_Picaroon", mj="6", sj="6", mlvl="56-59", behavior="0", aggro="S", links="N", spawntype="0", weak="Light", note="" }
-	mb_data[120] = { nm="N", id="17109362", name="Goblin_Picaroon", mj="6", sj="6", mlvl="56-59", behavior="0", aggro="S", links="N", spawntype="0", weak="Light", note="" }
-	mb_data[121] = { nm="N", id="17109371", name="Ancilla_Beetle", mj="1", sj="1", mlvl="0-0", behavior="0", aggro="S,Sc", links="Y", spawntype="128", weak="Ice,Light", note="" }
-	mb_data[122] = { nm="N", id="17109719", name="Cottus", mj="9", sj="9", mlvl="80-85", behavior="0", aggro="T(H)", links="Y", spawntype="128", weak="Earth", note="" }
-	mb_data[123] = { nm="N", id="17109718", name="Cottus", mj="9", sj="9", mlvl="80-85", behavior="0", aggro="T(H)", links="Y", spawntype="128", weak="Earth", note="" }
-	mb_data[124] = { nm="N", id="17109011", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[125] = { nm="N", id="17108993", name="Snipper", mj="7", sj="7", mlvl="13-17", behavior="0", aggro="NA", links="N", spawntype="128", weak="Ice,Lightning", note="" }
-	mb_data[126] = { nm="N", id="17108994", name="Mud_Pugil", mj="1", sj="1", mlvl="15-20", behavior="0", aggro="H", links="N", spawntype="128", weak="Ice,Lightning", note="" }
-	mb_data[127] = { nm="N", id="17108995", name="Pug_Pugil", mj="1", sj="1", mlvl="15-20", behavior="0", aggro="NA", links="N", spawntype="128", weak="Ice,Lightning", note="" }
-	mb_data[128] = { nm="N", id="17108996", name="Clipper", mj="7", sj="7", mlvl="13-17", behavior="0", aggro="NA", links="N", spawntype="128", weak="Ice,Lightning", note="" }
-	mb_data[129] = { nm="N", id="17108997", name="Fighting_Pugil", mj="1", sj="1", mlvl="15-20", behavior="0", aggro="H", links="N", spawntype="128", weak="Ice,Lightning", note="" }
-	mb_data[130] = { nm="N", id="17108998", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[131] = { nm="N", id="17108999", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[132] = { nm="N", id="17109000", name="Mouse_Bat", mj="1", sj="1", mlvl="14-15", behavior="0", aggro="NA", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[133] = { nm="N", id="17109001", name="Mouse_Bat", mj="1", sj="1", mlvl="14-15", behavior="0", aggro="NA", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[134] = { nm="N", id="17109002", name="Ding_Bats", mj="1", sj="1", mlvl="11-12", behavior="0", aggro="NA", links="N", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[135] = { nm="N", id="17109003", name="Ding_Bats", mj="1", sj="1", mlvl="11-12", behavior="0", aggro="NA", links="N", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[136] = { nm="N", id="17109004", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[137] = { nm="N", id="17109005", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[138] = { nm="N", id="17109006", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[139] = { nm="N", id="17109007", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[140] = { nm="N", id="17109008", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[141] = { nm="N", id="17109009", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[142] = { nm="N", id="17109010", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[143] = { nm="N", id="17125378", name="OgrishPugil", mj="1", sj="1", mlvl="0-0", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[144] = { nm="N", id="17125381", name="OilSpill", mj="2", sj="9", mlvl="0-0", behavior="0", aggro="T(H),T(S)", links="Y", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[145] = { nm="N", id="17109317", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[146] = { nm="N", id="17109361", name="Goblin_Picaroon", mj="6", sj="6", mlvl="56-59", behavior="0", aggro="S", links="N", spawntype="0", weak="Light", note="" }
-	mb_data[147] = { nm="N", id="17109360", name="Goblin_Picaroon", mj="6", sj="6", mlvl="56-59", behavior="0", aggro="S", links="N", spawntype="0", weak="Light", note="" }
-	mb_data[148] = { nm="N", id="17109359", name="Goblin_Picaroon", mj="6", sj="6", mlvl="56-59", behavior="0", aggro="S", links="N", spawntype="0", weak="Light", note="" }
-	mb_data[149] = { nm="N", id="17109358", name="Goblin_Picaroon", mj="6", sj="6", mlvl="56-59", behavior="0", aggro="S", links="N", spawntype="0", weak="Light", note="" }
-	mb_data[150] = { nm="N", id="17109332", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[151] = { nm="N", id="17109331", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[152] = { nm="N", id="17109330", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[153] = { nm="N", id="17109329", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[154] = { nm="N", id="17109328", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[155] = { nm="N", id="17109327", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[156] = { nm="N", id="17109012", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[157] = { nm="N", id="17109013", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[158] = { nm="N", id="17109014", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[159] = { nm="N", id="17109015", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[160] = { nm="N", id="17109016", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[161] = { nm="N", id="17109017", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[162] = { nm="N", id="17109018", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[163] = { nm="N", id="17109019", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[164] = { nm="N", id="17109020", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[165] = { nm="N", id="17109021", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[166] = { nm="N", id="17109022", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[167] = { nm="N", id="17109023", name="River_Crab", mj="7", sj="7", mlvl="12-14", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[168] = { nm="N", id="17109024", name="River_Crab", mj="7", sj="7", mlvl="12-14", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[169] = { nm="N", id="17109025", name="River_Crab", mj="7", sj="7", mlvl="12-14", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[170] = { nm="N", id="17109026", name="River_Crab", mj="7", sj="7", mlvl="12-14", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[171] = { nm="N", id="17109333", name="Walking_Tree", mj="1", sj="1", mlvl="58-58", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[172] = { nm="N", id="17109028", name="Pugil", mj="1", sj="1", mlvl="14-17", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[173] = { nm="N", id="17109334", name="Walking_Tree", mj="1", sj="1", mlvl="58-58", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[174] = { nm="N", id="17109336", name="Walking_Tree", mj="1", sj="1", mlvl="58-58", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[175] = { nm="N", id="17109357", name="Sandworm", mj="1", sj="1", mlvl="88-88", behavior="0", aggro="H", links="N", spawntype="0", weak="Wind", note="" }
-	mb_data[176] = { nm="N", id="17109356", name="Pixie", mj="3", sj="3", mlvl="53-55", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[177] = { nm="N", id="17109355", name="Pixie", mj="3", sj="3", mlvl="53-55", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[178] = { nm="N", id="17109354", name="Pixie", mj="3", sj="3", mlvl="53-55", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[179] = { nm="N", id="17109353", name="Pixie", mj="3", sj="3", mlvl="53-55", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[180] = { nm="N", id="17109352", name="Pixie", mj="3", sj="3", mlvl="53-55", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[181] = { nm="N", id="17109351", name="Pixie", mj="3", sj="3", mlvl="53-55", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[182] = { nm="N", id="17109350", name="Pixie", mj="3", sj="3", mlvl="53-55", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[183] = { nm="N", id="17109349", name="Pixie", mj="3", sj="3", mlvl="53-55", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[184] = { nm="N", id="17109348", name="Orcish_Fodder", mj="1", sj="1", mlvl="62-64", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[185] = { nm="N", id="17109347", name="Orcish_Neckchopper", mj="8", sj="8", mlvl="62-64", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[186] = { nm="N", id="17109346", name="Orcish_Stonechucker", mj="11", sj="11", mlvl="62-64", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[187] = { nm="N", id="17109345", name="Orcish_Fodder", mj="1", sj="1", mlvl="62-64", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[188] = { nm="N", id="17109344", name="Orcish_Neckchopper", mj="8", sj="8", mlvl="62-64", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[189] = { nm="N", id="17109343", name="Orcish_Mesmerizer", mj="4", sj="4", mlvl="62-64", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[190] = { nm="N", id="17109342", name="Orcish_Neckchopper", mj="8", sj="8", mlvl="62-64", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[191] = { nm="N", id="17109341", name="Orcish_Fodder", mj="1", sj="1", mlvl="62-64", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[192] = { nm="N", id="17109340", name="Orcish_Stonechucker", mj="11", sj="11", mlvl="62-64", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[193] = { nm="N", id="17109339", name="Orcish_Mesmerizer", mj="4", sj="4", mlvl="62-64", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[194] = { nm="N", id="17109338", name="Skogs_Fru", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[195] = { nm="N", id="17109337", name="Walking_Tree", mj="1", sj="1", mlvl="58-58", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[196] = { nm="N", id="17109335", name="Walking_Tree", mj="1", sj="1", mlvl="58-58", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[197] = { nm="N", id="17109124", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[198] = { nm="N", id="17109720", name="Cottus", mj="9", sj="9", mlvl="80-85", behavior="0", aggro="T(H)", links="Y", spawntype="128", weak="Earth", note="" }
-	mb_data[199] = { nm="N", id="17109126", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[200] = { nm="N", id="17109214", name="Pugil", mj="1", sj="1", mlvl="14-17", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[201] = { nm="N", id="17109213", name="Pugil", mj="1", sj="1", mlvl="14-17", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[202] = { nm="N", id="17109212", name="Pugil", mj="1", sj="1", mlvl="14-17", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[203] = { nm="N", id="17109211", name="River_Crab", mj="7", sj="7", mlvl="12-14", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[204] = { nm="N", id="17109210", name="River_Crab", mj="7", sj="7", mlvl="12-14", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[205] = { nm="N", id="17109209", name="River_Crab", mj="7", sj="7", mlvl="12-14", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[206] = { nm="N", id="17109208", name="River_Crab", mj="7", sj="7", mlvl="12-14", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[207] = { nm="N", id="17109215", name="Pugil", mj="1", sj="1", mlvl="14-17", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[208] = { nm="N", id="17109207", name="River_Crab", mj="7", sj="7", mlvl="12-14", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[209] = { nm="N", id="17109205", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[210] = { nm="N", id="17109204", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[211] = { nm="N", id="17109203", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[212] = { nm="N", id="17109202", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[213] = { nm="N", id="17109201", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[214] = { nm="N", id="17109200", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[215] = { nm="N", id="17109199", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[216] = { nm="N", id="17109206", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[217] = { nm="N", id="17109198", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[218] = { nm="N", id="17109216", name="Pugil", mj="1", sj="1", mlvl="14-17", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[219] = { nm="N", id="17109218", name="Pugil", mj="1", sj="1", mlvl="14-17", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[220] = { nm="N", id="17109234", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[221] = { nm="N", id="17109233", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[222] = { nm="N", id="17109232", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[223] = { nm="N", id="17109231", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[224] = { nm="N", id="17109230", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[225] = { nm="N", id="17109229", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[226] = { nm="N", id="17109228", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[227] = { nm="N", id="17109217", name="Pugil", mj="1", sj="1", mlvl="14-17", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[228] = { nm="N", id="17109227", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[229] = { nm="N", id="17109225", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[230] = { nm="N", id="17109224", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[231] = { nm="N", id="17109223", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[232] = { nm="N", id="17109222", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[233] = { nm="N", id="17109221", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[234] = { nm="N", id="17109220", name="Ding_Bats", mj="1", sj="1", mlvl="11-12", behavior="0", aggro="NA", links="N", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[235] = { nm="N", id="17109219", name="Mouse_Bat", mj="1", sj="1", mlvl="14-15", behavior="0", aggro="NA", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[236] = { nm="N", id="17109226", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[237] = { nm="N", id="17109235", name="Myradrosh", mj="5", sj="5", mlvl="50-51", behavior="0", aggro="NA", links="N", spawntype="128", weak="Piercing", note="" }
-	mb_data[238] = { nm="N", id="17109197", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[239] = { nm="N", id="17109195", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[240] = { nm="N", id="17109181", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[241] = { nm="N", id="17109180", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[242] = { nm="N", id="17109179", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[243] = { nm="N", id="17109178", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[244] = { nm="N", id="17109177", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[245] = { nm="N", id="17109176", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[246] = { nm="N", id="17109175", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[247] = { nm="N", id="17109315", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[248] = { nm="N", id="17109174", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[249] = { nm="N", id="17109172", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[250] = { nm="N", id="17109171", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[251] = { nm="N", id="17109170", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[252] = { nm="N", id="17109169", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[253] = { nm="N", id="17109168", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[254] = { nm="N", id="17109167", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[255] = { nm="N", id="17109166", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[256] = { nm="N", id="17109173", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[257] = { nm="N", id="17109196", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[258] = { nm="N", id="17109182", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[259] = { nm="N", id="17109184", name="River_Crab", mj="7", sj="7", mlvl="12-14", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[260] = { nm="N", id="17109194", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[261] = { nm="N", id="17109318", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[262] = { nm="N", id="17109319", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[263] = { nm="N", id="17109320", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[264] = { nm="N", id="17109321", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[265] = { nm="N", id="17109322", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[266] = { nm="N", id="17109323", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[267] = { nm="N", id="17109183", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[268] = { nm="N", id="17109193", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[269] = { nm="N", id="17109191", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[270] = { nm="N", id="17109190", name="Ding_Bats", mj="1", sj="1", mlvl="11-12", behavior="0", aggro="NA", links="N", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[271] = { nm="N", id="17109189", name="Mouse_Bat", mj="1", sj="1", mlvl="14-15", behavior="0", aggro="NA", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[272] = { nm="N", id="17109188", name="Pugil", mj="1", sj="1", mlvl="14-17", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[273] = { nm="N", id="17109187", name="Pugil", mj="1", sj="1", mlvl="14-17", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[274] = { nm="N", id="17109186", name="Pugil", mj="1", sj="1", mlvl="14-17", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[275] = { nm="N", id="17109185", name="River_Crab", mj="7", sj="7", mlvl="12-14", behavior="0", aggro="NA", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[276] = { nm="N", id="17109192", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[277] = { nm="N", id="17109165", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[278] = { nm="N", id="17109236", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[279] = { nm="N", id="17109238", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[280] = { nm="N", id="17109311", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[281] = { nm="N", id="17109312", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[282] = { nm="N", id="17109313", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[283] = { nm="N", id="17109314", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[284] = { nm="N", id="17109290", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[285] = { nm="N", id="17109289", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[286] = { nm="N", id="17109288", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[287] = { nm="N", id="17109310", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[288] = { nm="N", id="17109287", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[289] = { nm="N", id="17109285", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[290] = { nm="N", id="17109284", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[291] = { nm="N", id="17109283", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[292] = { nm="N", id="17109282", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[293] = { nm="N", id="17109281", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[294] = { nm="N", id="17109280", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[295] = { nm="N", id="17109279", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[296] = { nm="N", id="17109286", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[297] = { nm="N", id="17109278", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[298] = { nm="N", id="17109309", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[299] = { nm="N", id="17109307", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[300] = { nm="N", id="17109295", name="Battrap", mj="1", sj="1", mlvl="3-6", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[301] = { nm="N", id="17109125", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[302] = { nm="N", id="17109296", name="Goblintrap", mj="1", sj="1", mlvl="60-60", behavior="0", aggro="NA", links="N", spawntype="128", weak="Fire,Ice", note="" }
-	mb_data[303] = { nm="N", id="17109297", name="Battrap", mj="1", sj="1", mlvl="3-6", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[304] = { nm="N", id="17109298", name="Battrap", mj="1", sj="1", mlvl="3-6", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[305] = { nm="N", id="17109299", name="Battrap", mj="1", sj="1", mlvl="3-6", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[306] = { nm="N", id="17109300", name="Battrap", mj="1", sj="1", mlvl="3-6", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[307] = { nm="N", id="17109308", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[308] = { nm="N", id="17109301", name="Battrap", mj="1", sj="1", mlvl="3-6", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[309] = { nm="N", id="17109303", name="Battrap", mj="1", sj="1", mlvl="3-6", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[310] = { nm="N", id="17109304", name="Battrap", mj="1", sj="1", mlvl="3-6", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[311] = { nm="N", id="17109305", name="Battrap", mj="1", sj="1", mlvl="3-6", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[312] = { nm="N", id="17109306", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[313] = { nm="N", id="17109294", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[314] = { nm="N", id="17109293", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[315] = { nm="N", id="17109292", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[316] = { nm="N", id="17109302", name="Battrap", mj="1", sj="1", mlvl="3-6", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[317] = { nm="N", id="17109237", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[318] = { nm="N", id="17109277", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[319] = { nm="N", id="17109275", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[320] = { nm="N", id="17109254", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[321] = { nm="N", id="17109253", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[322] = { nm="N", id="17109252", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[323] = { nm="N", id="17109251", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[324] = { nm="N", id="17109250", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[325] = { nm="N", id="17109249", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[326] = { nm="N", id="17109248", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[327] = { nm="N", id="17109255", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[328] = { nm="N", id="17109247", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[329] = { nm="N", id="17109245", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[330] = { nm="N", id="17109244", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[331] = { nm="N", id="17109243", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[332] = { nm="N", id="17109242", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[333] = { nm="N", id="17109241", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[334] = { nm="N", id="17109240", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[335] = { nm="N", id="17109239", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[336] = { nm="N", id="17109246", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[337] = { nm="N", id="17109276", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[338] = { nm="N", id="17109256", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[339] = { nm="N", id="17109258", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[340] = { nm="N", id="17109274", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[341] = { nm="N", id="17109273", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[342] = { nm="N", id="17109272", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[343] = { nm="N", id="17109271", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[344] = { nm="N", id="17109270", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[345] = { nm="N", id="17109269", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[346] = { nm="N", id="17109268", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[347] = { nm="N", id="17109257", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[348] = { nm="N", id="17109267", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[349] = { nm="N", id="17109265", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[350] = { nm="N", id="17109264", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[351] = { nm="N", id="17109263", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[352] = { nm="N", id="17109262", name="Colibri", mj="5", sj="5", mlvl="45-47", behavior="0", aggro="NA", links="N", spawntype="0", weak="Piercing", note="" }
-	mb_data[353] = { nm="N", id="17109261", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[354] = { nm="N", id="17109260", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", behavior="0", aggro="Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[355] = { nm="N", id="17109259", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-46", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[356] = { nm="N", id="17109266", name="Ladybug", mj="6", sj="6", mlvl="44-47", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[357] = { nm="N", id="17109164", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[358] = { nm="N", id="17109291", name="Djinn", mj="1", sj="1", mlvl="55-55", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[359] = { nm="N", id="17109152", name="Mouse_Bat", mj="1", sj="1", mlvl="14-15", behavior="0", aggro="NA", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[360] = { nm="N", id="17109148", name="Giant_Spider", mj="1", sj="1", mlvl="50-52", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[361] = { nm="N", id="17109149", name="Giant_Spider", mj="1", sj="1", mlvl="50-52", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[362] = { nm="N", id="17109150", name="Giant_Spider", mj="1", sj="1", mlvl="50-52", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[363] = { nm="N", id="17109127", name="Mouse_Bat", mj="1", sj="1", mlvl="14-15", behavior="0", aggro="NA", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[364] = { nm="N", id="17109151", name="Giant_Spider", mj="1", sj="1", mlvl="50-52", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[365] = { nm="N", id="17109153", name="Ding_Bats", mj="1", sj="1", mlvl="11-12", behavior="0", aggro="NA", links="N", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[366] = { nm="N", id="17109154", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[367] = { nm="N", id="17109146", name="Giant_Spider", mj="1", sj="1", mlvl="50-52", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[368] = { nm="N", id="17109155", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[369] = { nm="N", id="17109157", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[370] = { nm="N", id="17109158", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[371] = { nm="N", id="17109159", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[372] = { nm="N", id="17109160", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", behavior="0", aggro="NA", links="N", spawntype="0", weak="Wind,Light", note="" }
-	mb_data[373] = { nm="N", id="17109161", name="Mouse_Bat", mj="1", sj="1", mlvl="14-15", behavior="0", aggro="NA", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[374] = { nm="N", id="17109162", name="Ding_Bats", mj="1", sj="1", mlvl="11-12", behavior="0", aggro="NA", links="N", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[375] = { nm="N", id="17109163", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[376] = { nm="N", id="17109156", name="Forest_Hare", mj="1", sj="1", mlvl="12-15", behavior="0", aggro="Sc", links="N", spawntype="0", weak="Lightning,Water,Dark", note="" }
-	mb_data[377] = { nm="N", id="17109145", name="Giant_Spider", mj="1", sj="1", mlvl="50-52", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[378] = { nm="N", id="17109147", name="Melusine", mj="3", sj="3", mlvl="72-76", behavior="0", aggro="NA", links="N", spawntype="128", weak="???", note="" }
-	mb_data[379] = { nm="N", id="17109128", name="Ding_Bats", mj="1", sj="1", mlvl="11-12", behavior="0", aggro="NA", links="N", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[380] = { nm="N", id="17109142", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[381] = { nm="N", id="17109141", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[382] = { nm="N", id="17109140", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[383] = { nm="N", id="17109139", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[384] = { nm="N", id="17109143", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[385] = { nm="N", id="17109144", name="Wild_Sheep", mj="1", sj="1", mlvl="16-17", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[386] = { nm="N", id="17109137", name="Goblin_Patrolman", mj="9", sj="9", mlvl="56-59", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[387] = { nm="N", id="17109136", name="Goblin_Mine", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="T(H)", links="N", spawntype="128", weak="???", note="" }
-	mb_data[388] = { nm="N", id="17109138", name="Goblin_s_Ladybug", mj="6", sj="6", mlvl="49-52", behavior="0", aggro="S", links="Y", spawntype="128", weak="Piercing,Ice", note="" }
-	mb_data[389] = { nm="N", id="17109134", name="Goblin_Draftee", mj="5", sj="5", mlvl="56-59", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[390] = { nm="N", id="17109133", name="Goblin_Franctireur", mj="8", sj="8", mlvl="56-59", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[391] = { nm="N", id="17109132", name="Goblin_Mine", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="T(H)", links="N", spawntype="128", weak="???", note="" }
-	mb_data[392] = { nm="N", id="17109131", name="Goblin_Skirmisher", mj="11", sj="11", mlvl="56-59", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[393] = { nm="N", id="17109130", name="Goblin_Draftee", mj="5", sj="5", mlvl="56-59", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[394] = { nm="N", id="17109129", name="Goblin_Franctireur", mj="8", sj="8", mlvl="56-59", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[395] = { nm="N", id="17109135", name="Goblin_Skirmisher", mj="11", sj="11", mlvl="56-59", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
+	mb_data[1] = { nm="N", id="16781313", name="Snipper_fished", mj="7", sj="7", mlvl="13-17", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[2] = { nm="N", id="16781314", name="Snipper_fished", mj="7", sj="7", mlvl="13-17", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[3] = { nm="N", id="16785409", name="Snipper_fished", mj="7", sj="7", mlvl="13-17", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[4] = { nm="N", id="16822273", name="Snipper_fished", mj="7", sj="7", mlvl="13-17", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[5] = { nm="N", id="17108993", name="Snipper_fished", mj="7", sj="7", mlvl="13-17", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[6] = { nm="N", id="17108994", name="Mud_Pugil", mj="1", sj="1", mlvl="15-20", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[7] = { nm="N", id="17108995", name="Pug_Pugil", mj="1", sj="1", mlvl="15-20", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[8] = { nm="N", id="17108996", name="Clipper", mj="7", sj="7", mlvl="13-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[9] = { nm="N", id="17108997", name="Fighting_Pugil", mj="1", sj="1", mlvl="15-20", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[10] = { nm="N", id="17108998", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[11] = { nm="N", id="17108999", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[12] = { nm="N", id="17109000", name="Mouse_Bat", mj="1", sj="1", mlvl="12-15", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[13] = { nm="N", id="17109001", name="Mouse_Bat", mj="1", sj="1", mlvl="12-15", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[14] = { nm="N", id="17109002", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[15] = { nm="N", id="17109003", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[16] = { nm="N", id="17109004", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[17] = { nm="N", id="17109005", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[18] = { nm="N", id="17109006", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[19] = { nm="N", id="17109007", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[20] = { nm="N", id="17109008", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[21] = { nm="N", id="17109009", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[22] = { nm="N", id="17109010", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[23] = { nm="N", id="17109011", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[24] = { nm="N", id="17109012", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[25] = { nm="N", id="17109013", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[26] = { nm="N", id="17109014", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[27] = { nm="N", id="17109015", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[28] = { nm="N", id="17109016", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[29] = { nm="N", id="17109017", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[30] = { nm="N", id="17109018", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[31] = { nm="N", id="17109019", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[32] = { nm="N", id="17109020", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[33] = { nm="N", id="17109021", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[34] = { nm="N", id="17109022", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[35] = { nm="N", id="17109023", name="River_Crab", mj="7", sj="7", mlvl="11-14", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[36] = { nm="N", id="17109024", name="River_Crab", mj="7", sj="7", mlvl="11-14", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[37] = { nm="N", id="17109025", name="River_Crab", mj="7", sj="7", mlvl="11-14", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[38] = { nm="N", id="17109026", name="River_Crab", mj="7", sj="7", mlvl="11-14", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[39] = { nm="N", id="17109027", name="River_Crab", mj="7", sj="7", mlvl="11-14", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[40] = { nm="N", id="17109028", name="Pugil", mj="1", sj="1", mlvl="14-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Shall Shell", steal="" }
+	mb_data[41] = { nm="N", id="17109029", name="Pugil", mj="1", sj="1", mlvl="14-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Shall Shell", steal="" }
+	mb_data[42] = { nm="N", id="17109030", name="Pugil", mj="1", sj="1", mlvl="14-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Shall Shell", steal="" }
+	mb_data[43] = { nm="N", id="17109031", name="Pugil", mj="1", sj="1", mlvl="14-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Shall Shell", steal="" }
+	mb_data[44] = { nm="N", id="17109032", name="Pugil", mj="1", sj="1", mlvl="14-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Shall Shell", steal="" }
+	mb_data[45] = { nm="N", id="17109033", name="Mouse_Bat", mj="1", sj="1", mlvl="12-15", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[46] = { nm="N", id="17109034", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[47] = { nm="N", id="17109035", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[48] = { nm="N", id="17109036", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[49] = { nm="N", id="17109037", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[50] = { nm="N", id="17109038", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[51] = { nm="N", id="17109039", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[52] = { nm="N", id="17109040", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[53] = { nm="N", id="17109041", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[54] = { nm="N", id="17109042", name="Mouse_Bat", mj="1", sj="1", mlvl="12-15", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[55] = { nm="N", id="17109043", name="Mouse_Bat", mj="1", sj="1", mlvl="12-15", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[56] = { nm="N", id="17109044", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[57] = { nm="N", id="17109045", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[58] = { nm="N", id="17109046", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[59] = { nm="N", id="17109047", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[60] = { nm="N", id="17109048", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[61] = { nm="N", id="17109049", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[62] = { nm="N", id="17109050", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[63] = { nm="N", id="17109051", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[64] = { nm="N", id="17109052", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[65] = { nm="N", id="17109053", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[66] = { nm="N", id="17109054", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[67] = { nm="N", id="17109055", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[68] = { nm="N", id="17109056", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[69] = { nm="N", id="17109057", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[70] = { nm="N", id="17109058", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[71] = { nm="N", id="17109059", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[72] = { nm="N", id="17109060", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[73] = { nm="N", id="17109061", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[74] = { nm="N", id="17109062", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[75] = { nm="N", id="17109063", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[76] = { nm="N", id="17109064", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[77] = { nm="N", id="17109065", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[78] = { nm="N", id="17109066", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[79] = { nm="N", id="17109067", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[80] = { nm="N", id="17109068", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[81] = { nm="N", id="17109069", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[82] = { nm="N", id="17109070", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[83] = { nm="N", id="17109071", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[84] = { nm="N", id="17109072", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[85] = { nm="N", id="17109073", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[86] = { nm="N", id="17109074", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[87] = { nm="N", id="17109075", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[88] = { nm="N", id="17109076", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[89] = { nm="N", id="17109077", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[90] = { nm="N", id="17109078", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[91] = { nm="N", id="17109079", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[92] = { nm="N", id="17109080", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[93] = { nm="N", id="17109081", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[94] = { nm="N", id="17109082", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[95] = { nm="N", id="17109083", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[96] = { nm="N", id="17109084", name="Mouse_Bat", mj="1", sj="1", mlvl="12-15", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[97] = { nm="N", id="17109085", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[98] = { nm="N", id="17109086", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[99] = { nm="N", id="17109087", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[100] = { nm="N", id="17109088", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[101] = { nm="N", id="17109089", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[102] = { nm="N", id="17109090", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[103] = { nm="N", id="17109091", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[104] = { nm="N", id="17109092", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[105] = { nm="N", id="17109093", name="Mouse_Bat", mj="1", sj="1", mlvl="12-15", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[106] = { nm="N", id="17109094", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[107] = { nm="N", id="17109095", name="Goblin_Patrolman", mj="9", sj="9", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[108] = { nm="N", id="17109096", name="Goblins_Ladybug", mj="6", sj="6", mlvl="52-54", aggro="A,S,Sc", links="Y", weak="Piercing,Ice", strong="Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[109] = { nm="N", id="17109097", name="Goblin_Franctireur", mj="8", sj="8", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Mail, Goblin Helm, Bottled Pixie, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Gold Beastcoin" }
+	mb_data[110] = { nm="N", id="17109098", name="Goblin_Draftee", mj="5", sj="5", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Brass Ingot, Silver Ingot, Gold Ingot, Platinum Ingot", steal="Gold Beastcoin" }
+	mb_data[111] = { nm="N", id="17109099", name="Goblin_Skirmisher", mj="11", sj="11", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Mess Tin, Goblin Weel", steal="Gold Beastcoin" }
+	mb_data[112] = { nm="N", id="17109100", name="Goblin_Mine", mj="1", sj="1", mlvl="54-54", aggro="A,T(H)", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[113] = { nm="N", id="17109101", name="Goblin_Franctireur", mj="8", sj="8", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Mail, Goblin Helm, Bottled Pixie, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Gold Beastcoin" }
+	mb_data[114] = { nm="N", id="17109102", name="Goblin_Draftee", mj="5", sj="5", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Brass Ingot, Silver Ingot, Gold Ingot, Platinum Ingot", steal="Gold Beastcoin" }
+	mb_data[115] = { nm="N", id="17109103", name="Goblin_Franctireur", mj="8", sj="8", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Mail, Goblin Helm, Bottled Pixie, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Gold Beastcoin" }
+	mb_data[116] = { nm="N", id="17109104", name="Goblin_Patrolman", mj="9", sj="9", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[117] = { nm="N", id="17109105", name="Goblins_Ladybug", mj="6", sj="6", mlvl="52-54", aggro="A,S,Sc", links="Y", weak="Piercing,Ice", strong="Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[118] = { nm="N", id="17109106", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[119] = { nm="N", id="17109107", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[120] = { nm="N", id="17109108", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[121] = { nm="N", id="17109109", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[122] = { nm="N", id="17109110", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[123] = { nm="N", id="17109111", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[124] = { nm="N", id="17109112", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[125] = { nm="N", id="17109113", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[126] = { nm="N", id="17109114", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[127] = { nm="N", id="17109115", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[128] = { nm="N", id="17109116", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[129] = { nm="N", id="17109117", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[130] = { nm="N", id="17109118", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[131] = { nm="N", id="17109119", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[132] = { nm="N", id="17109120", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[133] = { nm="N", id="17109121", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[134] = { nm="N", id="17109122", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[135] = { nm="N", id="17109123", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[136] = { nm="N", id="17109124", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[137] = { nm="N", id="17109125", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[138] = { nm="N", id="17109126", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[139] = { nm="N", id="17109127", name="Mouse_Bat", mj="1", sj="1", mlvl="12-15", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[140] = { nm="N", id="17109128", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[141] = { nm="N", id="17109129", name="Goblin_Franctireur", mj="8", sj="8", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Mail, Goblin Helm, Bottled Pixie, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Gold Beastcoin" }
+	mb_data[142] = { nm="N", id="17109130", name="Goblin_Draftee", mj="5", sj="5", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Brass Ingot, Silver Ingot, Gold Ingot, Platinum Ingot", steal="Gold Beastcoin" }
+	mb_data[143] = { nm="N", id="17109131", name="Goblin_Skirmisher", mj="11", sj="11", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Mess Tin, Goblin Weel", steal="Gold Beastcoin" }
+	mb_data[144] = { nm="N", id="17109132", name="Goblin_Mine", mj="1", sj="1", mlvl="54-54", aggro="A,T(H)", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[145] = { nm="N", id="17109133", name="Goblin_Franctireur", mj="8", sj="8", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Mail, Goblin Helm, Bottled Pixie, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Gold Beastcoin" }
+	mb_data[146] = { nm="N", id="17109134", name="Goblin_Draftee", mj="5", sj="5", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Brass Ingot, Silver Ingot, Gold Ingot, Platinum Ingot", steal="Gold Beastcoin" }
+	mb_data[147] = { nm="N", id="17109135", name="Goblin_Skirmisher", mj="11", sj="11", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Mess Tin, Goblin Weel", steal="Gold Beastcoin" }
+	mb_data[148] = { nm="N", id="17109136", name="Goblin_Mine", mj="1", sj="1", mlvl="54-54", aggro="A,T(H)", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[149] = { nm="N", id="17109137", name="Goblin_Patrolman", mj="9", sj="9", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[150] = { nm="N", id="17109138", name="Goblins_Ladybug", mj="6", sj="6", mlvl="52-54", aggro="A,S,Sc", links="Y", weak="Piercing,Ice", strong="Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[151] = { nm="N", id="17109139", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[152] = { nm="N", id="17109140", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[153] = { nm="N", id="17109141", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[154] = { nm="N", id="17109142", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[155] = { nm="N", id="17109143", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[156] = { nm="N", id="17109144", name="Wild_Sheep", mj="1", sj="1", mlvl="16-18", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="300", items="Sheepskin, Sheep Tooth, G. Sheep Meat", steal="Sheep Wool" }
+	mb_data[157] = { nm="N", id="17109145", name="Giant_Spider", mj="1", sj="1", mlvl="50-52", aggro="H", links="Y", weak="Ice", strong="", respawntime="300", items="Spider Web", steal="Spider Web" }
+	mb_data[158] = { nm="N", id="17109146", name="Giant_Spider", mj="1", sj="1", mlvl="50-52", aggro="H", links="Y", weak="Ice", strong="", respawntime="300", items="Spider Web", steal="Spider Web" }
+	mb_data[159] = { nm="Y", id="17109147", name="Melusine", mj="4", sj="4", mlvl="73-73", aggro="S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="7200", items="Ebon Pigment, Furia Pigment", steal="" }
+	mb_data[160] = { nm="N", id="17109148", name="Giant_Spider", mj="1", sj="1", mlvl="50-52", aggro="H", links="Y", weak="Ice", strong="", respawntime="300", items="Spider Web", steal="Spider Web" }
+	mb_data[161] = { nm="N", id="17109149", name="Giant_Spider", mj="1", sj="1", mlvl="50-52", aggro="H", links="Y", weak="Ice", strong="", respawntime="300", items="Spider Web", steal="Spider Web" }
+	mb_data[162] = { nm="N", id="17109150", name="Giant_Spider", mj="1", sj="1", mlvl="50-52", aggro="H", links="Y", weak="Ice", strong="", respawntime="300", items="Spider Web", steal="Spider Web" }
+	mb_data[163] = { nm="N", id="17109151", name="Giant_Spider", mj="1", sj="1", mlvl="50-52", aggro="H", links="Y", weak="Ice", strong="", respawntime="300", items="Spider Web", steal="Spider Web" }
+	mb_data[164] = { nm="N", id="17109152", name="Mouse_Bat", mj="1", sj="1", mlvl="12-15", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[165] = { nm="N", id="17109153", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[166] = { nm="N", id="17109154", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[167] = { nm="N", id="17109155", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[168] = { nm="N", id="17109156", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[169] = { nm="N", id="17109157", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[170] = { nm="N", id="17109158", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[171] = { nm="N", id="17109159", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[172] = { nm="N", id="17109160", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[173] = { nm="N", id="17109161", name="Mouse_Bat", mj="1", sj="1", mlvl="12-15", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[174] = { nm="N", id="17109162", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[175] = { nm="N", id="17109163", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[176] = { nm="N", id="17109164", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[177] = { nm="N", id="17109165", name="Forest_Hare", mj="1", sj="1", mlvl="11-15", aggro="S,Sc", links="N", weak="Lightning,Water,Dark", strong="", respawntime="300", items="Rabbit Hide, Hare Meat", steal="San d'Or. Carrot" }
+	mb_data[178] = { nm="N", id="17109166", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[179] = { nm="N", id="17109167", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[180] = { nm="N", id="17109168", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[181] = { nm="N", id="17109169", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[182] = { nm="N", id="17109170", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[183] = { nm="N", id="17109171", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[184] = { nm="N", id="17109172", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[185] = { nm="N", id="17109173", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[186] = { nm="N", id="17109174", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[187] = { nm="N", id="17109175", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[188] = { nm="N", id="17109176", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[189] = { nm="N", id="17109177", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[190] = { nm="N", id="17109178", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[191] = { nm="N", id="17109179", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[192] = { nm="N", id="17109180", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[193] = { nm="N", id="17109181", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[194] = { nm="N", id="17109182", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[195] = { nm="N", id="17109183", name="Carrion_Worm", mj="4", sj="5", mlvl="10-12", aggro="H", links="N", weak="Wind,Light", strong="Earth", respawntime="300", items="Copper Ore, Zinc Ore, Silver Ore, Flint Stone", steal="Pebble" }
+	mb_data[196] = { nm="N", id="17109184", name="River_Crab", mj="7", sj="7", mlvl="11-14", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[197] = { nm="N", id="17109185", name="River_Crab", mj="7", sj="7", mlvl="11-14", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[198] = { nm="N", id="17109186", name="Pugil", mj="1", sj="1", mlvl="14-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Shall Shell", steal="" }
+	mb_data[199] = { nm="N", id="17109187", name="Pugil", mj="1", sj="1", mlvl="14-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Shall Shell", steal="" }
+	mb_data[200] = { nm="N", id="17109188", name="Pugil", mj="1", sj="1", mlvl="14-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Shall Shell", steal="" }
+	mb_data[201] = { nm="N", id="17109189", name="Mouse_Bat", mj="1", sj="1", mlvl="12-15", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[202] = { nm="N", id="17109190", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[203] = { nm="N", id="17109191", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[204] = { nm="N", id="17109192", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[205] = { nm="N", id="17109193", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[206] = { nm="N", id="17109194", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[207] = { nm="N", id="17109195", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[208] = { nm="N", id="17109196", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[209] = { nm="N", id="17109197", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[210] = { nm="N", id="17109198", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[211] = { nm="N", id="17109199", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[212] = { nm="N", id="17109200", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[213] = { nm="N", id="17109201", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[214] = { nm="N", id="17109202", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[215] = { nm="N", id="17109203", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[216] = { nm="N", id="17109204", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[217] = { nm="N", id="17109205", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[218] = { nm="N", id="17109206", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[219] = { nm="N", id="17109207", name="River_Crab", mj="7", sj="7", mlvl="11-14", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[220] = { nm="N", id="17109208", name="River_Crab", mj="7", sj="7", mlvl="11-14", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[221] = { nm="N", id="17109209", name="River_Crab", mj="7", sj="7", mlvl="11-14", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[222] = { nm="N", id="17109210", name="River_Crab", mj="7", sj="7", mlvl="11-14", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[223] = { nm="N", id="17109211", name="River_Crab", mj="7", sj="7", mlvl="11-14", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[224] = { nm="N", id="17109212", name="Pugil", mj="1", sj="1", mlvl="14-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Shall Shell", steal="" }
+	mb_data[225] = { nm="N", id="17109213", name="Pugil", mj="1", sj="1", mlvl="14-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Shall Shell", steal="" }
+	mb_data[226] = { nm="N", id="17109214", name="Pugil", mj="1", sj="1", mlvl="14-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Shall Shell", steal="" }
+	mb_data[227] = { nm="N", id="17109215", name="Pugil", mj="1", sj="1", mlvl="14-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Shall Shell", steal="" }
+	mb_data[228] = { nm="N", id="17109216", name="Pugil", mj="1", sj="1", mlvl="14-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Shall Shell", steal="" }
+	mb_data[229] = { nm="N", id="17109217", name="Pugil", mj="1", sj="1", mlvl="14-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Shall Shell", steal="" }
+	mb_data[230] = { nm="N", id="17109218", name="Pugil", mj="1", sj="1", mlvl="14-17", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Shall Shell", steal="" }
+	mb_data[231] = { nm="N", id="17109219", name="Mouse_Bat", mj="1", sj="1", mlvl="12-15", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[232] = { nm="N", id="17109220", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[233] = { nm="N", id="17109221", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[234] = { nm="N", id="17109222", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[235] = { nm="N", id="17109223", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[236] = { nm="N", id="17109224", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[237] = { nm="N", id="17109225", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[238] = { nm="N", id="17109226", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[239] = { nm="N", id="17109227", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[240] = { nm="N", id="17109228", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[241] = { nm="N", id="17109229", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[242] = { nm="N", id="17109230", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[243] = { nm="N", id="17109231", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[244] = { nm="N", id="17109232", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[245] = { nm="N", id="17109233", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[246] = { nm="N", id="17109234", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[247] = { nm="Y", id="17109235", name="Myradrosh", mj="5", sj="5", mlvl="53-53", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="0", items="Restorer Cloak", steal="" }
+	mb_data[248] = { nm="N", id="17109236", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[249] = { nm="N", id="17109237", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[250] = { nm="N", id="17109238", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[251] = { nm="N", id="17109239", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[252] = { nm="N", id="17109240", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[253] = { nm="N", id="17109241", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[254] = { nm="N", id="17109242", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[255] = { nm="N", id="17109243", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[256] = { nm="N", id="17109244", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[257] = { nm="N", id="17109245", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[258] = { nm="N", id="17109246", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[259] = { nm="N", id="17109247", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[260] = { nm="N", id="17109248", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[261] = { nm="N", id="17109249", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[262] = { nm="N", id="17109250", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[263] = { nm="N", id="17109251", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[264] = { nm="N", id="17109252", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[265] = { nm="N", id="17109253", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[266] = { nm="N", id="17109254", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[267] = { nm="N", id="17109255", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[268] = { nm="N", id="17109256", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[269] = { nm="N", id="17109257", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[270] = { nm="N", id="17109258", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[271] = { nm="N", id="17109259", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[272] = { nm="N", id="17109260", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[273] = { nm="N", id="17109261", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[274] = { nm="N", id="17109262", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[275] = { nm="N", id="17109263", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[276] = { nm="N", id="17109264", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[277] = { nm="N", id="17109265", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[278] = { nm="N", id="17109266", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[279] = { nm="N", id="17109267", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[280] = { nm="N", id="17109268", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[281] = { nm="N", id="17109269", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[282] = { nm="N", id="17109270", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[283] = { nm="N", id="17109271", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[284] = { nm="N", id="17109272", name="Scarab_Beetle", mj="7", sj="7", mlvl="21-23", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Jaw", steal="" }
+	mb_data[285] = { nm="N", id="17109273", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[286] = { nm="N", id="17109274", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[287] = { nm="N", id="17109275", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[288] = { nm="N", id="17109276", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[289] = { nm="N", id="17109277", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[290] = { nm="N", id="17109278", name="Colibri", mj="5", sj="5", mlvl="45-47", aggro="S", links="N", weak="Piercing,Ice,Dark", strong="Wind", respawntime="300", items="Colibri Feather, Colibri Beak", steal="Colibri Feather" }
+	mb_data[291] = { nm="N", id="17109279", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[292] = { nm="N", id="17109280", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[293] = { nm="N", id="17109281", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[294] = { nm="N", id="17109282", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[295] = { nm="N", id="17109283", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[296] = { nm="N", id="17109284", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[297] = { nm="N", id="17109285", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[298] = { nm="N", id="17109286", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[299] = { nm="N", id="17109287", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[300] = { nm="N", id="17109288", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[301] = { nm="N", id="17109289", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[302] = { nm="N", id="17109290", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[303] = { nm="N", id="17109291", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[304] = { nm="N", id="17109292", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[305] = { nm="N", id="17109293", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[306] = { nm="N", id="17109294", name="Djinn", mj="1", sj="1", mlvl="53-55", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[307] = { nm="N", id="17109295", name="Battrap", mj="1", sj="1", mlvl="36-39", aggro="H", links="N", weak="Fire", strong="Light,Wind,Water", respawntime="300", items="Flytrap Leaf", steal="" }
+	mb_data[308] = { nm="Y", id="17109296", name="Goblintrap", mj="1", sj="1", mlvl="60-60", aggro="H", links="N", weak="Fire", strong="Light,Wind,Water", respawntime="0", items="Wilhelm's Earring", steal="" }
+	mb_data[309] = { nm="N", id="17109297", name="Battrap", mj="1", sj="1", mlvl="36-39", aggro="H", links="N", weak="Fire", strong="Light,Wind,Water", respawntime="300", items="Flytrap Leaf", steal="" }
+	mb_data[310] = { nm="N", id="17109298", name="Battrap", mj="1", sj="1", mlvl="36-39", aggro="H", links="N", weak="Fire", strong="Light,Wind,Water", respawntime="300", items="Flytrap Leaf", steal="" }
+	mb_data[311] = { nm="N", id="17109299", name="Battrap", mj="1", sj="1", mlvl="36-39", aggro="H", links="N", weak="Fire", strong="Light,Wind,Water", respawntime="300", items="Flytrap Leaf", steal="" }
+	mb_data[312] = { nm="N", id="17109300", name="Battrap", mj="1", sj="1", mlvl="36-39", aggro="H", links="N", weak="Fire", strong="Light,Wind,Water", respawntime="300", items="Flytrap Leaf", steal="" }
+	mb_data[313] = { nm="N", id="17109301", name="Battrap", mj="1", sj="1", mlvl="36-39", aggro="H", links="N", weak="Fire", strong="Light,Wind,Water", respawntime="300", items="Flytrap Leaf", steal="" }
+	mb_data[314] = { nm="N", id="17109302", name="Battrap", mj="1", sj="1", mlvl="36-39", aggro="H", links="N", weak="Fire", strong="Light,Wind,Water", respawntime="300", items="Flytrap Leaf", steal="" }
+	mb_data[315] = { nm="N", id="17109303", name="Battrap", mj="1", sj="1", mlvl="36-39", aggro="H", links="N", weak="Fire", strong="Light,Wind,Water", respawntime="300", items="Flytrap Leaf", steal="" }
+	mb_data[316] = { nm="N", id="17109304", name="Battrap", mj="1", sj="1", mlvl="36-39", aggro="H", links="N", weak="Fire", strong="Light,Wind,Water", respawntime="300", items="Flytrap Leaf", steal="" }
+	mb_data[317] = { nm="N", id="17109305", name="Battrap", mj="1", sj="1", mlvl="36-39", aggro="H", links="N", weak="Fire", strong="Light,Wind,Water", respawntime="300", items="Flytrap Leaf", steal="" }
+	mb_data[318] = { nm="N", id="17109306", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[319] = { nm="N", id="17109307", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[320] = { nm="N", id="17109308", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[321] = { nm="N", id="17109309", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[322] = { nm="N", id="17109310", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[323] = { nm="N", id="17109311", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[324] = { nm="N", id="17109312", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[325] = { nm="N", id="17109313", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[326] = { nm="N", id="17109314", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[327] = { nm="N", id="17109315", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[328] = { nm="N", id="17109316", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[329] = { nm="N", id="17109317", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[330] = { nm="N", id="17109318", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[331] = { nm="N", id="17109319", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[332] = { nm="N", id="17109320", name="Ladybug", mj="6", sj="6", mlvl="45-47", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="300", items="Ladybug Wing", steal="" }
+	mb_data[333] = { nm="N", id="17109321", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[334] = { nm="N", id="17109322", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[335] = { nm="N", id="17109323", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[336] = { nm="N", id="17109324", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[337] = { nm="N", id="17109325", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[338] = { nm="N", id="17109326", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[339] = { nm="N", id="17109327", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[340] = { nm="N", id="17109328", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[341] = { nm="N", id="17109329", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[342] = { nm="N", id="17109330", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[343] = { nm="N", id="17109331", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[344] = { nm="N", id="17109332", name="Enchanted_Bones", mj="4", sj="4", mlvl="37-39", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Bone Chip" }
+	mb_data[345] = { nm="N", id="17109333", name="Walking_Tree", mj="1", sj="1", mlvl="54-56", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Mahogany Log, Rosewood Log, Ebony Log, Petrified Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[346] = { nm="N", id="17109334", name="Walking_Tree", mj="1", sj="1", mlvl="54-56", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Mahogany Log, Rosewood Log, Ebony Log, Petrified Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[347] = { nm="N", id="17109335", name="Walking_Tree", mj="1", sj="1", mlvl="54-56", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Mahogany Log, Rosewood Log, Ebony Log, Petrified Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[348] = { nm="N", id="17109336", name="Walking_Tree", mj="1", sj="1", mlvl="54-56", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Mahogany Log, Rosewood Log, Ebony Log, Petrified Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[349] = { nm="N", id="17109337", name="Walking_Tree", mj="1", sj="1", mlvl="54-56", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Mahogany Log, Rosewood Log, Ebony Log, Petrified Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[350] = { nm="Y", id="17109338", name="Skogs_Fru", mj="1", sj="1", mlvl="52-53", aggro="A,S,Sc", links="N", weak="Piercing,Ice", strong="Wind,Earth", respawntime="0", items="Ladybug Wing, Ecphoria Ring", steal="" }
+	mb_data[351] = { nm="N", id="17109339", name="Orcish_Mesmerizer", mj="4", sj="4", mlvl="62-64", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Sch. Testimony", steal="Gold Beastcoin" }
+	mb_data[352] = { nm="N", id="17109340", name="Orcish_Stonechucker", mj="11", sj="11", mlvl="62-64", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Sch. Testimony", steal="Gold Beastcoin" }
+	mb_data[353] = { nm="N", id="17109341", name="Orcish_Fodder", mj="1", sj="1", mlvl="62-64", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Orc Helmet, Sch. Testimony", steal="Gold Beastcoin" }
+	mb_data[354] = { nm="N", id="17109342", name="Orcish_Neckchopper", mj="8", sj="8", mlvl="62-64", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Orc Helmet, Orc Pauldron, Sch. Testimony, Absorb-ACC", steal="Gold Beastcoin" }
+	mb_data[355] = { nm="N", id="17109343", name="Orcish_Mesmerizer", mj="4", sj="4", mlvl="62-64", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Sch. Testimony", steal="Gold Beastcoin" }
+	mb_data[356] = { nm="N", id="17109344", name="Orcish_Neckchopper", mj="8", sj="8", mlvl="62-64", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Orc Helmet, Orc Pauldron, Sch. Testimony, Absorb-ACC", steal="Gold Beastcoin" }
+	mb_data[357] = { nm="N", id="17109345", name="Orcish_Fodder", mj="1", sj="1", mlvl="62-64", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Orc Helmet, Sch. Testimony", steal="Gold Beastcoin" }
+	mb_data[358] = { nm="N", id="17109346", name="Orcish_Stonechucker", mj="11", sj="11", mlvl="62-64", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Sch. Testimony", steal="Gold Beastcoin" }
+	mb_data[359] = { nm="N", id="17109347", name="Orcish_Neckchopper", mj="8", sj="8", mlvl="62-64", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Orc Helmet, Orc Pauldron, Sch. Testimony, Absorb-ACC", steal="Gold Beastcoin" }
+	mb_data[360] = { nm="N", id="17109348", name="Orcish_Fodder", mj="1", sj="1", mlvl="62-64", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Orc Helmet, Sch. Testimony", steal="Gold Beastcoin" }
+	mb_data[361] = { nm="N", id="17109349", name="Pixie", mj="3", sj="3", mlvl="51-54", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[362] = { nm="N", id="17109350", name="Pixie", mj="3", sj="3", mlvl="51-54", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[363] = { nm="N", id="17109351", name="Pixie", mj="3", sj="3", mlvl="51-54", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[364] = { nm="N", id="17109352", name="Pixie", mj="3", sj="3", mlvl="51-54", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[365] = { nm="N", id="17109353", name="Pixie", mj="3", sj="3", mlvl="51-54", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[366] = { nm="N", id="17109354", name="Pixie", mj="3", sj="3", mlvl="51-54", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[367] = { nm="N", id="17109355", name="Pixie", mj="3", sj="3", mlvl="51-54", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[368] = { nm="N", id="17109356", name="Pixie", mj="3", sj="3", mlvl="51-54", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[369] = { nm="N", id="17109357", name="Sandworm", mj="1", sj="1", mlvl="85-85", aggro="A,H", links="N", weak="", strong="Earth,Fire,Ice,Lightning,Water,Light,Dark,Wind", respawntime="86400", items="", steal="" }
+	mb_data[370] = { nm="N", id="17109358", name="Goblin_Picaroon", mj="6", sj="6", mlvl="56-59", aggro="A,S", links="N", weak="Light", strong="", respawntime="300", items="Bottled Pixie, Goblin Mess Tin, Goblin Weel", steal="Plt. Beastcoin" }
+	mb_data[371] = { nm="N", id="17109359", name="Goblin_Picaroon", mj="6", sj="6", mlvl="56-59", aggro="A,S", links="N", weak="Light", strong="", respawntime="300", items="Bottled Pixie, Goblin Mess Tin, Goblin Weel", steal="Plt. Beastcoin" }
+	mb_data[372] = { nm="N", id="17109360", name="Goblin_Picaroon", mj="6", sj="6", mlvl="56-59", aggro="A,S", links="N", weak="Light", strong="", respawntime="300", items="Bottled Pixie, Goblin Mess Tin, Goblin Weel", steal="Plt. Beastcoin" }
+	mb_data[373] = { nm="N", id="17109361", name="Goblin_Picaroon", mj="6", sj="6", mlvl="56-59", aggro="A,S", links="N", weak="Light", strong="", respawntime="300", items="Bottled Pixie, Goblin Mess Tin, Goblin Weel", steal="Plt. Beastcoin" }
+	mb_data[374] = { nm="N", id="17109362", name="Goblin_Picaroon", mj="6", sj="6", mlvl="56-59", aggro="A,S", links="N", weak="Light", strong="", respawntime="300", items="Bottled Pixie, Goblin Mess Tin, Goblin Weel", steal="Plt. Beastcoin" }
+	mb_data[375] = { nm="N", id="17109363", name="Goblin_Picaroon", mj="6", sj="6", mlvl="56-59", aggro="A,S", links="N", weak="Light", strong="", respawntime="300", items="Bottled Pixie, Goblin Mess Tin, Goblin Weel", steal="Plt. Beastcoin" }
+	mb_data[376] = { nm="N", id="17109364", name="Orcish_Transporter", mj="1", sj="1", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="Silver Beastcoin" }
+	mb_data[377] = { nm="N", id="17109365", name="Orcish_Guard", mj="1", sj="1", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="Bottled Pixie", steal="" }
+	mb_data[378] = { nm="N", id="17109366", name="Orcish_Guard", mj="1", sj="1", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="Bottled Pixie", steal="" }
+	mb_data[379] = { nm="N", id="17109367", name="Dark_Ixion", mj="1", sj="1", mlvl="85-85", aggro="S,H,Assists,???", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[380] = { nm="N", id="17109368", name="Queenbug", mj="6", sj="6", mlvl="80-85", aggro="A,S,Sc", links="Y", weak="Piercing,Ice", strong="Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[381] = { nm="N", id="17109369", name="Ancilla_Beetle", mj="1", sj="1", mlvl="65-65", aggro="A,S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[382] = { nm="N", id="17109370", name="Ancilla_Beetle", mj="1", sj="1", mlvl="65-65", aggro="A,S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[383] = { nm="N", id="17109371", name="Ancilla_Beetle", mj="1", sj="1", mlvl="65-65", aggro="A,S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[384] = { nm="N", id="17109372", name="Ancilla_Beetle", mj="1", sj="1", mlvl="65-65", aggro="A,S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[385] = { nm="N", id="17109373", name="Ancilla_Beetle", mj="1", sj="1", mlvl="65-65", aggro="A,S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[386] = { nm="N", id="17109374", name="Ancilla_Beetle", mj="1", sj="1", mlvl="65-65", aggro="A,S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[387] = { nm="N", id="17109375", name="Faytrapper_Vashgash", mj="1", sj="1", mlvl="80-85", aggro="S,Sc", links="N", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[388] = { nm="N", id="17109376", name="Faygorger_Ram", mj="1", sj="1", mlvl="0-0", aggro="S,Sc", links="N", weak="Lightning,Water", strong="Ice", respawntime="0", items="", steal="" }
+	mb_data[389] = { nm="N", id="17109377", name="Faygorger_Ram", mj="1", sj="1", mlvl="0-0", aggro="S,Sc", links="N", weak="Lightning,Water", strong="Ice", respawntime="0", items="", steal="" }
+	mb_data[390] = { nm="N", id="17109378", name="Faygorger_Sheep", mj="1", sj="1", mlvl="0-0", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[391] = { nm="N", id="17109379", name="Faygorger_Sheep", mj="1", sj="1", mlvl="0-0", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[392] = { nm="N", id="17109380", name="Faygorger_Sheep", mj="1", sj="1", mlvl="0-0", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[393] = { nm="N", id="17109381", name="Faygorger_Sheep", mj="1", sj="1", mlvl="0-0", aggro="S,Sc", links="Y", weak="Lightning,Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[394] = { nm="N", id="17109382", name="Yilbegan", mj="1", sj="1", mlvl="90-92", aggro="A,H", links="Y", weak="Wind", strong="", respawntime="0", items="Luminian Tissue, Aern Organ, All Elemental Clusters", steal="" }
+	mb_data[395] = { nm="N", id="17109718", name="Cottus", mj="9", sj="9", mlvl="80-85", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Braveheart, Coarse Gauntlets", steal="" }
+	mb_data[396] = { nm="N", id="17109719", name="Cottus", mj="9", sj="9", mlvl="80-85", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Braveheart, Coarse Gauntlets", steal="" }
+	mb_data[397] = { nm="N", id="17109720", name="Cottus", mj="9", sj="9", mlvl="80-85", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Braveheart, Coarse Gauntlets", steal="" }
+	mb_data[398] = { nm="N", id="17121281", name="Snipper_fished", mj="7", sj="7", mlvl="13-17", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[399] = { nm="N", id="17137669", name="Fighting_Pugil", mj="1", sj="1", mlvl="15-20", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[400] = { nm="N", id="17149953", name="Snipper_fished", mj="7", sj="7", mlvl="13-17", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[401] = { nm="N", id="17150029", name="Goblin_Franctireur", mj="8", sj="8", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Mail, Goblin Helm, Bottled Pixie, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Gold Beastcoin" }
+	mb_data[402] = { nm="N", id="17150039", name="Goblin_Franctireur", mj="8", sj="8", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Mail, Goblin Helm, Bottled Pixie, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Gold Beastcoin" }
+	mb_data[403] = { nm="N", id="17150051", name="Goblin_Franctireur", mj="8", sj="8", mlvl="56-59", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Mail, Goblin Helm, Bottled Pixie, Absorb-VIT, Absorb-AGI, Absorb-INT", steal="Gold Beastcoin" }
+	mb_data[404] = { nm="N", id="17166341", name="Fighting_Pugil", mj="1", sj="1", mlvl="15-20", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[405] = { nm="N", id="17186837", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[406] = { nm="N", id="17186838", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[407] = { nm="N", id="17186839", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[408] = { nm="N", id="17186840", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[409] = { nm="N", id="17186841", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[410] = { nm="N", id="17186857", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[411] = { nm="N", id="17186858", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[412] = { nm="N", id="17186859", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[413] = { nm="N", id="17186860", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[414] = { nm="N", id="17186861", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[415] = { nm="N", id="17186873", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[416] = { nm="N", id="17186874", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[417] = { nm="N", id="17186875", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[418] = { nm="N", id="17186888", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[419] = { nm="N", id="17186889", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[420] = { nm="N", id="17186905", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[421] = { nm="N", id="17186906", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[422] = { nm="N", id="17186923", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[423] = { nm="N", id="17186924", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[424] = { nm="N", id="17186939", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[425] = { nm="N", id="17186940", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[426] = { nm="N", id="17186968", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[427] = { nm="N", id="17186969", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[428] = { nm="N", id="17186983", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[429] = { nm="N", id="17186984", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[430] = { nm="N", id="17186999", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[431] = { nm="N", id="17187000", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[432] = { nm="N", id="17187015", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[433] = { nm="N", id="17187016", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[434] = { nm="N", id="17187037", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[435] = { nm="N", id="17187079", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[436] = { nm="N", id="17187080", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[437] = { nm="N", id="17187125", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[438] = { nm="N", id="17187126", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[439] = { nm="N", id="17187166", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[440] = { nm="N", id="17187167", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[441] = { nm="N", id="17187192", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[442] = { nm="N", id="17187193", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[443] = { nm="N", id="17187235", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[444] = { nm="N", id="17187269", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[445] = { nm="N", id="17187283", name="Pixie", mj="3", sj="3", mlvl="51-54", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[446] = { nm="N", id="17187284", name="Pixie", mj="3", sj="3", mlvl="51-54", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[447] = { nm="N", id="17187285", name="Pixie", mj="3", sj="3", mlvl="51-54", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[448] = { nm="N", id="17187286", name="Pixie", mj="3", sj="3", mlvl="51-54", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[449] = { nm="N", id="17187287", name="Pixie", mj="3", sj="3", mlvl="51-54", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[450] = { nm="N", id="17190917", name="Fighting_Pugil", mj="1", sj="1", mlvl="15-20", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[451] = { nm="N", id="17190933", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[452] = { nm="N", id="17190934", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[453] = { nm="N", id="17190935", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[454] = { nm="N", id="17190936", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[455] = { nm="N", id="17190937", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[456] = { nm="N", id="17190953", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[457] = { nm="N", id="17190954", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[458] = { nm="N", id="17190955", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[459] = { nm="N", id="17190956", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[460] = { nm="N", id="17190957", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[461] = { nm="N", id="17190972", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[462] = { nm="N", id="17190973", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[463] = { nm="N", id="17190974", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[464] = { nm="N", id="17190989", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[465] = { nm="N", id="17190990", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[466] = { nm="N", id="17191009", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[467] = { nm="N", id="17191010", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[468] = { nm="N", id="17191039", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[469] = { nm="N", id="17191040", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[470] = { nm="N", id="17191059", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[471] = { nm="N", id="17191060", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[472] = { nm="N", id="17191078", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[473] = { nm="N", id="17191079", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[474] = { nm="N", id="17191096", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[475] = { nm="N", id="17191097", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[476] = { nm="N", id="17191112", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[477] = { nm="N", id="17191113", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[478] = { nm="N", id="17191177", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[479] = { nm="N", id="17191178", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[480] = { nm="N", id="17191207", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[481] = { nm="N", id="17191208", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[482] = { nm="N", id="17191231", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[483] = { nm="N", id="17191232", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[484] = { nm="N", id="17191243", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[485] = { nm="N", id="17191244", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[486] = { nm="N", id="17191255", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[487] = { nm="N", id="17191256", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[488] = { nm="N", id="17191276", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[489] = { nm="N", id="17191277", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[490] = { nm="N", id="17191304", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[491] = { nm="N", id="17191314", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[492] = { nm="N", id="17207297", name="Snipper_fished", mj="7", sj="7", mlvl="13-17", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[493] = { nm="N", id="17211397", name="Fighting_Pugil", mj="1", sj="1", mlvl="15-20", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[494] = { nm="N", id="17211410", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[495] = { nm="N", id="17211411", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[496] = { nm="N", id="17211412", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[497] = { nm="N", id="17211413", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[498] = { nm="N", id="17211426", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[499] = { nm="N", id="17211427", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[500] = { nm="N", id="17211428", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[501] = { nm="N", id="17211429", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[502] = { nm="N", id="17211445", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[503] = { nm="N", id="17211446", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[504] = { nm="N", id="17211447", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[505] = { nm="N", id="17211448", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[506] = { nm="N", id="17211449", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[507] = { nm="N", id="17211460", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[508] = { nm="N", id="17211461", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[509] = { nm="N", id="17211462", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[510] = { nm="N", id="17211476", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[511] = { nm="N", id="17211477", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[512] = { nm="N", id="17211492", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[513] = { nm="N", id="17211493", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[514] = { nm="N", id="17211494", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[515] = { nm="N", id="17211507", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[516] = { nm="N", id="17211508", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[517] = { nm="N", id="17211519", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[518] = { nm="N", id="17211528", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[519] = { nm="N", id="17211548", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[520] = { nm="N", id="17211549", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[521] = { nm="N", id="17211550", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[522] = { nm="N", id="17211572", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[523] = { nm="N", id="17211573", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[524] = { nm="N", id="17211574", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[525] = { nm="N", id="17211587", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[526] = { nm="N", id="17211588", name="Ding_Bats", mj="1", sj="1", mlvl="12-14", aggro="H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Wing", steal="" }
+	mb_data[527] = { nm="N", id="17227777", name="Snipper_fished", mj="7", sj="7", mlvl="13-17", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[528] = { nm="N", id="17252357", name="Fighting_Pugil", mj="1", sj="1", mlvl="15-20", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[529] = { nm="N", id="17485825", name="Snipper_fished", mj="7", sj="7", mlvl="13-17", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[530] = { nm="N", id="17485826", name="Snipper_fished", mj="7", sj="7", mlvl="13-17", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
 
 	return mb_data;

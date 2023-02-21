@@ -1,405 +1,780 @@
 --[[
- *	Zone	:: Vunkerl_Inlet_S
+ *  Zone	:: Vunkerl_Inlet_[S]
  *  ZoneID	:: 83
- *  Total	:: 395
+ *  Total	:: 770
 ]]--
 
 	mb_data = {}
 
-	mb_data[1] = { nm="N", id="17117256", name="Goblin_Guerrilla", mj="9", sj="9", mlvl="66-69", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[2] = { nm="N", id="17117255", name="Goblin_Grenadier", mj="8", sj="8", mlvl="66-69", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[3] = { nm="N", id="17117261", name="Goblin_Mine", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="T(H)", links="N", spawntype="128", weak="???", note="" }
-	mb_data[4] = { nm="N", id="17117254", name="Goblin_Flagman", mj="5", sj="5", mlvl="66-69", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[5] = { nm="N", id="17117257", name="Goblin_s_Bat", mj="1", sj="1", mlvl="61-63", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[6] = { nm="N", id="17117258", name="Goblin_Flagman", mj="5", sj="5", mlvl="66-69", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[7] = { nm="N", id="17117259", name="Goblin_Grenadier", mj="8", sj="8", mlvl="66-69", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[8] = { nm="N", id="17117260", name="Goblin_Toxophilite", mj="11", sj="11", mlvl="66-69", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[9] = { nm="N", id="17117262", name="Goblin_Flagman", mj="5", sj="5", mlvl="66-69", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[10] = { nm="N", id="17117307", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[11] = { nm="N", id="17117264", name="Goblin_Guerrilla", mj="9", sj="9", mlvl="66-69", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[12] = { nm="N", id="17117265", name="Goblin_s_Bat", mj="1", sj="1", mlvl="61-63", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[13] = { nm="N", id="17117266", name="Goblin_Flagman", mj="5", sj="5", mlvl="66-69", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[14] = { nm="N", id="17117267", name="Goblin_Grenadier", mj="8", sj="8", mlvl="66-69", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[15] = { nm="N", id="17117268", name="Goblin_Toxophilite", mj="11", sj="11", mlvl="66-69", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[16] = { nm="N", id="17117269", name="Goblin_Mine", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="T(H)", links="N", spawntype="128", weak="???", note="" }
-	mb_data[17] = { nm="N", id="17117253", name="Pallas_s_Tiger", mj="1", sj="1", mlvl="72-74", behavior="0", aggro="Sc", links="N", spawntype="128", weak="Fire,Lightning", note="" }
-	mb_data[18] = { nm="N", id="17117270", name="Goblin_Guerrilla", mj="9", sj="9", mlvl="66-69", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[19] = { nm="N", id="17117271", name="Goblin_s_Bat", mj="1", sj="1", mlvl="61-63", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[20] = { nm="N", id="17117263", name="Goblin_Grenadier", mj="8", sj="8", mlvl="66-69", behavior="0", aggro="S", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[21] = { nm="N", id="17117252", name="Pallas_s_Tiger", mj="1", sj="1", mlvl="72-74", behavior="0", aggro="Sc", links="N", spawntype="128", weak="Fire,Lightning", note="" }
-	mb_data[22] = { nm="N", id="17117539", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[23] = { nm="N", id="17117250", name="Pallas", mj="9", sj="9", mlvl="79-85", behavior="0", aggro="S", links="Y", spawntype="128", weak="Earth", note="" }
-	mb_data[24] = { nm="N", id="17117541", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[25] = { nm="N", id="17117540", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[26] = { nm="N", id="17117272", name="Doom_Soldier", mj="8", sj="8", mlvl="69-71", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[27] = { nm="N", id="17117538", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[28] = { nm="N", id="17117537", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[29] = { nm="N", id="17117236", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[30] = { nm="N", id="17117237", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[31] = { nm="N", id="17117238", name="Gigas_Marine", mj="1", sj="1", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[32] = { nm="N", id="17117239", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[33] = { nm="N", id="17117240", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[34] = { nm="N", id="17117241", name="Gigas_Helmsman", mj="9", sj="9", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[35] = { nm="N", id="17117242", name="Gigas_s_Tiger", mj="1", sj="1", mlvl="78-82", behavior="0", aggro="Sc", links="N", spawntype="128", weak="Fire,Lightning", note="" }
-	mb_data[36] = { nm="N", id="17117243", name="Gigas_Marine", mj="1", sj="1", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[37] = { nm="N", id="17117244", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[38] = { nm="N", id="17117245", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[39] = { nm="N", id="17117246", name="Gigas_Helmsman", mj="9", sj="9", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[40] = { nm="N", id="17117247", name="Gigas_s_Tiger", mj="1", sj="1", mlvl="78-82", behavior="0", aggro="Sc", links="N", spawntype="128", weak="Fire,Lightning", note="" }
-	mb_data[41] = { nm="N", id="17117248", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[42] = { nm="N", id="17117249", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[43] = { nm="N", id="17117251", name="Pallas_s_Tiger", mj="1", sj="1", mlvl="72-74", behavior="0", aggro="Sc", links="N", spawntype="128", weak="Fire,Lightning", note="" }
-	mb_data[44] = { nm="N", id="17117273", name="Doom_Mage", mj="4", sj="4", mlvl="69-71", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[45] = { nm="N", id="17117292", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[46] = { nm="N", id="17117275", name="Doom_Mage", mj="4", sj="4", mlvl="69-71", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[47] = { nm="N", id="17117299", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[48] = { nm="N", id="17117300", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[49] = { nm="N", id="17117301", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[50] = { nm="N", id="17117302", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[51] = { nm="N", id="17117303", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[52] = { nm="N", id="17117536", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[53] = { nm="N", id="17117535", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[54] = { nm="N", id="17117534", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[55] = { nm="N", id="17117298", name="Bugard", mj="1", sj="1", mlvl="67-70", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice", note="" }
-	mb_data[56] = { nm="N", id="17117533", name="Royal_Leech", mj="1", sj="1", mlvl="59-62", behavior="0", aggro="H,Sc", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[57] = { nm="N", id="17117531", name="Royal_Leech", mj="1", sj="1", mlvl="59-62", behavior="0", aggro="H,Sc", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[58] = { nm="N", id="17117530", name="Dire_Bat", mj="1", sj="1", mlvl="61-63", behavior="0", aggro="H", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[59] = { nm="N", id="17117529", name="Dire_Bat", mj="1", sj="1", mlvl="61-63", behavior="0", aggro="H", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[60] = { nm="N", id="17117528", name="Dire_Bat", mj="1", sj="1", mlvl="61-63", behavior="0", aggro="H", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[61] = { nm="N", id="17117527", name="Dire_Bat", mj="1", sj="1", mlvl="61-63", behavior="0", aggro="H", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[62] = { nm="N", id="17117526", name="Dire_Bat", mj="1", sj="1", mlvl="61-63", behavior="0", aggro="H", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[63] = { nm="N", id="17117525", name="Dire_Bat", mj="1", sj="1", mlvl="61-63", behavior="0", aggro="H", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[64] = { nm="N", id="17117524", name="Dire_Bat", mj="1", sj="1", mlvl="61-63", behavior="0", aggro="H", links="Y", spawntype="2", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[65] = { nm="N", id="17117532", name="Royal_Leech", mj="1", sj="1", mlvl="59-62", behavior="0", aggro="H,Sc", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[66] = { nm="N", id="17117297", name="Bugard", mj="1", sj="1", mlvl="67-70", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice", note="" }
-	mb_data[67] = { nm="N", id="17117296", name="Bugard", mj="1", sj="1", mlvl="67-70", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice", note="" }
-	mb_data[68] = { nm="N", id="17117295", name="Warabouc", mj="8", sj="1", mlvl="72-73", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice", note="" }
-	mb_data[69] = { nm="N", id="17117276", name="Doom_Soldier", mj="8", sj="8", mlvl="69-71", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[70] = { nm="N", id="17117277", name="Doom_Mage", mj="4", sj="4", mlvl="69-71", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[71] = { nm="N", id="17117278", name="Doom_Soldier", mj="8", sj="8", mlvl="69-71", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[72] = { nm="N", id="17117279", name="Doom_Mage", mj="4", sj="4", mlvl="69-71", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[73] = { nm="N", id="17117280", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[74] = { nm="N", id="17117281", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[75] = { nm="N", id="17117282", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[76] = { nm="N", id="17117283", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[77] = { nm="N", id="17117284", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[78] = { nm="N", id="17117285", name="Gigas_Marine", mj="1", sj="1", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[79] = { nm="N", id="17117286", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[80] = { nm="N", id="17117287", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[81] = { nm="N", id="17117288", name="Gigas_Helmsman", mj="9", sj="9", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[82] = { nm="N", id="17117289", name="Gigas_s_Tiger", mj="1", sj="1", mlvl="78-82", behavior="0", aggro="Sc", links="N", spawntype="128", weak="Fire,Lightning", note="" }
-	mb_data[83] = { nm="N", id="17117290", name="Gigas_Marine", mj="1", sj="1", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[84] = { nm="N", id="17117291", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[85] = { nm="N", id="17117542", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[86] = { nm="N", id="17117293", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[87] = { nm="N", id="17117294", name="Bugard", mj="1", sj="1", mlvl="67-70", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice", note="" }
-	mb_data[88] = { nm="N", id="17117274", name="Doom_Soldier", mj="8", sj="8", mlvl="69-71", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[89] = { nm="N", id="17117543", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[90] = { nm="N", id="17117563", name="Glacial_Wisp", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[91] = { nm="N", id="17117545", name="Sprite", mj="3", sj="3", mlvl="73-73", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[92] = { nm="N", id="17117206", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[93] = { nm="N", id="17117207", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[94] = { nm="N", id="17117208", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[95] = { nm="N", id="17117209", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[96] = { nm="N", id="17117210", name="Fierce_Smilodon", mj="1", sj="1", mlvl="67-70", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[97] = { nm="N", id="17117211", name="Fierce_Smilodon", mj="1", sj="1", mlvl="67-70", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[98] = { nm="N", id="17117212", name="Fierce_Smilodon", mj="1", sj="1", mlvl="67-70", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[99] = { nm="N", id="17117213", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[100] = { nm="N", id="17117205", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[101] = { nm="N", id="17117214", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[102] = { nm="N", id="17117216", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[103] = { nm="N", id="17117217", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[104] = { nm="N", id="17117218", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[105] = { nm="N", id="17117219", name="Air_Elemental", mj="4", sj="5", mlvl="45-45", behavior="0", aggro="M", links="N", spawntype="4", weak="Ice", note="" }
-	mb_data[106] = { nm="N", id="17117220", name="Fierce_Smilodon", mj="1", sj="1", mlvl="67-70", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[107] = { nm="N", id="17117221", name="Fierce_Smilodon", mj="1", sj="1", mlvl="67-70", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[108] = { nm="N", id="17117222", name="Fierce_Smilodon", mj="1", sj="1", mlvl="67-70", behavior="0", aggro="S,Sc", links="N", spawntype="0", weak="Fire,Lightning", note="" }
-	mb_data[109] = { nm="N", id="17117223", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[110] = { nm="N", id="17117215", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[111] = { nm="N", id="17117204", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[112] = { nm="N", id="17117203", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[113] = { nm="N", id="17117202", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[114] = { nm="N", id="17117893", name="Gaunab", mj="4", sj="4", mlvl="98-99", behavior="0", aggro="H", links="N", spawntype="128", weak="Ice,Lightning,Light,Dark", note="" }
-	mb_data[115] = { nm="N", id="17117306", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[116] = { nm="N", id="17117185", name="SubmarineNippe", mj="7", sj="7", mlvl="63-67", behavior="0", aggro="H", links="N", spawntype="128", weak="Ice,Lightning", note="" }
-	mb_data[117] = { nm="N", id="17117186", name="ThalassicPugil", mj="1", sj="1", mlvl="61-67", behavior="0", aggro="H", links="N", spawntype="128", weak="Ice,Lightning", note="" }
-	mb_data[118] = { nm="N", id="17117187", name="AbyssalPugil", mj="1", sj="1", mlvl="61-67", behavior="0", aggro="H", links="N", spawntype="128", weak="Ice,Lightning", note="" }
-	mb_data[119] = { nm="N", id="17117188", name="Bloodsucker", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="H,Sc", links="N", spawntype="128", weak="Light", note="" }
-	mb_data[120] = { nm="N", id="17117189", name="Bloodsucker", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="H,Sc", links="N", spawntype="128", weak="Light", note="" }
-	mb_data[121] = { nm="N", id="17117190", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[122] = { nm="N", id="17117191", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[123] = { nm="N", id="17117192", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[124] = { nm="N", id="17117193", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[125] = { nm="N", id="17117194", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[126] = { nm="N", id="17117195", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[127] = { nm="N", id="17117196", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[128] = { nm="N", id="17117197", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[129] = { nm="N", id="17117198", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[130] = { nm="N", id="17117199", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[131] = { nm="N", id="17117200", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[132] = { nm="N", id="17117201", name="Duriumshell", mj="7", sj="7", mlvl="93-94", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[133] = { nm="N", id="17117224", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[134] = { nm="N", id="17117544", name="Sprite", mj="3", sj="3", mlvl="73-73", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[135] = { nm="N", id="17117225", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[136] = { nm="N", id="17117227", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[137] = { nm="N", id="17117564", name="Glacial_Wisp", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[138] = { nm="N", id="17117523", name="Air_Elemental", mj="4", sj="5", mlvl="45-45", behavior="0", aggro="M", links="N", spawntype="4", weak="Ice", note="" }
-	mb_data[139] = { nm="N", id="17117562", name="Edonus", mj="1", sj="1", mlvl="75-80", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[140] = { nm="N", id="17117561", name="Almops", mj="1", sj="1", mlvl="75-80", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[141] = { nm="N", id="17117560", name="Madthrasher_Zradbodd", mj="4", sj="4", mlvl="70-75", behavior="0", aggro="Sc", links="Y", spawntype="128", weak="Water", note="" }
-	mb_data[142] = { nm="N", id="17117559", name="Jotunn_Ruffian", mj="2", sj="2", mlvl="1-1", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[143] = { nm="N", id="17117558", name="Jotunn_Ruffian", mj="2", sj="2", mlvl="1-1", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[144] = { nm="N", id="17117557", name="Jotunn_Ruffian", mj="2", sj="2", mlvl="1-1", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[145] = { nm="N", id="17117565", name="Glacial_Wisp", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[146] = { nm="N", id="17117555", name="Jotunn_Ruffian", mj="2", sj="2", mlvl="1-1", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[147] = { nm="N", id="17117553", name="Procrustes", mj="4", sj="4", mlvl="1-1", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[148] = { nm="N", id="17117552", name="Orcish_Guard", mj="1", sj="1", mlvl="60-60", behavior="0", aggro="S,H,Sc", links="Y", spawntype="128", weak="Water", note="" }
-	mb_data[149] = { nm="N", id="17117551", name="Orcish_Guard", mj="1", sj="1", mlvl="60-60", behavior="0", aggro="S,H,Sc", links="Y", spawntype="128", weak="Water", note="" }
-	mb_data[150] = { nm="N", id="17117550", name="Orcish_Transporter", mj="1", sj="1", mlvl="60-60", behavior="0", aggro="S,H,Sc", links="Y", spawntype="128", weak="Water", note="" }
-	mb_data[151] = { nm="N", id="17117549", name="Sprite", mj="3", sj="3", mlvl="73-73", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[152] = { nm="N", id="17117548", name="Sprite", mj="3", sj="3", mlvl="73-73", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[153] = { nm="N", id="17117547", name="Sprite", mj="3", sj="3", mlvl="73-73", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[154] = { nm="N", id="17117546", name="Sprite", mj="3", sj="3", mlvl="73-73", behavior="0", aggro="NA", links="N", spawntype="0", weak="???", note="" }
-	mb_data[155] = { nm="N", id="17117554", name="Jotunn_Ruffian", mj="2", sj="2", mlvl="1-1", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[156] = { nm="N", id="17117566", name="Glacial_Wisp", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[157] = { nm="N", id="17117567", name="ValaineralRDavilles", mj="4", sj="4", mlvl="1-1", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[158] = { nm="N", id="17117568", name="RoyalGuard", mj="2", sj="2", mlvl="1-1", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[159] = { nm="N", id="17117228", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[160] = { nm="N", id="17117229", name="Air_Elemental", mj="4", sj="5", mlvl="45-45", behavior="0", aggro="M", links="N", spawntype="4", weak="Ice", note="" }
-	mb_data[161] = { nm="N", id="17117230", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[162] = { nm="N", id="17117231", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[163] = { nm="N", id="17117232", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[164] = { nm="N", id="17117233", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[165] = { nm="N", id="17117234", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[166] = { nm="N", id="17117580", name="SavageHoundCondottiere2", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[167] = { nm="N", id="17117579", name="SavageHoundCondottiere1", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[168] = { nm="N", id="17117578", name="SavageHoundCondottiere", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="NA", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[169] = { nm="N", id="17117235", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[170] = { nm="N", id="17117576", name="RoyalGuard8", mj="1", sj="1", mlvl="75-80", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[171] = { nm="N", id="17117575", name="RoyalGuard7", mj="1", sj="1", mlvl="75-80", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[172] = { nm="N", id="17117574", name="RoyalGuard6", mj="4", sj="4", mlvl="70-75", behavior="0", aggro="Sc", links="Y", spawntype="128", weak="Water", note="" }
-	mb_data[173] = { nm="N", id="17117573", name="RoyalGuard5", mj="2", sj="2", mlvl="1-1", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[174] = { nm="N", id="17117572", name="RoyalGuard4", mj="2", sj="2", mlvl="1-1", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[175] = { nm="N", id="17117571", name="RoyalGuard3", mj="2", sj="2", mlvl="1-1", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[176] = { nm="N", id="17117570", name="RoyalGuard2", mj="2", sj="2", mlvl="1-1", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[177] = { nm="N", id="17117569", name="RoyalGuard1", mj="2", sj="2", mlvl="1-1", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[178] = { nm="N", id="17117226", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[179] = { nm="N", id="17117522", name="Gnole", mj="2", sj="2", mlvl="68-72", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[180] = { nm="N", id="17117556", name="Jotunn_Ruffian", mj="2", sj="2", mlvl="1-1", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[181] = { nm="N", id="17117520", name="Gnole", mj="2", sj="2", mlvl="68-72", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[182] = { nm="N", id="17117385", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", behavior="0", aggro="T(S),Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[183] = { nm="N", id="17117384", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[184] = { nm="N", id="17117383", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", behavior="0", aggro="T(S),Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[185] = { nm="N", id="17117382", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[186] = { nm="N", id="17117381", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[187] = { nm="N", id="17117380", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[188] = { nm="N", id="17117379", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[189] = { nm="N", id="17117378", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[190] = { nm="N", id="17117377", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[191] = { nm="N", id="17117376", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[192] = { nm="N", id="17117375", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[193] = { nm="N", id="17117374", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[194] = { nm="N", id="17117373", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[195] = { nm="N", id="17117372", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[196] = { nm="N", id="17117371", name="Treant", mj="8", sj="8", mlvl="73-75", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[197] = { nm="N", id="17117370", name="Treant", mj="8", sj="8", mlvl="73-75", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[198] = { nm="N", id="17117369", name="Doom_Mage", mj="4", sj="4", mlvl="69-71", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[199] = { nm="N", id="17117368", name="Doom_Soldier", mj="8", sj="8", mlvl="69-71", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[200] = { nm="N", id="17117367", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", behavior="0", aggro="T(S),Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[201] = { nm="N", id="17117365", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[202] = { nm="N", id="17117364", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[203] = { nm="N", id="17117363", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[204] = { nm="N", id="17117362", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", behavior="0", aggro="T(S),Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[205] = { nm="N", id="17117386", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[206] = { nm="N", id="17117361", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[207] = { nm="N", id="17117387", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[208] = { nm="N", id="17117389", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", behavior="0", aggro="T(S),Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[209] = { nm="N", id="17117411", name="Doom_Mage", mj="4", sj="4", mlvl="69-71", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[210] = { nm="N", id="17117410", name="Doom_Soldier", mj="8", sj="8", mlvl="69-71", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[211] = { nm="N", id="17117409", name="Demonic_Rose", mj="1", sj="1", mlvl="75-78", behavior="0", aggro="H", links="Y", spawntype="0", weak="Fire", note="" }
-	mb_data[212] = { nm="N", id="17117408", name="Demonic_Rose", mj="1", sj="1", mlvl="75-78", behavior="0", aggro="H", links="Y", spawntype="0", weak="Fire", note="" }
-	mb_data[213] = { nm="N", id="17117407", name="Demonic_Rose", mj="1", sj="1", mlvl="75-78", behavior="0", aggro="H", links="Y", spawntype="0", weak="Fire", note="" }
-	mb_data[214] = { nm="N", id="17117406", name="Demonic_Rose", mj="1", sj="1", mlvl="75-78", behavior="0", aggro="H", links="Y", spawntype="0", weak="Fire", note="" }
-	mb_data[215] = { nm="N", id="17117405", name="Demonic_Rose", mj="1", sj="1", mlvl="75-78", behavior="0", aggro="H", links="Y", spawntype="0", weak="Fire", note="" }
-	mb_data[216] = { nm="N", id="17117404", name="Demonic_Rose", mj="1", sj="1", mlvl="75-78", behavior="0", aggro="H", links="Y", spawntype="0", weak="Fire", note="" }
-	mb_data[217] = { nm="N", id="17117403", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[218] = { nm="N", id="17117402", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[219] = { nm="N", id="17117401", name="Gigas_s_Tiger", mj="1", sj="1", mlvl="78-82", behavior="0", aggro="Sc", links="N", spawntype="128", weak="Fire,Lightning", note="" }
-	mb_data[220] = { nm="N", id="17117400", name="Gigas_Helmsman", mj="9", sj="9", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[221] = { nm="N", id="17117399", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[222] = { nm="N", id="17117398", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[223] = { nm="N", id="17117397", name="Gigas_Marine", mj="1", sj="1", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[224] = { nm="N", id="17117396", name="Gigas_s_Tiger", mj="1", sj="1", mlvl="78-82", behavior="0", aggro="Sc", links="N", spawntype="128", weak="Fire,Lightning", note="" }
-	mb_data[225] = { nm="N", id="17117304", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[226] = { nm="N", id="17117395", name="Gigas_Helmsman", mj="9", sj="9", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[227] = { nm="N", id="17117394", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[228] = { nm="N", id="17117393", name="Gigas_Marine", mj="1", sj="1", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[229] = { nm="N", id="17117392", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[230] = { nm="N", id="17117391", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[231] = { nm="N", id="17117390", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[232] = { nm="N", id="17117388", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[233] = { nm="N", id="17117360", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[234] = { nm="N", id="17117359", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[235] = { nm="N", id="17117358", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[236] = { nm="N", id="17117329", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[237] = { nm="N", id="17117328", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[238] = { nm="N", id="17117327", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[239] = { nm="N", id="17117326", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[240] = { nm="N", id="17117325", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[241] = { nm="N", id="17117324", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[242] = { nm="N", id="17117323", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[243] = { nm="N", id="17117322", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[244] = { nm="N", id="17117321", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[245] = { nm="N", id="17117320", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[246] = { nm="N", id="17117319", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[247] = { nm="N", id="17117318", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[248] = { nm="N", id="17117317", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[249] = { nm="N", id="17117316", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[250] = { nm="N", id="17117315", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[251] = { nm="N", id="17117521", name="Gnole", mj="2", sj="2", mlvl="68-72", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[252] = { nm="N", id="17117314", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[253] = { nm="N", id="17117308", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[254] = { nm="N", id="17117309", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[255] = { nm="N", id="17117310", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[256] = { nm="N", id="17117313", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[257] = { nm="N", id="17117311", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[258] = { nm="N", id="17117312", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[259] = { nm="N", id="17117330", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[260] = { nm="N", id="17117331", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[261] = { nm="N", id="17117332", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[262] = { nm="N", id="17117333", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[263] = { nm="N", id="17117357", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", behavior="0", aggro="T(S),Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[264] = { nm="N", id="17117356", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[265] = { nm="N", id="17117355", name="Treant", mj="8", sj="8", mlvl="73-75", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[266] = { nm="N", id="17117354", name="Treant", mj="8", sj="8", mlvl="73-75", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[267] = { nm="N", id="17117353", name="Treant", mj="8", sj="8", mlvl="73-75", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[268] = { nm="N", id="17117352", name="Treant", mj="8", sj="8", mlvl="73-75", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[269] = { nm="N", id="17117351", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[270] = { nm="N", id="17117350", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[271] = { nm="N", id="17117305", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", behavior="0", aggro="H", links="N", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[272] = { nm="N", id="17117348", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[273] = { nm="N", id="17117347", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[274] = { nm="N", id="17117412", name="Doom_Soldier", mj="8", sj="8", mlvl="69-71", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[275] = { nm="N", id="17117346", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[276] = { nm="N", id="17117344", name="Thunder_Elemental", mj="4", sj="5", mlvl="60-60", behavior="0", aggro="M", links="N", spawntype="4", weak="Earth", note="" }
-	mb_data[277] = { nm="N", id="17117343", name="Thunder_Elemental", mj="4", sj="5", mlvl="60-60", behavior="0", aggro="M", links="N", spawntype="4", weak="Earth", note="" }
-	mb_data[278] = { nm="N", id="17117342", name="Haunt", mj="4", sj="4", mlvl="66-69", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Fire,Light", note="" }
-	mb_data[279] = { nm="N", id="17117341", name="Haunt", mj="4", sj="4", mlvl="66-69", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Fire,Light", note="" }
-	mb_data[280] = { nm="N", id="17117340", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[281] = { nm="N", id="17117339", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[282] = { nm="N", id="17117338", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[283] = { nm="N", id="17117337", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[284] = { nm="N", id="17117336", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[285] = { nm="N", id="17117335", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[286] = { nm="N", id="17117334", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[287] = { nm="N", id="17117345", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[288] = { nm="N", id="17117413", name="Doom_Mage", mj="4", sj="4", mlvl="69-71", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Hand-To-Hand,Impact,Fire,Light", note="" }
-	mb_data[289] = { nm="N", id="17117366", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[290] = { nm="N", id="17117415", name="Gigas_Helmsman", mj="9", sj="9", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[291] = { nm="N", id="17117492", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[292] = { nm="N", id="17117491", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[293] = { nm="N", id="17117490", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[294] = { nm="N", id="17117488", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[295] = { nm="N", id="17117487", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[296] = { nm="N", id="17117486", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[297] = { nm="N", id="17117485", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[298] = { nm="N", id="17117484", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[299] = { nm="N", id="17117483", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[300] = { nm="N", id="17117482", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[301] = { nm="N", id="17117481", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[302] = { nm="N", id="17117480", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[303] = { nm="N", id="17117479", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[304] = { nm="N", id="17117478", name="Chigoe", mj="6", sj="6", mlvl="75-78", behavior="0", aggro="S,H", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[305] = { nm="N", id="17117477", name="Chigoe", mj="6", sj="6", mlvl="75-78", behavior="0", aggro="S,H", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[306] = { nm="N", id="17117476", name="Chigoe", mj="6", sj="6", mlvl="75-78", behavior="0", aggro="S,H", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[307] = { nm="N", id="17117475", name="Chigoe", mj="6", sj="6", mlvl="75-78", behavior="0", aggro="S,H", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[308] = { nm="N", id="17117474", name="Chigoe", mj="6", sj="6", mlvl="75-78", behavior="0", aggro="S,H", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[309] = { nm="N", id="17117473", name="Chigoe", mj="6", sj="6", mlvl="75-78", behavior="0", aggro="S,H", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[310] = { nm="N", id="17117472", name="Chigoe", mj="6", sj="6", mlvl="75-78", behavior="0", aggro="S,H", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[311] = { nm="N", id="17117471", name="Chigoe", mj="6", sj="6", mlvl="75-78", behavior="0", aggro="S,H", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[312] = { nm="N", id="17117470", name="Chigoe", mj="6", sj="6", mlvl="75-78", behavior="0", aggro="S,H", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[313] = { nm="N", id="17117469", name="Chigoe", mj="6", sj="6", mlvl="75-78", behavior="0", aggro="S,H", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[314] = { nm="N", id="17117493", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[315] = { nm="N", id="17117494", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[316] = { nm="N", id="17117495", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[317] = { nm="N", id="17117496", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[318] = { nm="N", id="17117517", name="Gnole", mj="2", sj="2", mlvl="68-72", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[319] = { nm="N", id="17117516", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[320] = { nm="N", id="17117515", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[321] = { nm="N", id="17117518", name="Gnole", mj="2", sj="2", mlvl="68-72", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[322] = { nm="N", id="17117519", name="Gnole", mj="2", sj="2", mlvl="68-72", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[323] = { nm="N", id="17117514", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[324] = { nm="N", id="17117513", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[325] = { nm="N", id="17117414", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[326] = { nm="N", id="17117512", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[327] = { nm="N", id="17117511", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[328] = { nm="N", id="17117510", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[329] = { nm="N", id="17117468", name="Chigoe", mj="6", sj="6", mlvl="75-78", behavior="0", aggro="S,H", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[330] = { nm="N", id="17117509", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[331] = { nm="N", id="17117507", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[332] = { nm="N", id="17117506", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[333] = { nm="N", id="17117505", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[334] = { nm="N", id="17117504", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[335] = { nm="N", id="17117503", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[336] = { nm="N", id="17117502", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[337] = { nm="N", id="17117501", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[338] = { nm="N", id="17117500", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[339] = { nm="N", id="17117499", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[340] = { nm="N", id="17117498", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[341] = { nm="N", id="17117497", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[342] = { nm="N", id="17117508", name="Carrion_Marabou", mj="1", sj="1", mlvl="38-40", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[343] = { nm="N", id="17117467", name="Chigoe", mj="6", sj="6", mlvl="75-78", behavior="0", aggro="S,H", links="N", spawntype="0", weak="Fire,Ice", note="" }
-	mb_data[344] = { nm="N", id="17117489", name="Goliath_Beetle", mj="7", sj="7", mlvl="60-65", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Ice,Light", note="" }
-	mb_data[345] = { nm="N", id="17117465", name="Dragonfly", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[346] = { nm="N", id="17117438", name="Thunder_Elemental", mj="4", sj="5", mlvl="60-60", behavior="0", aggro="M", links="N", spawntype="4", weak="Earth", note="" }
-	mb_data[347] = { nm="N", id="17117437", name="Thunder_Elemental", mj="4", sj="5", mlvl="60-60", behavior="0", aggro="M", links="N", spawntype="4", weak="Earth", note="" }
-	mb_data[348] = { nm="N", id="17117436", name="Haunt", mj="4", sj="4", mlvl="66-69", behavior="0", aggro="H,HP", links="N", spawntype="1", weak="Fire,Light", note="" }
-	mb_data[349] = { nm="N", id="17117435", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[350] = { nm="N", id="17117434", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[351] = { nm="N", id="17117433", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[352] = { nm="N", id="17117431", name="Treant", mj="8", sj="8", mlvl="73-75", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[353] = { nm="N", id="17117430", name="Royal_Leech", mj="1", sj="1", mlvl="59-62", behavior="0", aggro="H,Sc", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[354] = { nm="N", id="17117429", name="Royal_Leech", mj="1", sj="1", mlvl="59-62", behavior="0", aggro="H,Sc", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[355] = { nm="N", id="17117428", name="Royal_Leech", mj="1", sj="1", mlvl="59-62", behavior="0", aggro="H,Sc", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[356] = { nm="N", id="17117427", name="Royal_Leech", mj="1", sj="1", mlvl="59-62", behavior="0", aggro="H,Sc", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[357] = { nm="N", id="17117426", name="Royal_Leech", mj="1", sj="1", mlvl="59-62", behavior="0", aggro="H,Sc", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[358] = { nm="N", id="17117425", name="Royal_Leech", mj="1", sj="1", mlvl="59-62", behavior="0", aggro="H,Sc", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[359] = { nm="N", id="17117424", name="Royal_Leech", mj="1", sj="1", mlvl="59-62", behavior="0", aggro="H,Sc", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[360] = { nm="N", id="17117423", name="Demonic_Rose", mj="1", sj="1", mlvl="75-78", behavior="0", aggro="H", links="Y", spawntype="0", weak="Fire", note="" }
-	mb_data[361] = { nm="N", id="17117422", name="Judgmental_Julika", mj="1", sj="1", mlvl="82-82", behavior="0", aggro="T(H)", links="Y", spawntype="0", weak="Fire", note="" }
-	mb_data[362] = { nm="N", id="17117466", name="Dragonfly", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[363] = { nm="N", id="17117416", name="Gigas_s_Tiger", mj="1", sj="1", mlvl="78-82", behavior="0", aggro="Sc", links="N", spawntype="128", weak="Fire,Lightning", note="" }
-	mb_data[364] = { nm="N", id="17117417", name="Gigas_Marine", mj="1", sj="1", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[365] = { nm="N", id="17117418", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Earth", note="" }
-	mb_data[366] = { nm="N", id="17117421", name="Demonic_Rose", mj="1", sj="1", mlvl="75-78", behavior="0", aggro="H", links="Y", spawntype="0", weak="Fire", note="" }
-	mb_data[367] = { nm="N", id="17117420", name="Demonic_Rose", mj="1", sj="1", mlvl="75-78", behavior="0", aggro="H", links="Y", spawntype="0", weak="Fire", note="" }
-	mb_data[368] = { nm="N", id="17117419", name="Demonic_Rose", mj="1", sj="1", mlvl="75-78", behavior="0", aggro="H", links="Y", spawntype="0", weak="Fire", note="" }
-	mb_data[369] = { nm="N", id="17117439", name="Treant", mj="8", sj="8", mlvl="73-75", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[370] = { nm="N", id="17117440", name="Treant", mj="8", sj="8", mlvl="73-75", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[371] = { nm="N", id="17117432", name="Treant", mj="8", sj="8", mlvl="73-75", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[372] = { nm="N", id="17117442", name="Treant", mj="8", sj="8", mlvl="73-75", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[373] = { nm="N", id="17117464", name="Dragonfly", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[374] = { nm="N", id="17117463", name="Dragonfly", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[375] = { nm="N", id="17117462", name="Dragonfly", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[376] = { nm="N", id="17117461", name="Dragonfly", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[377] = { nm="N", id="17117460", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[378] = { nm="N", id="17117441", name="Treant", mj="8", sj="8", mlvl="73-75", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[379] = { nm="N", id="17117458", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[380] = { nm="N", id="17117457", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[381] = { nm="N", id="17117456", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[382] = { nm="N", id="17117455", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[383] = { nm="N", id="17117454", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", behavior="0", aggro="T(S),Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[384] = { nm="N", id="17117453", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[385] = { nm="N", id="17117459", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[386] = { nm="N", id="17117451", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", behavior="0", aggro="T(S),Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[387] = { nm="N", id="17117443", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[388] = { nm="N", id="17117444", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[389] = { nm="N", id="17117452", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", behavior="0", aggro="S,Sc", links="Y", spawntype="0", weak="Water", note="" }
-	mb_data[390] = { nm="N", id="17117446", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[391] = { nm="N", id="17117447", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[392] = { nm="N", id="17117445", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
-	mb_data[393] = { nm="N", id="17117450", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[394] = { nm="N", id="17117449", name="Ignis_Djinn", mj="1", sj="1", mlvl="71-76", behavior="0", aggro="S,M", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[395] = { nm="N", id="17117448", name="Wandering_Sapling", mj="1", sj="1", mlvl="60-65", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Fire,Dark", note="" }
+	mb_data[1] = { nm="N", id="17113734", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[2] = { nm="N", id="17113735", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[3] = { nm="N", id="17113736", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[4] = { nm="N", id="17113737", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[5] = { nm="N", id="17113738", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[6] = { nm="N", id="17113739", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[7] = { nm="N", id="17113740", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[8] = { nm="N", id="17113741", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[9] = { nm="N", id="17113742", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[10] = { nm="N", id="17113743", name="Fortification", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[11] = { nm="N", id="17113744", name="Fortification", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[12] = { nm="N", id="17113745", name="Fortification", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[13] = { nm="N", id="17113746", name="Fortification", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[14] = { nm="N", id="17113747", name="Rikoh_Wahcondalo", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[15] = { nm="N", id="17113748", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[16] = { nm="N", id="17113749", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[17] = { nm="N", id="17113750", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[18] = { nm="N", id="17113751", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[19] = { nm="N", id="17113752", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[20] = { nm="N", id="17113753", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[21] = { nm="N", id="17113754", name="Dalzakk", mj="2", sj="2", mlvl="1-1", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[22] = { nm="N", id="17113755", name="Oggbi", mj="2", sj="2", mlvl="1-1", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[23] = { nm="N", id="17113757", name="Maat", mj="2", sj="0", mlvl="1-1", aggro="S,H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[24] = { nm="N", id="17113758", name="Degenhard", mj="2", sj="2", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[25] = { nm="N", id="17113759", name="Azima", mj="4", sj="4", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[26] = { nm="N", id="17113760", name="Choh_Moui", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[27] = { nm="N", id="17113815", name="Gigas_Mercenary", mj="11", sj="11", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[28] = { nm="N", id="17113816", name="Gigas_Mercenary", mj="11", sj="11", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[29] = { nm="N", id="17113817", name="Poroggo_Prince", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Lightning", strong="Water,Light,Ice,Earth", respawntime="0", items="", steal="" }
+	mb_data[30] = { nm="N", id="17113818", name="Poroggo_Servant", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Lightning", strong="Water,Light,Ice,Earth", respawntime="0", items="", steal="" }
+	mb_data[31] = { nm="N", id="17113819", name="Poroggo_Servant", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Lightning", strong="Water,Light,Ice,Earth", respawntime="0", items="", steal="" }
+	mb_data[32] = { nm="N", id="17113820", name="Poroggo_Servant", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Lightning", strong="Water,Light,Ice,Earth", respawntime="0", items="", steal="" }
+	mb_data[33] = { nm="N", id="17113821", name="Kaiser_Behemoth", mj="1", sj="1", mlvl="1-1", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[34] = { nm="N", id="17113822", name="Ferreous_Coffin", mj="3", sj="3", mlvl="1-1", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[35] = { nm="N", id="17113823", name="Lewenhart", mj="10", sj="10", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[36] = { nm="N", id="17113824", name="Auroral_Alicorn", mj="1", sj="1", mlvl="1-1", aggro="S,H,Assists,???", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[37] = { nm="N", id="17113825", name="Auroral_Alicorn", mj="1", sj="1", mlvl="1-1", aggro="S,H,Assists,???", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[38] = { nm="N", id="17117185", name="Submarine_Nipper", mj="7", sj="7", mlvl="63-67", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Crab Shell, Rock Salt, Land Crab Meat", steal="Rock Salt" }
+	mb_data[39] = { nm="N", id="17117186", name="Thalassic_Pugil", mj="1", sj="1", mlvl="61-67", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[40] = { nm="N", id="17117187", name="Abyssal_Pugil", mj="1", sj="1", mlvl="61-67", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[41] = { nm="N", id="17117188", name="Bloodsucker", mj="1", sj="1", mlvl="60-65", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="0", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby", steal="" }
+	mb_data[42] = { nm="N", id="17117189", name="Bloodsucker", mj="1", sj="1", mlvl="60-65", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="0", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby", steal="" }
+	mb_data[43] = { nm="N", id="17117190", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[44] = { nm="N", id="17117191", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[45] = { nm="N", id="17117192", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[46] = { nm="N", id="17117193", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[47] = { nm="N", id="17117194", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[48] = { nm="N", id="17117195", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[49] = { nm="N", id="17117196", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[50] = { nm="N", id="17117197", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[51] = { nm="N", id="17117198", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[52] = { nm="N", id="17117199", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[53] = { nm="N", id="17117200", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[54] = { nm="N", id="17117201", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[55] = { nm="N", id="17117202", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[56] = { nm="N", id="17117203", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[57] = { nm="N", id="17117204", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[58] = { nm="N", id="17117205", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[59] = { nm="N", id="17117206", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[60] = { nm="N", id="17117207", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[61] = { nm="N", id="17117208", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[62] = { nm="N", id="17117209", name="Duriumshell", mj="7", sj="7", mlvl="62-64", aggro="H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="", steal="" }
+	mb_data[63] = { nm="N", id="17117210", name="Fierce_Smilodon", mj="1", sj="1", mlvl="67-70", aggro="A,S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="300", items="Smilodon Hide, Smilodon Liver", steal="G. Sheep Meat" }
+	mb_data[64] = { nm="N", id="17117211", name="Fierce_Smilodon", mj="1", sj="1", mlvl="67-70", aggro="A,S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="300", items="Smilodon Hide, Smilodon Liver", steal="G. Sheep Meat" }
+	mb_data[65] = { nm="N", id="17117212", name="Fierce_Smilodon", mj="1", sj="1", mlvl="67-70", aggro="A,S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="300", items="Smilodon Hide, Smilodon Liver", steal="G. Sheep Meat" }
+	mb_data[66] = { nm="N", id="17117213", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[67] = { nm="N", id="17117214", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[68] = { nm="N", id="17117215", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[69] = { nm="N", id="17117216", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[70] = { nm="N", id="17117217", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[71] = { nm="N", id="17117218", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[72] = { nm="N", id="17117219", name="Air_Elemental", mj="4", sj="5", mlvl="45-45", aggro="A,M", links="N", weak="Ice", strong="Melee,Wind,Earth", respawntime="300", items="Wind Cluster", steal="" }
+	mb_data[73] = { nm="N", id="17117220", name="Fierce_Smilodon", mj="1", sj="1", mlvl="67-70", aggro="A,S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="300", items="Smilodon Hide, Smilodon Liver", steal="G. Sheep Meat" }
+	mb_data[74] = { nm="N", id="17117221", name="Fierce_Smilodon", mj="1", sj="1", mlvl="67-70", aggro="A,S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="300", items="Smilodon Hide, Smilodon Liver", steal="G. Sheep Meat" }
+	mb_data[75] = { nm="N", id="17117222", name="Fierce_Smilodon", mj="1", sj="1", mlvl="67-70", aggro="A,S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="300", items="Smilodon Hide, Smilodon Liver", steal="G. Sheep Meat" }
+	mb_data[76] = { nm="N", id="17117223", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[77] = { nm="N", id="17117224", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[78] = { nm="N", id="17117225", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[79] = { nm="N", id="17117226", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[80] = { nm="N", id="17117227", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[81] = { nm="N", id="17117228", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[82] = { nm="N", id="17117229", name="Air_Elemental", mj="4", sj="5", mlvl="45-45", aggro="A,M", links="N", weak="Ice", strong="Melee,Wind,Earth", respawntime="300", items="Wind Cluster", steal="" }
+	mb_data[83] = { nm="N", id="17117230", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[84] = { nm="N", id="17117231", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[85] = { nm="N", id="17117232", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[86] = { nm="N", id="17117233", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[87] = { nm="N", id="17117234", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[88] = { nm="N", id="17117235", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[89] = { nm="N", id="17117236", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[90] = { nm="N", id="17117237", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[91] = { nm="N", id="17117238", name="Gigas_Marine", mj="1", sj="1", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[92] = { nm="N", id="17117239", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[93] = { nm="N", id="17117240", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[94] = { nm="N", id="17117241", name="Gigas_Helmsman", mj="9", sj="9", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[95] = { nm="N", id="17117242", name="Gigass_Tiger", mj="1", sj="1", mlvl="71-75", aggro="S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[96] = { nm="N", id="17117243", name="Gigas_Marine", mj="1", sj="1", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[97] = { nm="N", id="17117244", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[98] = { nm="N", id="17117245", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[99] = { nm="N", id="17117246", name="Gigas_Helmsman", mj="9", sj="9", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[100] = { nm="N", id="17117247", name="Gigass_Tiger", mj="1", sj="1", mlvl="71-75", aggro="S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[101] = { nm="N", id="17117248", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[102] = { nm="N", id="17117249", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[103] = { nm="N", id="17117250", name="Pallas", mj="9", sj="9", mlvl="83-85", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="Pallas's Bracelets, Pallas's Shield", steal="" }
+	mb_data[104] = { nm="N", id="17117251", name="Pallass_Tiger", mj="1", sj="1", mlvl="72-74", aggro="S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[105] = { nm="N", id="17117252", name="Pallass_Tiger", mj="1", sj="1", mlvl="72-74", aggro="S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[106] = { nm="N", id="17117253", name="Pallass_Tiger", mj="1", sj="1", mlvl="72-74", aggro="S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[107] = { nm="N", id="17117254", name="Goblin_Flagman", mj="5", sj="5", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[108] = { nm="N", id="17117255", name="Goblin_Grenadier", mj="8", sj="8", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Mail, Goblin Helm, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[109] = { nm="N", id="17117256", name="Goblin_Guerrilla", mj="9", sj="9", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[110] = { nm="N", id="17117257", name="Goblins_Bat", mj="1", sj="1", mlvl="61-63", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[111] = { nm="N", id="17117258", name="Goblin_Flagman", mj="5", sj="5", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[112] = { nm="N", id="17117259", name="Goblin_Grenadier", mj="8", sj="8", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Mail, Goblin Helm, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[113] = { nm="N", id="17117260", name="Goblin_Toxophilite", mj="11", sj="11", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Bottled Pixie, Goblin Mess Tin, Goblin Weel", steal="Gold Beastcoin" }
+	mb_data[114] = { nm="N", id="17117261", name="Goblin_Mine", mj="1", sj="1", mlvl="63-63", aggro="A,T(H)", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[115] = { nm="N", id="17117262", name="Goblin_Flagman", mj="5", sj="5", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[116] = { nm="N", id="17117263", name="Goblin_Grenadier", mj="8", sj="8", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Mail, Goblin Helm, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[117] = { nm="N", id="17117264", name="Goblin_Guerrilla", mj="9", sj="9", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[118] = { nm="N", id="17117265", name="Goblins_Bat", mj="1", sj="1", mlvl="61-63", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[119] = { nm="N", id="17117266", name="Goblin_Flagman", mj="5", sj="5", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[120] = { nm="N", id="17117267", name="Goblin_Grenadier", mj="8", sj="8", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Mail, Goblin Helm, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[121] = { nm="N", id="17117268", name="Goblin_Toxophilite", mj="11", sj="11", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Bottled Pixie, Goblin Mess Tin, Goblin Weel", steal="Gold Beastcoin" }
+	mb_data[122] = { nm="N", id="17117269", name="Goblin_Mine", mj="1", sj="1", mlvl="63-63", aggro="A,T(H)", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[123] = { nm="N", id="17117270", name="Goblin_Guerrilla", mj="9", sj="9", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[124] = { nm="N", id="17117271", name="Goblins_Bat", mj="1", sj="1", mlvl="61-63", aggro="H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="0", items="", steal="" }
+	mb_data[125] = { nm="N", id="17117272", name="Doom_Soldier", mj="8", sj="8", mlvl="69-71", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root", steal="Bone Chip" }
+	mb_data[126] = { nm="N", id="17117273", name="Doom_Mage", mj="4", sj="4", mlvl="69-71", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root", steal="Bone Chip" }
+	mb_data[127] = { nm="N", id="17117274", name="Doom_Soldier", mj="8", sj="8", mlvl="69-71", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root", steal="Bone Chip" }
+	mb_data[128] = { nm="N", id="17117275", name="Doom_Mage", mj="4", sj="4", mlvl="69-71", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root", steal="Bone Chip" }
+	mb_data[129] = { nm="N", id="17117276", name="Doom_Soldier", mj="8", sj="8", mlvl="69-71", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root", steal="Bone Chip" }
+	mb_data[130] = { nm="N", id="17117277", name="Doom_Mage", mj="4", sj="4", mlvl="69-71", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root", steal="Bone Chip" }
+	mb_data[131] = { nm="N", id="17117278", name="Doom_Soldier", mj="8", sj="8", mlvl="69-71", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root", steal="Bone Chip" }
+	mb_data[132] = { nm="N", id="17117279", name="Doom_Mage", mj="4", sj="4", mlvl="69-71", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root", steal="Bone Chip" }
+	mb_data[133] = { nm="N", id="17117280", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[134] = { nm="N", id="17117281", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[135] = { nm="N", id="17117282", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[136] = { nm="N", id="17117283", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[137] = { nm="N", id="17117284", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[138] = { nm="N", id="17117285", name="Gigas_Marine", mj="1", sj="1", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[139] = { nm="N", id="17117286", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[140] = { nm="N", id="17117287", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[141] = { nm="N", id="17117288", name="Gigas_Helmsman", mj="9", sj="9", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[142] = { nm="N", id="17117289", name="Gigass_Tiger", mj="1", sj="1", mlvl="71-75", aggro="S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[143] = { nm="N", id="17117290", name="Gigas_Marine", mj="1", sj="1", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[144] = { nm="N", id="17117291", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[145] = { nm="N", id="17117292", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[146] = { nm="N", id="17117293", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[147] = { nm="N", id="17117294", name="Bugard", mj="1", sj="1", mlvl="66-68", aggro="A,H", links="N", weak="Ice", strong="Fire,Light", respawntime="300", items="Bugard Tusk, Bugard Skin, H.Q. Bugard Skin", steal="G. Sheep Meat" }
+	mb_data[148] = { nm="Y", id="17117295", name="Warabouc", mj="1", sj="1", mlvl="72-73", aggro="A,H", links="N", weak="Ice", strong="Fire,Light", respawntime="7200", items="Aptant: Aecus, Aptant: Geoc", steal="" }
+	mb_data[149] = { nm="N", id="17117296", name="Bugard", mj="1", sj="1", mlvl="66-68", aggro="A,H", links="N", weak="Ice", strong="Fire,Light", respawntime="300", items="Bugard Tusk, Bugard Skin, H.Q. Bugard Skin", steal="G. Sheep Meat" }
+	mb_data[150] = { nm="N", id="17117297", name="Bugard", mj="1", sj="1", mlvl="66-68", aggro="A,H", links="N", weak="Ice", strong="Fire,Light", respawntime="300", items="Bugard Tusk, Bugard Skin, H.Q. Bugard Skin", steal="G. Sheep Meat" }
+	mb_data[151] = { nm="N", id="17117298", name="Bugard", mj="1", sj="1", mlvl="66-68", aggro="A,H", links="N", weak="Ice", strong="Fire,Light", respawntime="300", items="Bugard Tusk, Bugard Skin, H.Q. Bugard Skin", steal="G. Sheep Meat" }
+	mb_data[152] = { nm="N", id="17117299", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[153] = { nm="N", id="17117300", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[154] = { nm="N", id="17117301", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[155] = { nm="N", id="17117302", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[156] = { nm="N", id="17117303", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[157] = { nm="N", id="17117304", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[158] = { nm="N", id="17117305", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[159] = { nm="N", id="17117306", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[160] = { nm="N", id="17117307", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[161] = { nm="N", id="17117308", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[162] = { nm="N", id="17117309", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[163] = { nm="N", id="17117310", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[164] = { nm="N", id="17117311", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[165] = { nm="N", id="17117312", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[166] = { nm="N", id="17117313", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[167] = { nm="N", id="17117314", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[168] = { nm="N", id="17117315", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[169] = { nm="N", id="17117316", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[170] = { nm="N", id="17117317", name="Robber_Crab", mj="7", sj="7", mlvl="62-64", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Crab Shell, H.Q. Crab Shell, Land Crab Meat", steal="" }
+	mb_data[171] = { nm="N", id="17117318", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Silica", steal="Fish Scales" }
+	mb_data[172] = { nm="N", id="17117319", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Silica", steal="Fish Scales" }
+	mb_data[173] = { nm="N", id="17117320", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Silica", steal="Fish Scales" }
+	mb_data[174] = { nm="N", id="17117321", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Silica", steal="Fish Scales" }
+	mb_data[175] = { nm="N", id="17117322", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Silica", steal="Fish Scales" }
+	mb_data[176] = { nm="N", id="17117323", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Silica", steal="Fish Scales" }
+	mb_data[177] = { nm="N", id="17117324", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Silica", steal="Fish Scales" }
+	mb_data[178] = { nm="N", id="17117325", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Silica", steal="Fish Scales" }
+	mb_data[179] = { nm="N", id="17117326", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Silica", steal="Fish Scales" }
+	mb_data[180] = { nm="N", id="17117327", name="Stygian_Pugil", mj="1", sj="1", mlvl="64-66", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="300", items="Pugil Scales, Silica", steal="Fish Scales" }
+	mb_data[181] = { nm="N", id="17117328", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[182] = { nm="N", id="17117329", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[183] = { nm="N", id="17117330", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[184] = { nm="N", id="17117331", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[185] = { nm="N", id="17117332", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[186] = { nm="N", id="17117333", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[187] = { nm="N", id="17117334", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[188] = { nm="N", id="17117335", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[189] = { nm="N", id="17117336", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[190] = { nm="N", id="17117337", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[191] = { nm="N", id="17117338", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[192] = { nm="N", id="17117339", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[193] = { nm="N", id="17117340", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[194] = { nm="N", id="17117341", name="Haunt", mj="4", sj="4", mlvl="66-69", aggro="A,H,HP", links="N", weak="Fire,Light", strong="Melee,Ice,Dark", respawntime="300", items="Luminicloth, Cotton Cloth, Revival Root", steal="Cotton Cloth" }
+	mb_data[195] = { nm="N", id="17117342", name="Haunt", mj="4", sj="4", mlvl="66-69", aggro="A,H,HP", links="N", weak="Fire,Light", strong="Melee,Ice,Dark", respawntime="300", items="Luminicloth, Cotton Cloth, Revival Root", steal="Cotton Cloth" }
+	mb_data[196] = { nm="N", id="17117343", name="Thunder_Elemental", mj="4", sj="5", mlvl="60-60", aggro="A,M", links="N", weak="Earth", strong="Melee,Lightning,Water", respawntime="300", items="Lightning Cluster", steal="" }
+	mb_data[197] = { nm="N", id="17117344", name="Thunder_Elemental", mj="4", sj="5", mlvl="60-60", aggro="A,M", links="N", weak="Earth", strong="Melee,Lightning,Water", respawntime="300", items="Lightning Cluster", steal="" }
+	mb_data[198] = { nm="N", id="17117345", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[199] = { nm="N", id="17117346", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[200] = { nm="N", id="17117347", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[201] = { nm="N", id="17117348", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[202] = { nm="Y", id="17117349", name="Big_Bang", mj="1", sj="1", mlvl="75-75", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="0", items="Aptant: Bellum", steal="" }
+	mb_data[203] = { nm="N", id="17117350", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[204] = { nm="N", id="17117351", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[205] = { nm="N", id="17117352", name="Treant", mj="8", sj="8", mlvl="73-75", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Oak Log, Ebony Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[206] = { nm="N", id="17117353", name="Treant", mj="8", sj="8", mlvl="73-75", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Oak Log, Ebony Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[207] = { nm="N", id="17117354", name="Treant", mj="8", sj="8", mlvl="73-75", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Oak Log, Ebony Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[208] = { nm="N", id="17117355", name="Treant", mj="8", sj="8", mlvl="73-75", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Oak Log, Ebony Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[209] = { nm="N", id="17117356", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[210] = { nm="N", id="17117357", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[211] = { nm="N", id="17117358", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[212] = { nm="N", id="17117359", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Davoi Chest Key, Soiled Letter, Silver Mask, Silver Mail, Silver Mittens, Silver Hose, Silver Greaves", steal="Mtl. Beastcoin" }
+	mb_data[213] = { nm="N", id="17117360", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[214] = { nm="N", id="17117361", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[215] = { nm="N", id="17117362", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[216] = { nm="N", id="17117363", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Davoi Chest Key, Soiled Letter, Silver Mask, Silver Mail, Silver Mittens, Silver Hose, Silver Greaves", steal="Mtl. Beastcoin" }
+	mb_data[217] = { nm="N", id="17117364", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[218] = { nm="N", id="17117365", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Davoi Chest Key, Soiled Letter, Silver Mask, Silver Mail, Silver Mittens, Silver Hose, Silver Greaves", steal="Mtl. Beastcoin" }
+	mb_data[219] = { nm="N", id="17117366", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[220] = { nm="N", id="17117367", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[221] = { nm="N", id="17117368", name="Doom_Soldier", mj="8", sj="8", mlvl="69-71", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root", steal="Bone Chip" }
+	mb_data[222] = { nm="N", id="17117369", name="Doom_Mage", mj="4", sj="4", mlvl="69-71", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root", steal="Bone Chip" }
+	mb_data[223] = { nm="N", id="17117370", name="Treant", mj="8", sj="8", mlvl="73-75", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Oak Log, Ebony Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[224] = { nm="N", id="17117371", name="Treant", mj="8", sj="8", mlvl="73-75", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Oak Log, Ebony Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[225] = { nm="N", id="17117372", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[226] = { nm="N", id="17117373", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[227] = { nm="N", id="17117374", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[228] = { nm="N", id="17117375", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[229] = { nm="N", id="17117376", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[230] = { nm="N", id="17117377", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[231] = { nm="N", id="17117378", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[232] = { nm="N", id="17117379", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[233] = { nm="N", id="17117380", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[234] = { nm="N", id="17117381", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[235] = { nm="N", id="17117382", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Davoi Chest Key, Soiled Letter, Silver Mask, Silver Mail, Silver Mittens, Silver Hose, Silver Greaves", steal="Mtl. Beastcoin" }
+	mb_data[236] = { nm="N", id="17117383", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[237] = { nm="N", id="17117384", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[238] = { nm="N", id="17117385", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[239] = { nm="N", id="17117386", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[240] = { nm="N", id="17117387", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Davoi Chest Key, Soiled Letter, Silver Mask, Silver Mail, Silver Mittens, Silver Hose, Silver Greaves", steal="Mtl. Beastcoin" }
+	mb_data[241] = { nm="N", id="17117388", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[242] = { nm="N", id="17117389", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[243] = { nm="N", id="17117390", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[244] = { nm="N", id="17117391", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Davoi Chest Key, Soiled Letter, Silver Mask, Silver Mail, Silver Mittens, Silver Hose, Silver Greaves", steal="Mtl. Beastcoin" }
+	mb_data[245] = { nm="N", id="17117392", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[246] = { nm="N", id="17117393", name="Gigas_Marine", mj="1", sj="1", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[247] = { nm="N", id="17117394", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[248] = { nm="N", id="17117395", name="Gigas_Helmsman", mj="9", sj="9", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[249] = { nm="N", id="17117396", name="Gigass_Tiger", mj="1", sj="1", mlvl="71-75", aggro="S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[250] = { nm="N", id="17117397", name="Gigas_Marine", mj="1", sj="1", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[251] = { nm="N", id="17117398", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[252] = { nm="N", id="17117399", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[253] = { nm="N", id="17117400", name="Gigas_Helmsman", mj="9", sj="9", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[254] = { nm="N", id="17117401", name="Gigass_Tiger", mj="1", sj="1", mlvl="71-75", aggro="S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[255] = { nm="N", id="17117402", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[256] = { nm="N", id="17117403", name="Gigas_Jack", mj="11", sj="11", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[257] = { nm="N", id="17117404", name="Demonic_Rose", mj="1", sj="1", mlvl="74-76", aggro="A,H", links="Y", weak="Fire", strong="Water,Dark", respawntime="300", items="Malboro Vine", steal="Malboro Vine" }
+	mb_data[258] = { nm="N", id="17117405", name="Demonic_Rose", mj="1", sj="1", mlvl="74-76", aggro="A,H", links="Y", weak="Fire", strong="Water,Dark", respawntime="300", items="Malboro Vine", steal="Malboro Vine" }
+	mb_data[259] = { nm="N", id="17117406", name="Demonic_Rose", mj="1", sj="1", mlvl="74-76", aggro="A,H", links="Y", weak="Fire", strong="Water,Dark", respawntime="300", items="Malboro Vine", steal="Malboro Vine" }
+	mb_data[260] = { nm="N", id="17117407", name="Demonic_Rose", mj="1", sj="1", mlvl="74-76", aggro="A,H", links="Y", weak="Fire", strong="Water,Dark", respawntime="300", items="Malboro Vine", steal="Malboro Vine" }
+	mb_data[261] = { nm="N", id="17117408", name="Demonic_Rose", mj="1", sj="1", mlvl="74-76", aggro="A,H", links="Y", weak="Fire", strong="Water,Dark", respawntime="300", items="Malboro Vine", steal="Malboro Vine" }
+	mb_data[262] = { nm="N", id="17117409", name="Demonic_Rose", mj="1", sj="1", mlvl="74-76", aggro="A,H", links="Y", weak="Fire", strong="Water,Dark", respawntime="300", items="Malboro Vine", steal="Malboro Vine" }
+	mb_data[263] = { nm="N", id="17117410", name="Doom_Soldier", mj="8", sj="8", mlvl="69-71", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root", steal="Bone Chip" }
+	mb_data[264] = { nm="N", id="17117411", name="Doom_Mage", mj="4", sj="4", mlvl="69-71", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root", steal="Bone Chip" }
+	mb_data[265] = { nm="N", id="17117412", name="Doom_Soldier", mj="8", sj="8", mlvl="69-71", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root", steal="Bone Chip" }
+	mb_data[266] = { nm="N", id="17117413", name="Doom_Mage", mj="4", sj="4", mlvl="69-71", aggro="A,H,HP", links="N", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="300", items="Bone Chip, Revival Root", steal="Bone Chip" }
+	mb_data[267] = { nm="N", id="17117414", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[268] = { nm="N", id="17117415", name="Gigas_Helmsman", mj="9", sj="9", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[269] = { nm="N", id="17117416", name="Gigass_Tiger", mj="1", sj="1", mlvl="71-75", aggro="S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[270] = { nm="N", id="17117417", name="Gigas_Marine", mj="1", sj="1", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[271] = { nm="N", id="17117418", name="Gigas_Deckhand", mj="2", sj="2", mlvl="78-82", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="300", items="Gigas Helm, Gigas Gauntlets", steal="" }
+	mb_data[272] = { nm="N", id="17117419", name="Demonic_Rose", mj="1", sj="1", mlvl="74-76", aggro="A,H", links="Y", weak="Fire", strong="Water,Dark", respawntime="300", items="Malboro Vine", steal="Malboro Vine" }
+	mb_data[273] = { nm="N", id="17117420", name="Demonic_Rose", mj="1", sj="1", mlvl="74-76", aggro="A,H", links="Y", weak="Fire", strong="Water,Dark", respawntime="300", items="Malboro Vine", steal="Malboro Vine" }
+	mb_data[274] = { nm="N", id="17117421", name="Demonic_Rose", mj="1", sj="1", mlvl="74-76", aggro="A,H", links="Y", weak="Fire", strong="Water,Dark", respawntime="300", items="Malboro Vine", steal="Malboro Vine" }
+	mb_data[275] = { nm="N", id="17117422", name="Judgmental_Julika", mj="1", sj="1", mlvl="82-82", aggro="A,T(H)", links="Y", weak="Fire", strong="Water,Dark", respawntime="9000", items="Creve-coeur", steal="" }
+	mb_data[276] = { nm="N", id="17117423", name="Demonic_Rose", mj="1", sj="1", mlvl="74-76", aggro="A,H", links="Y", weak="Fire", strong="Water,Dark", respawntime="300", items="Malboro Vine", steal="Malboro Vine" }
+	mb_data[277] = { nm="N", id="17117424", name="Royal_Leech", mj="1", sj="1", mlvl="37-40", aggro="H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="300", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby, Leech Saliva", steal="" }
+	mb_data[278] = { nm="N", id="17117425", name="Royal_Leech", mj="1", sj="1", mlvl="37-40", aggro="H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="300", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby, Leech Saliva", steal="" }
+	mb_data[279] = { nm="N", id="17117426", name="Royal_Leech", mj="1", sj="1", mlvl="37-40", aggro="H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="300", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby, Leech Saliva", steal="" }
+	mb_data[280] = { nm="N", id="17117427", name="Royal_Leech", mj="1", sj="1", mlvl="37-40", aggro="H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="300", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby, Leech Saliva", steal="" }
+	mb_data[281] = { nm="N", id="17117428", name="Royal_Leech", mj="1", sj="1", mlvl="37-40", aggro="H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="300", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby, Leech Saliva", steal="" }
+	mb_data[282] = { nm="N", id="17117429", name="Royal_Leech", mj="1", sj="1", mlvl="37-40", aggro="H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="300", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby, Leech Saliva", steal="" }
+	mb_data[283] = { nm="N", id="17117430", name="Royal_Leech", mj="1", sj="1", mlvl="37-40", aggro="H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="300", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby, Leech Saliva", steal="" }
+	mb_data[284] = { nm="N", id="17117431", name="Treant", mj="8", sj="8", mlvl="73-75", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Oak Log, Ebony Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[285] = { nm="N", id="17117432", name="Treant", mj="8", sj="8", mlvl="73-75", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Oak Log, Ebony Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[286] = { nm="N", id="17117433", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[287] = { nm="N", id="17117434", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[288] = { nm="N", id="17117435", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[289] = { nm="N", id="17117436", name="Haunt", mj="4", sj="4", mlvl="66-69", aggro="A,H,HP", links="N", weak="Fire,Light", strong="Melee,Ice,Dark", respawntime="300", items="Luminicloth, Cotton Cloth, Revival Root", steal="Cotton Cloth" }
+	mb_data[290] = { nm="N", id="17117437", name="Thunder_Elemental", mj="4", sj="5", mlvl="60-60", aggro="A,M", links="N", weak="Earth", strong="Melee,Lightning,Water", respawntime="300", items="Lightning Cluster", steal="" }
+	mb_data[291] = { nm="N", id="17117438", name="Thunder_Elemental", mj="4", sj="5", mlvl="60-60", aggro="A,M", links="N", weak="Earth", strong="Melee,Lightning,Water", respawntime="300", items="Lightning Cluster", steal="" }
+	mb_data[292] = { nm="N", id="17117439", name="Treant", mj="8", sj="8", mlvl="73-75", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Oak Log, Ebony Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[293] = { nm="N", id="17117440", name="Treant", mj="8", sj="8", mlvl="73-75", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Oak Log, Ebony Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[294] = { nm="N", id="17117441", name="Treant", mj="8", sj="8", mlvl="73-75", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Oak Log, Ebony Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[295] = { nm="N", id="17117442", name="Treant", mj="8", sj="8", mlvl="73-75", aggro="A,H", links="N", weak="Fire,Dark", strong="", respawntime="300", items="Oak Log, Ebony Log, Mistletoe, Dryad Root, Puffball", steal="" }
+	mb_data[296] = { nm="N", id="17117443", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[297] = { nm="N", id="17117444", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[298] = { nm="N", id="17117445", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[299] = { nm="N", id="17117446", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[300] = { nm="N", id="17117447", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[301] = { nm="N", id="17117448", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[302] = { nm="N", id="17117449", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[303] = { nm="N", id="17117450", name="Ignis_Djinn", mj="1", sj="1", mlvl="69-72", aggro="A,S,M", links="N", weak="Fire", strong="", respawntime="300", items="Djinn Ash, Djinn Arm", steal="" }
+	mb_data[304] = { nm="N", id="17117451", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[305] = { nm="N", id="17117452", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Davoi Chest Key, Soiled Letter, Silver Mask, Silver Mail, Silver Mittens, Silver Hose, Silver Greaves", steal="Mtl. Beastcoin" }
+	mb_data[306] = { nm="N", id="17117453", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[307] = { nm="N", id="17117454", name="Orcish_Hexspinner", mj="4", sj="4", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[308] = { nm="N", id="17117455", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[309] = { nm="N", id="17117456", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Davoi Chest Key, Soiled Letter, Silver Mask, Silver Mail, Silver Mittens, Silver Hose, Silver Greaves", steal="Mtl. Beastcoin" }
+	mb_data[310] = { nm="N", id="17117457", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[311] = { nm="N", id="17117458", name="Orcish_Zerker", mj="8", sj="8", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[312] = { nm="N", id="17117459", name="Orcish_Footsoldier", mj="1", sj="1", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Davoi Chest Key, Soiled Letter, Silver Mask, Silver Mail, Silver Mittens, Silver Hose, Silver Greaves", steal="Mtl. Beastcoin" }
+	mb_data[313] = { nm="N", id="17117460", name="Orcish_Gladiator", mj="2", sj="2", mlvl="71-74", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="300", items="Bottled Pixie", steal="" }
+	mb_data[314] = { nm="N", id="17117461", name="Dragonfly", mj="1", sj="1", mlvl="58-60", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Insect Wing", steal="" }
+	mb_data[315] = { nm="N", id="17117462", name="Dragonfly", mj="1", sj="1", mlvl="58-60", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Insect Wing", steal="" }
+	mb_data[316] = { nm="N", id="17117463", name="Dragonfly", mj="1", sj="1", mlvl="58-60", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Insect Wing", steal="" }
+	mb_data[317] = { nm="N", id="17117464", name="Dragonfly", mj="1", sj="1", mlvl="58-60", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Insect Wing", steal="" }
+	mb_data[318] = { nm="N", id="17117465", name="Dragonfly", mj="1", sj="1", mlvl="58-60", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Insect Wing", steal="" }
+	mb_data[319] = { nm="N", id="17117466", name="Dragonfly", mj="1", sj="1", mlvl="58-60", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Insect Wing", steal="" }
+	mb_data[320] = { nm="N", id="17117467", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[321] = { nm="N", id="17117468", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[322] = { nm="N", id="17117469", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[323] = { nm="N", id="17117470", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[324] = { nm="N", id="17117471", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[325] = { nm="N", id="17117472", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[326] = { nm="N", id="17117473", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[327] = { nm="N", id="17117474", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[328] = { nm="N", id="17117475", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[329] = { nm="N", id="17117476", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[330] = { nm="N", id="17117477", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[331] = { nm="N", id="17117478", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[332] = { nm="N", id="17117479", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[333] = { nm="N", id="17117480", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[334] = { nm="N", id="17117481", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[335] = { nm="N", id="17117482", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[336] = { nm="N", id="17117483", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[337] = { nm="N", id="17117484", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[338] = { nm="N", id="17117485", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[339] = { nm="N", id="17117486", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[340] = { nm="N", id="17117487", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[341] = { nm="N", id="17117488", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[342] = { nm="N", id="17117489", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[343] = { nm="N", id="17117490", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[344] = { nm="N", id="17117491", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[345] = { nm="N", id="17117492", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[346] = { nm="N", id="17117493", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[347] = { nm="N", id="17117494", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[348] = { nm="N", id="17117495", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[349] = { nm="N", id="17117496", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[350] = { nm="N", id="17117497", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[351] = { nm="N", id="17117498", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[352] = { nm="N", id="17117499", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[353] = { nm="N", id="17117500", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[354] = { nm="N", id="17117501", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[355] = { nm="N", id="17117502", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[356] = { nm="N", id="17117503", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[357] = { nm="N", id="17117504", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[358] = { nm="N", id="17117505", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[359] = { nm="N", id="17117506", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[360] = { nm="N", id="17117507", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[361] = { nm="N", id="17117508", name="Carrion_Marabou", mj="1", sj="1", mlvl="35-38", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="300", items="Bird Feather, Bird Egg", steal="" }
+	mb_data[362] = { nm="N", id="17117509", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[363] = { nm="N", id="17117510", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[364] = { nm="N", id="17117511", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[365] = { nm="N", id="17117512", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[366] = { nm="N", id="17117513", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[367] = { nm="N", id="17117514", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[368] = { nm="N", id="17117515", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[369] = { nm="N", id="17117516", name="Goliath_Beetle", mj="7", sj="7", mlvl="34-36", aggro="S,Sc", links="Y", weak="Light,Ice", strong="", respawntime="300", items="Insect Wing, Beetle Shell, Beetle Jaw", steal="" }
+	mb_data[370] = { nm="N", id="17117517", name="Gnole", mj="2", sj="2", mlvl="68-72", aggro="A,S,Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="300", items="Gnole Claw", steal="" }
+	mb_data[371] = { nm="N", id="17117518", name="Gnole", mj="2", sj="2", mlvl="68-72", aggro="A,S,Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="300", items="Gnole Claw", steal="" }
+	mb_data[372] = { nm="N", id="17117519", name="Gnole", mj="2", sj="2", mlvl="68-72", aggro="A,S,Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="300", items="Gnole Claw", steal="" }
+	mb_data[373] = { nm="N", id="17117520", name="Gnole", mj="2", sj="2", mlvl="68-72", aggro="A,S,Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="300", items="Gnole Claw", steal="" }
+	mb_data[374] = { nm="N", id="17117521", name="Gnole", mj="2", sj="2", mlvl="68-72", aggro="A,S,Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="300", items="Gnole Claw", steal="" }
+	mb_data[375] = { nm="N", id="17117522", name="Gnole", mj="2", sj="2", mlvl="68-72", aggro="A,S,Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="300", items="Gnole Claw", steal="" }
+	mb_data[376] = { nm="N", id="17117523", name="Air_Elemental", mj="4", sj="5", mlvl="45-45", aggro="A,M", links="N", weak="Ice", strong="Melee,Wind,Earth", respawntime="300", items="Wind Cluster", steal="" }
+	mb_data[377] = { nm="N", id="17117524", name="Dire_Bat", mj="1", sj="1", mlvl="61-63", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[378] = { nm="N", id="17117525", name="Dire_Bat", mj="1", sj="1", mlvl="61-63", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[379] = { nm="N", id="17117526", name="Dire_Bat", mj="1", sj="1", mlvl="61-63", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[380] = { nm="N", id="17117527", name="Dire_Bat", mj="1", sj="1", mlvl="61-63", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[381] = { nm="N", id="17117528", name="Dire_Bat", mj="1", sj="1", mlvl="61-63", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[382] = { nm="N", id="17117529", name="Dire_Bat", mj="1", sj="1", mlvl="61-63", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[383] = { nm="N", id="17117530", name="Dire_Bat", mj="1", sj="1", mlvl="61-63", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="300", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[384] = { nm="N", id="17117531", name="Royal_Leech", mj="1", sj="1", mlvl="37-40", aggro="H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="300", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby, Leech Saliva", steal="" }
+	mb_data[385] = { nm="N", id="17117532", name="Royal_Leech", mj="1", sj="1", mlvl="37-40", aggro="H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="300", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby, Leech Saliva", steal="" }
+	mb_data[386] = { nm="N", id="17117533", name="Royal_Leech", mj="1", sj="1", mlvl="37-40", aggro="H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="300", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby, Leech Saliva", steal="" }
+	mb_data[387] = { nm="N", id="17117534", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[388] = { nm="N", id="17117535", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[389] = { nm="N", id="17117536", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[390] = { nm="N", id="17117537", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[391] = { nm="N", id="17117538", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[392] = { nm="N", id="17117539", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[393] = { nm="N", id="17117540", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[394] = { nm="N", id="17117541", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[395] = { nm="N", id="17117542", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[396] = { nm="N", id="17117543", name="Wandering_Sapling", mj="1", sj="1", mlvl="33-36", aggro="H", links="Y", weak="Fire,Dark", strong="", respawntime="300", items="Herb Seeds, Vegetable Seeds, Treant Bulb", steal="" }
+	mb_data[397] = { nm="N", id="17117544", name="Sprite", mj="3", sj="3", mlvl="65-68", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[398] = { nm="N", id="17117545", name="Sprite", mj="3", sj="3", mlvl="65-68", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[399] = { nm="N", id="17117546", name="Sprite", mj="3", sj="3", mlvl="65-68", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[400] = { nm="N", id="17117547", name="Sprite", mj="3", sj="3", mlvl="65-68", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[401] = { nm="N", id="17117548", name="Sprite", mj="3", sj="3", mlvl="65-68", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[402] = { nm="N", id="17117549", name="Sprite", mj="3", sj="3", mlvl="65-68", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="300", items="Stygian Ash", steal="" }
+	mb_data[403] = { nm="N", id="17117550", name="Orcish_Transporter", mj="1", sj="1", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="Silver Beastcoin" }
+	mb_data[404] = { nm="N", id="17117551", name="Orcish_Guard", mj="1", sj="1", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="Bottled Pixie", steal="" }
+	mb_data[405] = { nm="N", id="17117552", name="Orcish_Guard", mj="1", sj="1", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="Bottled Pixie", steal="" }
+	mb_data[406] = { nm="N", id="17117553", name="Procrustes", mj="4", sj="4", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[407] = { nm="N", id="17117554", name="Jotunn_Ruffian", mj="2", sj="2", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[408] = { nm="N", id="17117555", name="Jotunn_Ruffian", mj="2", sj="2", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[409] = { nm="N", id="17117556", name="Jotunn_Ruffian", mj="2", sj="2", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[410] = { nm="N", id="17117557", name="Jotunn_Ruffian", mj="2", sj="2", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[411] = { nm="N", id="17117558", name="Jotunn_Ruffian", mj="2", sj="2", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[412] = { nm="N", id="17117559", name="Jotunn_Ruffian", mj="2", sj="2", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[413] = { nm="N", id="17117560", name="Madthrasher_Zradbodd", mj="4", sj="4", mlvl="70-75", aggro="S,Sc", links="N", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[414] = { nm="N", id="17117561", name="Almops", mj="1", sj="1", mlvl="75-80", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[415] = { nm="N", id="17117562", name="Edonus", mj="1", sj="1", mlvl="75-80", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[416] = { nm="N", id="17117563", name="Glacial_Wisp", mj="1", sj="1", mlvl="75-75", aggro="S,M", links="N", weak="Fire", strong="", respawntime="0", items="", steal="" }
+	mb_data[417] = { nm="N", id="17117564", name="Glacial_Wisp", mj="1", sj="1", mlvl="75-75", aggro="S,M", links="N", weak="Fire", strong="", respawntime="0", items="", steal="" }
+	mb_data[418] = { nm="N", id="17117565", name="Glacial_Wisp", mj="1", sj="1", mlvl="75-75", aggro="S,M", links="N", weak="Fire", strong="", respawntime="0", items="", steal="" }
+	mb_data[419] = { nm="N", id="17117566", name="Glacial_Wisp", mj="1", sj="1", mlvl="75-75", aggro="S,M", links="N", weak="Fire", strong="", respawntime="0", items="", steal="" }
+	mb_data[420] = { nm="N", id="17117567", name="Valaineral_R_Davilles", mj="7", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[421] = { nm="N", id="17117568", name="Royal_Guard", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[422] = { nm="N", id="17117569", name="Royal_Guard", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[423] = { nm="N", id="17117570", name="Royal_Guard", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[424] = { nm="N", id="17117571", name="Royal_Guard", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[425] = { nm="N", id="17117572", name="Royal_Guard", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[426] = { nm="N", id="17117573", name="Royal_Guard", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[427] = { nm="N", id="17117574", name="Royal_Guard", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[428] = { nm="N", id="17117575", name="Royal_Guard", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[429] = { nm="N", id="17117576", name="Royal_Guard", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[430] = { nm="N", id="17117577", name="Leonoyne", mj="7", sj="4", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[431] = { nm="N", id="17117578", name="Savage_Hound_Condottiere", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[432] = { nm="N", id="17117579", name="Savage_Hound_Condottiere", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[433] = { nm="N", id="17117580", name="Savage_Hound_Condottiere", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[434] = { nm="N", id="17117581", name="Savage_Hound_Condottiere", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[435] = { nm="N", id="17117582", name="Savage_Hound_Condottiere", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[436] = { nm="N", id="17117583", name="Savage_Hound_Condottiere", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[437] = { nm="N", id="17117584", name="Savage_Hound_Condottiere", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[438] = { nm="N", id="17117585", name="Savage_Hound_Condottiere", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[439] = { nm="N", id="17117586", name="Savage_Hound_Condottiere", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[440] = { nm="N", id="17117587", name="Ashmea_B_Greinner", mj="7", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[441] = { nm="N", id="17117588", name="Scarlet_Boar_Esquire", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[442] = { nm="N", id="17117589", name="Scarlet_Boar_Esquire", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[443] = { nm="N", id="17117590", name="Scarlet_Boar_Esquire", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[444] = { nm="N", id="17117591", name="Scarlet_Boar_Esquire", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[445] = { nm="N", id="17117592", name="Scarlet_Boar_Esquire", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[446] = { nm="N", id="17117593", name="Scarlet_Boar_Esquire", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[447] = { nm="N", id="17117594", name="Scarlet_Boar_Esquire", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[448] = { nm="N", id="17117595", name="Scarlet_Boar_Esquire", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[449] = { nm="N", id="17117596", name="Scarlet_Boar_Esquire", mj="1", sj="1", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[450] = { nm="N", id="17117597", name="Feldrautte_I_Rouhent", mj="2", sj="2", mlvl="70-70", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[451] = { nm="N", id="17117598", name="Norvallen_Knight", mj="7", sj="1", mlvl="70-70", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[452] = { nm="N", id="17117599", name="Norvallen_Knight", mj="7", sj="1", mlvl="70-70", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[453] = { nm="N", id="17117600", name="Norvallen_Knight", mj="7", sj="1", mlvl="70-70", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[454] = { nm="N", id="17117601", name="Norvallen_Knight", mj="7", sj="1", mlvl="70-70", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[455] = { nm="N", id="17117602", name="Norvallen_Knight", mj="7", sj="1", mlvl="70-70", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[456] = { nm="N", id="17117603", name="Norvallen_Knight", mj="7", sj="1", mlvl="70-70", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[457] = { nm="N", id="17117604", name="Norvallen_Knight", mj="7", sj="1", mlvl="70-70", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[458] = { nm="N", id="17117605", name="Norvallen_Knight", mj="7", sj="1", mlvl="70-70", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[459] = { nm="N", id="17117606", name="Norvallen_Knight", mj="7", sj="1", mlvl="70-70", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[460] = { nm="N", id="17117607", name="Yrvaulair_S_Cousseraux", mj="14", sj="7", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[461] = { nm="N", id="17117608", name="Royal_Knight", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[462] = { nm="N", id="17117609", name="Royal_Knight", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[463] = { nm="N", id="17117610", name="Royal_Knight", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[464] = { nm="N", id="17117611", name="Royal_Knight", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[465] = { nm="N", id="17117612", name="Royal_Knight", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[466] = { nm="N", id="17117613", name="Royal_Knight", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[467] = { nm="N", id="17117614", name="Royal_Knight", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[468] = { nm="N", id="17117615", name="Royal_Knight", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[469] = { nm="N", id="17117616", name="Royal_Knight", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[470] = { nm="N", id="17117617", name="Noillurie", mj="12", sj="7", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[471] = { nm="N", id="17117618", name="Red_Rose_Condottiere", mj="1", sj="12", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[472] = { nm="N", id="17117619", name="Red_Rose_Condottiere", mj="1", sj="12", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[473] = { nm="N", id="17117620", name="Red_Rose_Condottiere", mj="1", sj="12", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[474] = { nm="N", id="17117621", name="Red_Rose_Condottiere", mj="1", sj="12", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[475] = { nm="N", id="17117622", name="Red_Rose_Condottiere", mj="1", sj="12", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[476] = { nm="N", id="17117623", name="Red_Rose_Condottiere", mj="1", sj="12", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[477] = { nm="N", id="17117624", name="Red_Rose_Condottiere", mj="1", sj="12", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[478] = { nm="N", id="17117625", name="Red_Rose_Condottiere", mj="1", sj="12", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[479] = { nm="N", id="17117626", name="Red_Rose_Condottiere", mj="1", sj="12", mlvl="0-0", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[480] = { nm="N", id="17117627", name="Gold_Badger_Esquire", mj="7", sj="7", mlvl="65-65", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[481] = { nm="N", id="17117628", name="Gold_Badger_Esquire", mj="7", sj="7", mlvl="65-65", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[482] = { nm="N", id="17117629", name="Gold_Badger_Esquire", mj="7", sj="7", mlvl="65-65", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[483] = { nm="N", id="17117630", name="Gold_Badger_Esquire", mj="7", sj="7", mlvl="65-65", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[484] = { nm="N", id="17117631", name="Gold_Badger_Esquire", mj="7", sj="7", mlvl="65-65", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[485] = { nm="N", id="17117632", name="Gold_Badger_Esquire", mj="7", sj="7", mlvl="65-65", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[486] = { nm="N", id="17117633", name="Allied_Mantelet", mj="1", sj="1", mlvl="50-50", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[487] = { nm="N", id="17117634", name="Allied_Mantelet", mj="1", sj="1", mlvl="50-50", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[488] = { nm="N", id="17117635", name="Allied_Mantelet", mj="1", sj="1", mlvl="50-50", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[489] = { nm="N", id="17117636", name="Allied_Mantelet", mj="1", sj="1", mlvl="50-50", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[490] = { nm="N", id="17117637", name="Allied_Mantelet", mj="1", sj="1", mlvl="50-50", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[491] = { nm="N", id="17117638", name="Allied_Mantelet", mj="1", sj="1", mlvl="50-50", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[492] = { nm="N", id="17117639", name="Nail_Bomb", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[493] = { nm="N", id="17117640", name="Nail_Bomb", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[494] = { nm="N", id="17117641", name="Nail_Bomb", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[495] = { nm="N", id="17117642", name="Nail_Bomb", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[496] = { nm="N", id="17117643", name="Nail_Bomb", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[497] = { nm="N", id="17117644", name="Nail_Bomb", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[498] = { nm="N", id="17117645", name="Allied_Belfry", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[499] = { nm="N", id="17117646", name="Royal_Banneret", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[500] = { nm="N", id="17117647", name="Royal_Banneret", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[501] = { nm="N", id="17117648", name="Royal_Banneret", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[502] = { nm="N", id="17117649", name="Royal_Banneret", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[503] = { nm="N", id="17117650", name="Royal_Banneret", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[504] = { nm="N", id="17117651", name="Royal_Banneret", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[505] = { nm="N", id="17117652", name="Allied_Armored_Belfry", mj="1", sj="1", mlvl="0-0", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[506] = { nm="N", id="17117653", name="Royal_Esquire", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[507] = { nm="N", id="17117654", name="Royal_Esquire", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[508] = { nm="N", id="17117655", name="Royal_Esquire", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[509] = { nm="N", id="17117656", name="Royal_Esquire", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[510] = { nm="N", id="17117657", name="Royal_Esquire", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[511] = { nm="N", id="17117658", name="Royal_Esquire", mj="7", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[512] = { nm="N", id="17117659", name="Royal_Palliator", mj="3", sj="3", mlvl="60-60", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[513] = { nm="N", id="17117660", name="Royal_Palliator", mj="3", sj="3", mlvl="60-60", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[514] = { nm="N", id="17117661", name="Royal_Palliator", mj="3", sj="3", mlvl="60-60", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[515] = { nm="N", id="17117662", name="Royal_Palliator", mj="3", sj="3", mlvl="60-60", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[516] = { nm="N", id="17117663", name="Royal_Palliator", mj="3", sj="3", mlvl="60-60", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[517] = { nm="N", id="17117664", name="Royal_Palliator", mj="3", sj="3", mlvl="60-60", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[518] = { nm="N", id="17117665", name="Royal_Provisioner", mj="5", sj="5", mlvl="60-60", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[519] = { nm="N", id="17117666", name="Royal_Provisioner", mj="5", sj="5", mlvl="60-60", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[520] = { nm="N", id="17117667", name="Royal_Provisioner", mj="5", sj="5", mlvl="60-60", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[521] = { nm="N", id="17117668", name="Conqueror_Bakgodek", mj="7", sj="7", mlvl="60-60", aggro="A,T(S),Sc", links="Y", weak="Water", strong="", respawntime="0", items="Gold Orcmask, Ebony Log, O. Bronzepiece, M. Silverpiece, Gnole Claw", steal="" }
+	mb_data[522] = { nm="N", id="17117669", name="Steelhide_Protector", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[523] = { nm="N", id="17117670", name="Steelhide_Protector", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[524] = { nm="N", id="17117671", name="Steelhide_Protector", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[525] = { nm="N", id="17117672", name="Steelhide_Protector", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[526] = { nm="N", id="17117673", name="Steelhide_Protector", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[527] = { nm="N", id="17117674", name="Steelhide_Protector", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[528] = { nm="N", id="17117675", name="Steelhide_Protector", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[529] = { nm="N", id="17117676", name="Steelhide_Protector", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[530] = { nm="N", id="17117677", name="Steelhide_Protector", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[531] = { nm="N", id="17117678", name="One-eyed_Gwajboj", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[532] = { nm="N", id="17117679", name="Gutrender_Trooper", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[533] = { nm="N", id="17117680", name="Gutrender_Trooper", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[534] = { nm="N", id="17117681", name="Gutrender_Trooper", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[535] = { nm="N", id="17117682", name="Gutrender_Trooper", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[536] = { nm="N", id="17117683", name="Gutrender_Trooper", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[537] = { nm="N", id="17117684", name="Gutrender_Trooper", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[538] = { nm="N", id="17117685", name="Gutrender_Trooper", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[539] = { nm="N", id="17117686", name="Gutrender_Trooper", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[540] = { nm="N", id="17117687", name="Gutrender_Trooper", mj="7", sj="7", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[541] = { nm="N", id="17117688", name="Deathlord_Rojgnoj", mj="8", sj="8", mlvl="60-60", aggro="A,T(S),Sc", links="Y", weak="Water", strong="", respawntime="0", items="Absorb-DEX, Absorb-TP", steal="" }
+	mb_data[542] = { nm="N", id="17117689", name="Spinebeak_Neckchopper", mj="8", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[543] = { nm="N", id="17117690", name="Spinebeak_Neckchopper", mj="8", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[544] = { nm="N", id="17117691", name="Spinebeak_Neckchopper", mj="8", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[545] = { nm="N", id="17117692", name="Spinebeak_Neckchopper", mj="8", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[546] = { nm="N", id="17117693", name="Spinebeak_Neckchopper", mj="8", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[547] = { nm="N", id="17117694", name="Spinebeak_Neckchopper", mj="8", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[548] = { nm="N", id="17117695", name="Spinebeak_Neckchopper", mj="8", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[549] = { nm="N", id="17117696", name="Spinebeak_Neckchopper", mj="8", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[550] = { nm="N", id="17117697", name="Spinebeak_Neckchopper", mj="8", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[551] = { nm="N", id="17117698", name="Jagidbods_Warmachine", mj="1", sj="1", mlvl="60-60", aggro="A,T(S),Sc", links="Y", weak="Fire", strong="Light,Dark", respawntime="0", items="", steal="" }
+	mb_data[552] = { nm="N", id="17117699", name="Jagidbod_of_Clan_Reaper", mj="11", sj="11", mlvl="0-0", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[553] = { nm="N", id="17117700", name="Clan_Reaper_Grunt", mj="11", sj="11", mlvl="0-0", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[554] = { nm="N", id="17117701", name="Clan_Reaper_Grunt", mj="11", sj="11", mlvl="0-0", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[555] = { nm="N", id="17117702", name="Clan_Reaper_Grunt", mj="11", sj="11", mlvl="0-0", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[556] = { nm="N", id="17117703", name="Clan_Reaper_Grunt", mj="11", sj="11", mlvl="0-0", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[557] = { nm="N", id="17117704", name="Clan_Reaper_Grunt", mj="11", sj="11", mlvl="0-0", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[558] = { nm="N", id="17117705", name="Clan_Reaper_Grunt", mj="11", sj="11", mlvl="0-0", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[559] = { nm="N", id="17117706", name="Clan_Reaper_Grunt", mj="11", sj="11", mlvl="0-0", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[560] = { nm="N", id="17117707", name="Clan_Reaper_Grunt", mj="11", sj="11", mlvl="0-0", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[561] = { nm="N", id="17117708", name="Clan_Reaper_Grunt", mj="11", sj="11", mlvl="0-0", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[562] = { nm="N", id="17117709", name="Alpha_Gnole_Anders", mj="2", sj="9", mlvl="0-0", aggro="A,T(S),Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="0", items="O. Bronzepiece, Oberon's Knuckles", steal="" }
+	mb_data[563] = { nm="N", id="17117710", name="Anderss_Guard", mj="2", sj="2", mlvl="60-60", aggro="A,T(S),Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="0", items="", steal="" }
+	mb_data[564] = { nm="N", id="17117711", name="Anderss_Guard", mj="2", sj="2", mlvl="60-60", aggro="A,T(S),Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="0", items="", steal="" }
+	mb_data[565] = { nm="N", id="17117712", name="Moonfang_Warrior", mj="2", sj="2", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="0", items="Smilodon Hide, Gnole Claw, Vitality Potion", steal="" }
+	mb_data[566] = { nm="N", id="17117713", name="Moonfang_Warrior", mj="2", sj="2", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="0", items="Smilodon Hide, Gnole Claw, Vitality Potion", steal="" }
+	mb_data[567] = { nm="N", id="17117714", name="Moonfang_Warrior", mj="2", sj="2", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="0", items="Smilodon Hide, Gnole Claw, Vitality Potion", steal="" }
+	mb_data[568] = { nm="N", id="17117715", name="Moonfang_Warrior", mj="2", sj="2", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="0", items="Smilodon Hide, Gnole Claw, Vitality Potion", steal="" }
+	mb_data[569] = { nm="N", id="17117716", name="Moonfang_Warrior", mj="2", sj="2", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="0", items="Smilodon Hide, Gnole Claw, Vitality Potion", steal="" }
+	mb_data[570] = { nm="N", id="17117717", name="Moonfang_Warrior", mj="2", sj="2", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="0", items="Smilodon Hide, Gnole Claw, Vitality Potion", steal="" }
+	mb_data[571] = { nm="N", id="17117718", name="Moonfang_Warrior", mj="2", sj="2", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="0", items="Smilodon Hide, Gnole Claw, Vitality Potion", steal="" }
+	mb_data[572] = { nm="N", id="17117719", name="Moonfang_Warrior", mj="2", sj="2", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="0", items="Smilodon Hide, Gnole Claw, Vitality Potion", steal="" }
+	mb_data[573] = { nm="N", id="17117720", name="Moonfang_Warrior", mj="2", sj="2", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Fire,Light", strong="Dark,Ice", respawntime="0", items="Smilodon Hide, Gnole Claw, Vitality Potion", steal="" }
+	mb_data[574] = { nm="N", id="17117721", name="Three-eyed_Prozpuz", mj="11", sj="11", mlvl="60-60", aggro="A,T(S),Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="Beastcoin" }
+	mb_data[575] = { nm="N", id="17117722", name="Throatripper_Predator", mj="11", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[576] = { nm="N", id="17117723", name="Throatripper_Predator", mj="11", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[577] = { nm="N", id="17117724", name="Throatripper_Predator", mj="11", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[578] = { nm="N", id="17117725", name="Throatripper_Predator", mj="11", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[579] = { nm="N", id="17117726", name="Throatripper_Predator", mj="11", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[580] = { nm="N", id="17117727", name="Throatripper_Predator", mj="11", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[581] = { nm="N", id="17117728", name="Throatripper_Predator", mj="11", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[582] = { nm="N", id="17117729", name="Throatripper_Predator", mj="11", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[583] = { nm="N", id="17117730", name="Throatripper_Predator", mj="11", sj="4", mlvl="60-60", aggro="A,S,Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[584] = { nm="N", id="17117731", name="Clan_Bear_Fighter", mj="11", sj="11", mlvl="65-65", aggro="A,T(S),Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[585] = { nm="N", id="17117732", name="Clan_Bear_Fighter", mj="11", sj="11", mlvl="65-65", aggro="A,T(S),Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[586] = { nm="N", id="17117733", name="Clan_Bear_Fighter", mj="11", sj="11", mlvl="65-65", aggro="A,T(S),Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[587] = { nm="N", id="17117734", name="Clan_Bear_Fighter", mj="11", sj="11", mlvl="65-65", aggro="A,T(S),Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[588] = { nm="N", id="17117735", name="Clan_Bear_Fighter", mj="11", sj="11", mlvl="65-65", aggro="A,T(S),Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[589] = { nm="N", id="17117736", name="Clan_Bear_Fighter", mj="11", sj="11", mlvl="65-65", aggro="A,T(S),Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[590] = { nm="N", id="17117737", name="Confederate_Mantelet", mj="1", sj="1", mlvl="60-60", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[591] = { nm="N", id="17117738", name="Confederate_Mantelet", mj="1", sj="1", mlvl="60-60", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[592] = { nm="N", id="17117739", name="Confederate_Mantelet", mj="1", sj="1", mlvl="60-60", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[593] = { nm="N", id="17117740", name="Confederate_Mantelet", mj="1", sj="1", mlvl="60-60", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[594] = { nm="N", id="17117741", name="Confederate_Mantelet", mj="1", sj="1", mlvl="60-60", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[595] = { nm="N", id="17117742", name="Confederate_Mantelet", mj="1", sj="1", mlvl="60-60", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[596] = { nm="N", id="17117743", name="Iron_Bomb", mj="1", sj="1", mlvl="60-60", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[597] = { nm="N", id="17117744", name="Iron_Bomb", mj="1", sj="1", mlvl="60-60", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[598] = { nm="N", id="17117745", name="Iron_Bomb", mj="1", sj="1", mlvl="60-60", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[599] = { nm="N", id="17117746", name="Iron_Bomb", mj="1", sj="1", mlvl="60-60", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[600] = { nm="N", id="17117747", name="Iron_Bomb", mj="1", sj="1", mlvl="60-60", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[601] = { nm="N", id="17117748", name="Iron_Bomb", mj="1", sj="1", mlvl="60-60", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[602] = { nm="N", id="17117749", name="Confederate_Belfry", mj="1", sj="1", mlvl="75-80", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[603] = { nm="N", id="17117750", name="Orcish_Strongarm", mj="2", sj="2", mlvl="75-80", aggro="A,T(S),Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[604] = { nm="N", id="17117751", name="Orcish_Strongarm", mj="2", sj="2", mlvl="75-80", aggro="A,T(S),Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[605] = { nm="N", id="17117752", name="Orcish_Strongarm", mj="2", sj="2", mlvl="75-80", aggro="A,T(S),Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[606] = { nm="N", id="17117753", name="Orcish_Strongarm", mj="2", sj="2", mlvl="75-80", aggro="A,T(S),Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[607] = { nm="N", id="17117754", name="Orcish_Strongarm", mj="2", sj="2", mlvl="75-80", aggro="A,T(S),Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[608] = { nm="N", id="17117755", name="Orcish_Strongarm", mj="2", sj="2", mlvl="75-80", aggro="A,T(S),Sc", links="Y", weak="Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[609] = { nm="N", id="17117756", name="Orcish_Turret", mj="11", sj="11", mlvl="60-60", aggro="A,S", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[610] = { nm="N", id="17117757", name="War_Smilodon", mj="1", sj="1", mlvl="60-60", aggro="A,S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[611] = { nm="N", id="17117758", name="War_Smilodon", mj="1", sj="1", mlvl="60-60", aggro="A,S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[612] = { nm="N", id="17117759", name="War_Smilodon", mj="1", sj="1", mlvl="60-60", aggro="A,S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[613] = { nm="N", id="17117760", name="War_Smilodon", mj="1", sj="1", mlvl="60-60", aggro="A,S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[614] = { nm="N", id="17117761", name="War_Smilodon", mj="1", sj="1", mlvl="60-60", aggro="A,S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[615] = { nm="N", id="17117762", name="War_Smilodon", mj="1", sj="1", mlvl="60-60", aggro="A,S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[616] = { nm="N", id="17117763", name="Fiendish_Leechkeeper", mj="20", sj="5", mlvl="60-60", aggro="A,T(S),T(H)", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[617] = { nm="N", id="17117764", name="Fiendish_Leechkeeper", mj="20", sj="5", mlvl="60-60", aggro="A,T(S),T(H)", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[618] = { nm="N", id="17117765", name="Fiendish_Leechkeeper", mj="20", sj="5", mlvl="60-60", aggro="A,T(S),T(H)", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[619] = { nm="N", id="17117766", name="Fiendish_Leechkeeper", mj="20", sj="5", mlvl="60-60", aggro="A,T(S),T(H)", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[620] = { nm="N", id="17117767", name="Fiendish_Leechkeeper", mj="20", sj="5", mlvl="60-60", aggro="A,T(S),T(H)", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[621] = { nm="N", id="17117768", name="Fiendish_Leechkeeper", mj="20", sj="5", mlvl="60-60", aggro="A,T(S),T(H)", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[622] = { nm="N", id="17117769", name="Shadowhorn", mj="2", sj="4", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Hand-to-Hand,Blunt,Light", strong="Dark", respawntime="0", items="Taurus Horn", steal="" }
+	mb_data[623] = { nm="N", id="17117770", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[624] = { nm="N", id="17117771", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[625] = { nm="N", id="17117772", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[626] = { nm="N", id="17117773", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[627] = { nm="N", id="17117774", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[628] = { nm="N", id="17117775", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[629] = { nm="N", id="17117776", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[630] = { nm="N", id="17117777", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[631] = { nm="N", id="17117778", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[632] = { nm="N", id="17117779", name="Shadowhand", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="Ogre Sickle", steal="" }
+	mb_data[633] = { nm="N", id="17117780", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[634] = { nm="N", id="17117781", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[635] = { nm="N", id="17117782", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[636] = { nm="N", id="17117783", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[637] = { nm="N", id="17117784", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[638] = { nm="N", id="17117785", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[639] = { nm="N", id="17117786", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[640] = { nm="N", id="17117787", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[641] = { nm="N", id="17117788", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[642] = { nm="N", id="17117789", name="Shadowfang", mj="15", sj="8", mlvl="60-60", aggro="A,T(S),Sc", links="Y", weak="Light", strong="", respawntime="0", items="Dread Spikes", steal="" }
+	mb_data[643] = { nm="N", id="17117790", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[644] = { nm="N", id="17117791", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[645] = { nm="N", id="17117792", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[646] = { nm="N", id="17117793", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[647] = { nm="N", id="17117794", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[648] = { nm="N", id="17117795", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[649] = { nm="N", id="17117796", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[650] = { nm="N", id="17117797", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[651] = { nm="N", id="17117798", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[652] = { nm="N", id="17117800", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[653] = { nm="N", id="17117801", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[654] = { nm="N", id="17117802", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[655] = { nm="N", id="17117803", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[656] = { nm="N", id="17117804", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[657] = { nm="N", id="17117805", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[658] = { nm="N", id="17117806", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[659] = { nm="N", id="17117807", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[660] = { nm="N", id="17117808", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[661] = { nm="N", id="17117809", name="Fortification", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[662] = { nm="N", id="17117810", name="Fortification", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[663] = { nm="N", id="17117811", name="Fortification", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[664] = { nm="N", id="17117812", name="Fortification", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[665] = { nm="N", id="17117813", name="Rikoh_Wahcondalo", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[666] = { nm="N", id="17117814", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[667] = { nm="N", id="17117815", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[668] = { nm="N", id="17117816", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[669] = { nm="N", id="17117817", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[670] = { nm="N", id="17117818", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[671] = { nm="N", id="17117819", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[672] = { nm="N", id="17117820", name="Dalzakk", mj="2", sj="2", mlvl="1-1", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[673] = { nm="N", id="17117821", name="Oggbi", mj="2", sj="2", mlvl="1-1", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[674] = { nm="N", id="17117822", name="Rainemard", mj="5", sj="5", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[675] = { nm="N", id="17117823", name="Maat", mj="2", sj="0", mlvl="1-1", aggro="S,H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[676] = { nm="N", id="17117824", name="Degenhard", mj="2", sj="2", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[677] = { nm="N", id="17117825", name="Azima", mj="4", sj="4", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[678] = { nm="N", id="17117826", name="Choh_Moui", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[679] = { nm="N", id="17117827", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[680] = { nm="N", id="17117828", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[681] = { nm="N", id="17117829", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[682] = { nm="N", id="17117830", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[683] = { nm="N", id="17117831", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[684] = { nm="N", id="17117832", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[685] = { nm="N", id="17117833", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[686] = { nm="N", id="17117834", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[687] = { nm="N", id="17117835", name="Azo", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[688] = { nm="N", id="17117836", name="Vahi", mj="1", sj="1", mlvl="1-1", aggro="H,Sc", links="N", weak="Ice,Light", strong="", respawntime="0", items="", steal="" }
+	mb_data[689] = { nm="N", id="17117837", name="Rongo-Nango", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[690] = { nm="N", id="17117838", name="Lerren", mj="1", sj="1", mlvl="1-1", aggro="S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[691] = { nm="N", id="17117839", name="Jajaro", mj="1", sj="1", mlvl="1-1", aggro="A,S", links="N", weak="Water", strong="Ice", respawntime="0", items="", steal="" }
+	mb_data[692] = { nm="N", id="17117840", name="Popochu", mj="3", sj="3", mlvl="1-1", aggro="S,Sc", links="N", weak="Wind,Lightning", strong="", respawntime="0", items="", steal="" }
+	mb_data[693] = { nm="N", id="17117841", name="Papako", mj="1", sj="1", mlvl="1-1", aggro="S,Sc", links="N", weak="Water", strong="Fire,Wind", respawntime="0", items="", steal="" }
+	mb_data[694] = { nm="N", id="17117842", name="Momowa", mj="1", sj="1", mlvl="75-80", aggro="H", links="N", weak="Piercing,Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[695] = { nm="N", id="17117843", name="Ulla", mj="1", sj="1", mlvl="60-60", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[696] = { nm="N", id="17117844", name="Kilhwch", mj="7", sj="7", mlvl="60-60", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[697] = { nm="N", id="17117845", name="Alfons", mj="1", sj="1", mlvl="60-60", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[698] = { nm="N", id="17117846", name="Achtelle", mj="14", sj="14", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[699] = { nm="N", id="17117847", name="Bravo", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="Dark", strong="Light,Fire,Wind", respawntime="0", items="", steal="" }
+	mb_data[700] = { nm="N", id="17117848", name="Duskraven", mj="8", sj="4", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[701] = { nm="N", id="17117849", name="Dusk_Raider", mj="8", sj="8", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[702] = { nm="N", id="17117850", name="Dusk_Raider", mj="8", sj="8", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[703] = { nm="N", id="17117851", name="Dusk_Raider", mj="8", sj="8", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[704] = { nm="N", id="17117852", name="Dusk_Raider", mj="8", sj="8", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[705] = { nm="N", id="17117853", name="Dusk_Raider", mj="8", sj="8", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[706] = { nm="N", id="17117854", name="Areuhat", mj="7", sj="7", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[707] = { nm="N", id="17117855", name="Odzmanouk", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="Lightning,Water", strong="", respawntime="0", items="", steal="" }
+	mb_data[708] = { nm="N", id="17117856", name="Boodlix", mj="1", sj="1", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="", respawntime="0", items="", steal="" }
+	mb_data[709] = { nm="N", id="17117857", name="Goblin_Lansquenet", mj="1", sj="1", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="", respawntime="0", items="", steal="" }
+	mb_data[710] = { nm="N", id="17117858", name="Goblin_Lansquenet", mj="1", sj="1", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="", respawntime="0", items="", steal="" }
+	mb_data[711] = { nm="N", id="17117859", name="Goblin_Lansquenet", mj="1", sj="1", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Light", strong="", respawntime="0", items="", steal="" }
+	mb_data[712] = { nm="N", id="17117860", name="Titania", mj="1", sj="1", mlvl="1-1", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="0", items="", steal="" }
+	mb_data[713] = { nm="N", id="17117861", name="Faerie", mj="1", sj="1", mlvl="77-80", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="0", items="", steal="" }
+	mb_data[714] = { nm="N", id="17117862", name="Faerie", mj="1", sj="1", mlvl="77-80", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="0", items="", steal="" }
+	mb_data[715] = { nm="N", id="17117863", name="Faerie", mj="1", sj="1", mlvl="77-80", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="0", items="", steal="" }
+	mb_data[716] = { nm="N", id="17117864", name="Faerie", mj="1", sj="1", mlvl="77-80", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="0", items="", steal="" }
+	mb_data[717] = { nm="N", id="17117865", name="Faerie", mj="1", sj="1", mlvl="77-80", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="0", items="", steal="" }
+	mb_data[718] = { nm="N", id="17117866", name="Faerie", mj="1", sj="1", mlvl="77-80", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="0", items="", steal="" }
+	mb_data[719] = { nm="N", id="17117867", name="Faerie", mj="1", sj="1", mlvl="77-80", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="0", items="", steal="" }
+	mb_data[720] = { nm="N", id="17117868", name="Faerie", mj="1", sj="1", mlvl="77-80", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="0", items="", steal="" }
+	mb_data[721] = { nm="N", id="17117869", name="Faerie", mj="1", sj="1", mlvl="77-80", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="0", items="", steal="" }
+	mb_data[722] = { nm="N", id="17117870", name="Babban_Ny_Mheillea", mj="2", sj="2", mlvl="0-0", aggro="H", links="N", weak="Piercing,Fire,Ice,Wind,Lightning,Dark", strong="", respawntime="0", items="", steal="" }
+	mb_data[723] = { nm="N", id="17117871", name="Abenzio", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Fire,Dark", strong="", respawntime="0", items="", steal="" }
+	mb_data[724] = { nm="N", id="17117872", name="Bryher", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="N", weak="Fire", strong="Water,Dark", respawntime="0", items="", steal="" }
+	mb_data[725] = { nm="N", id="17117873", name="Camlin", mj="1", sj="1", mlvl="60-60", aggro="H", links="N", weak="Ice", strong="Water,Light,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[726] = { nm="N", id="17117874", name="Darach", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Fire,Dark", strong="", respawntime="0", items="", steal="" }
+	mb_data[727] = { nm="N", id="17117876", name="Ancient_Royal_Knight", mj="1", sj="1", mlvl="0-0", aggro="A,T(H),HP", links="Y", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="0", items="", steal="" }
+	mb_data[728] = { nm="N", id="17117877", name="Ancient_Royal_Knight", mj="1", sj="1", mlvl="0-0", aggro="A,T(H),HP", links="Y", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="0", items="", steal="" }
+	mb_data[729] = { nm="N", id="17117878", name="Ancient_Royal_Knight", mj="1", sj="1", mlvl="0-0", aggro="A,T(H),HP", links="Y", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="0", items="", steal="" }
+	mb_data[730] = { nm="N", id="17117879", name="Ancient_Royal_Knight", mj="1", sj="1", mlvl="0-0", aggro="A,T(H),HP", links="Y", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="0", items="", steal="" }
+	mb_data[731] = { nm="N", id="17117880", name="Eurytos", mj="11", sj="1", mlvl="1-1", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[732] = { nm="N", id="17117881", name="Gigas_Mercenary", mj="11", sj="11", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[733] = { nm="N", id="17117882", name="Gigas_Mercenary", mj="11", sj="11", mlvl="1-1", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[734] = { nm="N", id="17117883", name="Poroggo_Prince", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Lightning", strong="Water,Light,Ice,Earth", respawntime="0", items="", steal="" }
+	mb_data[735] = { nm="N", id="17117884", name="Poroggo_Servant", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Lightning", strong="Water,Light,Ice,Earth", respawntime="0", items="", steal="" }
+	mb_data[736] = { nm="N", id="17117885", name="Poroggo_Servant", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Lightning", strong="Water,Light,Ice,Earth", respawntime="0", items="", steal="" }
+	mb_data[737] = { nm="N", id="17117886", name="Poroggo_Servant", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Lightning", strong="Water,Light,Ice,Earth", respawntime="0", items="", steal="" }
+	mb_data[738] = { nm="N", id="17117887", name="Kaiser_Behemoth", mj="1", sj="1", mlvl="1-1", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[739] = { nm="N", id="17117888", name="Ferreous_Coffin", mj="3", sj="3", mlvl="1-1", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[740] = { nm="N", id="17117889", name="Lewenhart", mj="10", sj="10", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[741] = { nm="N", id="17117890", name="Auroral_Alicorn", mj="1", sj="1", mlvl="1-1", aggro="S,H,Assists,???", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[742] = { nm="N", id="17117893", name="Gaunab", mj="4", sj="4", mlvl="98-99", aggro="A,S", links="N", weak="Ice,Lightning,Dark", strong="", respawntime="0", items="", steal="" }
+	mb_data[743] = { nm="N", id="17141773", name="Air_Elemental", mj="4", sj="5", mlvl="45-45", aggro="A,M", links="N", weak="Ice", strong="Melee,Wind,Earth", respawntime="300", items="Wind Cluster", steal="" }
+	mb_data[744] = { nm="N", id="17141996", name="Air_Elemental", mj="4", sj="5", mlvl="45-45", aggro="A,M", links="N", weak="Ice", strong="Melee,Wind,Earth", respawntime="300", items="Wind Cluster", steal="" }
+	mb_data[745] = { nm="N", id="17142004", name="Air_Elemental", mj="4", sj="5", mlvl="45-45", aggro="A,M", links="N", weak="Ice", strong="Melee,Wind,Earth", respawntime="300", items="Wind Cluster", steal="" }
+	mb_data[746] = { nm="N", id="17142016", name="Air_Elemental", mj="4", sj="5", mlvl="45-45", aggro="A,M", links="N", weak="Ice", strong="Melee,Wind,Earth", respawntime="300", items="Wind Cluster", steal="" }
+	mb_data[747] = { nm="N", id="17145897", name="Goblin_Flagman", mj="5", sj="5", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[748] = { nm="N", id="17145905", name="Goblin_Flagman", mj="5", sj="5", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[749] = { nm="N", id="17145912", name="Goblin_Flagman", mj="5", sj="5", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[750] = { nm="N", id="17145919", name="Goblin_Flagman", mj="5", sj="5", mlvl="66-69", aggro="A,S", links="Y", weak="Light", strong="", respawntime="300", items="Goblin Armor, Goblin Mask, Bottled Pixie", steal="Gold Beastcoin" }
+	mb_data[751] = { nm="N", id="17170501", name="Air_Elemental", mj="4", sj="5", mlvl="45-45", aggro="A,M", links="N", weak="Ice", strong="Melee,Wind,Earth", respawntime="300", items="Wind Cluster", steal="" }
+	mb_data[752] = { nm="N", id="17216029", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[753] = { nm="N", id="17216030", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[754] = { nm="N", id="17216031", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[755] = { nm="N", id="17216032", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[756] = { nm="N", id="17216033", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[757] = { nm="N", id="17216034", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[758] = { nm="N", id="17216035", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[759] = { nm="N", id="17216036", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[760] = { nm="N", id="17216037", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[761] = { nm="N", id="17216038", name="Chigoe", mj="6", sj="6", mlvl="53-56", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="300", items="Chimera Blood, Demon Blood", steal="" }
+	mb_data[762] = { nm="N", id="17469444", name="Bloodsucker", mj="1", sj="1", mlvl="60-65", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="0", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby", steal="" }
+	mb_data[763] = { nm="N", id="17469509", name="Bloodsucker", mj="1", sj="1", mlvl="60-65", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="0", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby", steal="" }
+	mb_data[764] = { nm="N", id="17469510", name="Bloodsucker", mj="1", sj="1", mlvl="60-65", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="0", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby", steal="" }
+	mb_data[765] = { nm="N", id="17469536", name="Bloodsucker", mj="1", sj="1", mlvl="60-65", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="0", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby", steal="" }
+	mb_data[766] = { nm="N", id="17469537", name="Bloodsucker", mj="1", sj="1", mlvl="60-65", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="0", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby", steal="" }
+	mb_data[767] = { nm="N", id="17469592", name="Bloodsucker", mj="1", sj="1", mlvl="60-65", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="0", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby", steal="" }
+	mb_data[768] = { nm="N", id="17469593", name="Bloodsucker", mj="1", sj="1", mlvl="60-65", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="0", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby", steal="" }
+	mb_data[769] = { nm="N", id="17469594", name="Bloodsucker", mj="1", sj="1", mlvl="60-65", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="0", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby", steal="" }
+	mb_data[770] = { nm="N", id="17469595", name="Bloodsucker", mj="1", sj="1", mlvl="60-65", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="0", items="Fiend Blood, Beastman Blood, Carbuncle's Ruby", steal="" }
 
 	return mb_data;
