@@ -1,109 +1,106 @@
 --[[
- *  Zone	:: Leujaoam_Sanctum
- *  ZoneID	:: 69
- *  Total	:: 99
+ *	Zone	::	Leujaoam_Sanctum
+ *	ZoneID	::	69
+ *	Total	::	99
 ]]--
-
 	mb_data = {}
-
-	mb_data[1] = { nm="N", id="17059841", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", aggro="H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[2] = { nm="N", id="17059842", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", aggro="H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[3] = { nm="N", id="17059843", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", aggro="H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[4] = { nm="N", id="17059844", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", aggro="H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[5] = { nm="N", id="17059845", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", aggro="H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[6] = { nm="N", id="17059846", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", aggro="H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[7] = { nm="N", id="17059847", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", aggro="H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[8] = { nm="N", id="17059848", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", aggro="H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[9] = { nm="N", id="17059849", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", aggro="H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[10] = { nm="N", id="17059850", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", aggro="H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[11] = { nm="N", id="17059851", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", aggro="H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[12] = { nm="N", id="17059852", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", aggro="H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[13] = { nm="N", id="17059853", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", aggro="H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[14] = { nm="N", id="17059854", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", aggro="H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[15] = { nm="N", id="17059855", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", aggro="H", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[16] = { nm="N", id="17059856", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", aggro="S,Sc", links="N", weak="Wind", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[17] = { nm="N", id="17059857", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", aggro="S,Sc", links="N", weak="Wind", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[18] = { nm="N", id="17059858", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", aggro="S,Sc", links="N", weak="Wind", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[19] = { nm="N", id="17059859", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", aggro="S,Sc", links="N", weak="Wind", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[20] = { nm="N", id="17059860", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", aggro="S,Sc", links="N", weak="Wind", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[21] = { nm="N", id="17059861", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", aggro="S,Sc", links="N", weak="Wind", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[22] = { nm="N", id="17059862", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", aggro="S,Sc", links="N", weak="Wind", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[23] = { nm="N", id="17059863", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", aggro="S,Sc", links="N", weak="Wind", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[24] = { nm="N", id="17059864", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", aggro="A,T(H)", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[25] = { nm="N", id="17059865", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", aggro="A,T(H)", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[26] = { nm="N", id="17059866", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", aggro="A,T(H)", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[27] = { nm="N", id="17059867", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", aggro="A,T(H)", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[28] = { nm="N", id="17059868", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", aggro="A,T(H)", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[29] = { nm="N", id="17059869", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", aggro="A,T(H)", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[30] = { nm="N", id="17059870", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", aggro="A,T(H)", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[31] = { nm="N", id="17059871", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", aggro="A,T(H)", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[32] = { nm="N", id="17059872", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", aggro="A,T(H)", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[33] = { nm="N", id="17059873", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", aggro="A,T(H)", links="Y", weak="Wind,Light", strong="Earth", respawntime="0", items="", steal="" }
-	mb_data[34] = { nm="N", id="17059936", name="Imp", mj="4", sj="4", mlvl="75-79", aggro="A,T(S),H", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
-	mb_data[35] = { nm="N", id="17059937", name="Imp", mj="4", sj="4", mlvl="75-79", aggro="A,T(S),H", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
-	mb_data[36] = { nm="N", id="17059938", name="Imp", mj="4", sj="4", mlvl="75-79", aggro="A,T(S),H", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
-	mb_data[37] = { nm="N", id="17059939", name="Imp", mj="4", sj="4", mlvl="75-79", aggro="A,T(S),H", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
-	mb_data[38] = { nm="N", id="17059940", name="Imp", mj="4", sj="4", mlvl="75-79", aggro="A,T(S),H", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
-	mb_data[39] = { nm="N", id="17059941", name="Imp", mj="4", sj="4", mlvl="75-79", aggro="A,T(S),H", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
-	mb_data[40] = { nm="N", id="17059942", name="Imp", mj="4", sj="4", mlvl="75-79", aggro="A,T(S),H", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
-	mb_data[41] = { nm="N", id="17059943", name="Imp", mj="4", sj="4", mlvl="75-79", aggro="A,T(S),H", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
-	mb_data[42] = { nm="N", id="17059944", name="Imp", mj="4", sj="4", mlvl="75-79", aggro="A,T(S),H", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
-	mb_data[43] = { nm="N", id="17059945", name="Imp", mj="4", sj="4", mlvl="75-79", aggro="A,T(S),H", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
-	mb_data[44] = { nm="N", id="17059946", name="Gasharyad", mj="16", sj="16", mlvl="75-75", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
-	mb_data[45] = { nm="N", id="17059947", name="Salimuhl", mj="1", sj="1", mlvl="75-75", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
-	mb_data[46] = { nm="N", id="17059958", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[47] = { nm="N", id="17059959", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[48] = { nm="N", id="17059960", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[49] = { nm="N", id="17059961", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[50] = { nm="N", id="17059962", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[51] = { nm="N", id="17059963", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[52] = { nm="N", id="17059964", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[53] = { nm="N", id="17059965", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[54] = { nm="N", id="17059966", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[55] = { nm="N", id="17059967", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[56] = { nm="N", id="17059968", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[57] = { nm="N", id="17059969", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[58] = { nm="N", id="17059970", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[59] = { nm="N", id="17059971", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[60] = { nm="N", id="17059972", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[61] = { nm="N", id="17059973", name="Kusa", mj="13", sj="13", mlvl="76-77", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[62] = { nm="N", id="17059974", name="Saizo", mj="13", sj="13", mlvl="79-80", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[63] = { nm="N", id="17059975", name="Oko", mj="13", sj="13", mlvl="79-80", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[64] = { nm="N", id="17059976", name="Danzo", mj="13", sj="13", mlvl="79-80", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[65] = { nm="N", id="17059977", name="Kudagitsune", mj="4", sj="4", mlvl="76-77", aggro="A,H,HP", links="N", weak="Fire,Lightning,Light", strong="Melee,Ice,Dark", respawntime="0", items="", steal="" }
-	mb_data[66] = { nm="N", id="17059978", name="Kudagitsune", mj="4", sj="4", mlvl="76-77", aggro="A,H,HP", links="N", weak="Fire,Lightning,Light", strong="Melee,Ice,Dark", respawntime="0", items="", steal="" }
-	mb_data[67] = { nm="N", id="17059979", name="Kudagitsune", mj="4", sj="4", mlvl="76-77", aggro="A,H,HP", links="N", weak="Fire,Lightning,Light", strong="Melee,Ice,Dark", respawntime="0", items="", steal="" }
-	mb_data[68] = { nm="N", id="17059980", name="Kudagitsune", mj="4", sj="4", mlvl="76-77", aggro="A,H,HP", links="N", weak="Fire,Lightning,Light", strong="Melee,Ice,Dark", respawntime="0", items="", steal="" }
-	mb_data[69] = { nm="N", id="17059981", name="Kudagitsune", mj="4", sj="4", mlvl="76-77", aggro="A,H,HP", links="N", weak="Fire,Lightning,Light", strong="Melee,Ice,Dark", respawntime="0", items="", steal="" }
-	mb_data[70] = { nm="N", id="17059982", name="Kudagitsune", mj="4", sj="4", mlvl="76-77", aggro="A,H,HP", links="N", weak="Fire,Lightning,Light", strong="Melee,Ice,Dark", respawntime="0", items="", steal="" }
-	mb_data[71] = { nm="N", id="17059983", name="Kudagitsune", mj="4", sj="4", mlvl="76-77", aggro="A,H,HP", links="N", weak="Fire,Lightning,Light", strong="Melee,Ice,Dark", respawntime="0", items="", steal="" }
-	mb_data[72] = { nm="N", id="17059984", name="Shailham", mj="1", sj="1", mlvl="75-75", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[73] = { nm="N", id="17059985", name="Dhiadjhar", mj="1", sj="1", mlvl="75-75", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[74] = { nm="N", id="17059986", name="Zhadjaraf", mj="1", sj="1", mlvl="75-75", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[75] = { nm="N", id="17059987", name="Ganmuul", mj="1", sj="1", mlvl="75-75", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[76] = { nm="N", id="17059988", name="Jalyaat", mj="1", sj="1", mlvl="75-75", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[77] = { nm="N", id="17059989", name="Rahdjab", mj="1", sj="1", mlvl="75-75", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[78] = { nm="N", id="17059990", name="Ghahnis", mj="1", sj="1", mlvl="75-75", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[79] = { nm="N", id="17059991", name="Tahbmar", mj="1", sj="1", mlvl="75-75", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[80] = { nm="N", id="17059992", name="Rhushouf", mj="1", sj="1", mlvl="75-75", aggro="S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[81] = { nm="N", id="17059993", name="Raubahn_redvsbl", mj="16", sj="16", mlvl="76-78", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[82] = { nm="N", id="17059994", name="Ghayaraan", mj="16", sj="16", mlvl="75-75", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[83] = { nm="N", id="17059995", name="Krinahal", mj="16", sj="16", mlvl="75-75", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[84] = { nm="N", id="17059996", name="Varajahl", mj="16", sj="16", mlvl="75-75", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[85] = { nm="N", id="17059997", name="Mareyamad", mj="16", sj="16", mlvl="75-75", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[86] = { nm="N", id="17059998", name="Shayaam", mj="16", sj="16", mlvl="75-75", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[87] = { nm="N", id="17059999", name="Habraheem", mj="16", sj="16", mlvl="75-75", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[88] = { nm="N", id="17060000", name="Qudeen", mj="16", sj="16", mlvl="75-75", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[89] = { nm="N", id="17060001", name="Salyhaar", mj="16", sj="16", mlvl="75-0", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[90] = { nm="N", id="17060002", name="Sharayaan", mj="16", sj="16", mlvl="75-75", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[91] = { nm="N", id="17060003", name="Ubdeen", mj="16", sj="16", mlvl="75-75", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[92] = { nm="N", id="17060004", name="Bashdeel", mj="16", sj="16", mlvl="75-75", aggro="A,S", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[93] = { nm="N", id="17060005", name="Wharadi", mj="16", sj="16", mlvl="75-75", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[94] = { nm="N", id="17060006", name="Hkadouf", mj="16", sj="16", mlvl="75-75", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[95] = { nm="N", id="17060007", name="Afrhaad", mj="16", sj="16", mlvl="75-75", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[96] = { nm="N", id="17060008", name="Nareema", mj="16", sj="16", mlvl="75-75", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[97] = { nm="N", id="17060009", name="Udhaaman", mj="16", sj="16", mlvl="75-75", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[98] = { nm="N", id="17060010", name="Yhalbin", mj="16", sj="16", mlvl="75-75", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[99] = { nm="N", id="17060011", name="Count_Dracula", mj="8", sj="8", mlvl="78-80", aggro="A,T(H),HP", links="N", weak="", strong="Dark,Ice,Wind,Earth,Fire,Lightning,Water,Light", respawntime="0", items="", steal="" }
-
+	mb_data[1] = { nm="N", id="17060007", name="Afrhaad", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[2] = { nm="N", id="17060004", name="Bashdeel", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="S", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[3] = { nm="N", id="17060011", name="Count_Dracula", mj="8", sj="8", mlvl="78-80", behavior="0", aggro="A,T(H),HP", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="Magic", note="" }
+	mb_data[4] = { nm="N", id="17059976", name="Danzo", mj="13", sj="13", mlvl="79-80", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[5] = { nm="N", id="17059985", name="Dhiadjhar", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="S", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[6] = { nm="N", id="17059987", name="Ganmuul", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="S", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[7] = { nm="N", id="17059946", name="Gasharyad", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="S", links="N", spawntype="0", respawntime="1", items="", steal="", weak="", strong="", note="" }
+	mb_data[8] = { nm="N", id="17059990", name="Ghahnis", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="S", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[9] = { nm="N", id="17059994", name="Ghayaraan", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[10] = { nm="N", id="17059999", name="Habraheem", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[11] = { nm="N", id="17060006", name="Hkadouf", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[12] = { nm="N", id="17059938", name="Imp", mj="4", sj="4", mlvl="75-79", behavior="0", aggro="S,H", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Pierce,Fire,Ice,Earth,Lightning,Water,Light", strong="Wind,Dark", note="" }
+	mb_data[13] = { nm="N", id="17059937", name="Imp", mj="4", sj="4", mlvl="75-79", behavior="0", aggro="S,H", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Pierce,Fire,Ice,Earth,Lightning,Water,Light", strong="Wind,Dark", note="" }
+	mb_data[14] = { nm="N", id="17059936", name="Imp", mj="4", sj="4", mlvl="75-79", behavior="0", aggro="S,H", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Pierce,Fire,Ice,Earth,Lightning,Water,Light", strong="Wind,Dark", note="" }
+	mb_data[15] = { nm="N", id="17059939", name="Imp", mj="4", sj="4", mlvl="75-79", behavior="0", aggro="S,H", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Pierce,Fire,Ice,Earth,Lightning,Water,Light", strong="Wind,Dark", note="" }
+	mb_data[16] = { nm="N", id="17059940", name="Imp", mj="4", sj="4", mlvl="75-79", behavior="0", aggro="S,H", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Pierce,Fire,Ice,Earth,Lightning,Water,Light", strong="Wind,Dark", note="" }
+	mb_data[17] = { nm="N", id="17059941", name="Imp", mj="4", sj="4", mlvl="75-79", behavior="0", aggro="S,H", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Pierce,Fire,Ice,Earth,Lightning,Water,Light", strong="Wind,Dark", note="" }
+	mb_data[18] = { nm="N", id="17059943", name="Imp", mj="4", sj="4", mlvl="75-79", behavior="0", aggro="S,H", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Pierce,Fire,Ice,Earth,Lightning,Water,Light", strong="Wind,Dark", note="" }
+	mb_data[19] = { nm="N", id="17059944", name="Imp", mj="4", sj="4", mlvl="75-79", behavior="0", aggro="S,H", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Pierce,Fire,Ice,Earth,Lightning,Water,Light", strong="Wind,Dark", note="" }
+	mb_data[20] = { nm="N", id="17059945", name="Imp", mj="4", sj="4", mlvl="75-79", behavior="0", aggro="S,H", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Pierce,Fire,Ice,Earth,Lightning,Water,Light", strong="Wind,Dark", note="" }
+	mb_data[21] = { nm="N", id="17059942", name="Imp", mj="4", sj="4", mlvl="75-79", behavior="0", aggro="S,H", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Pierce,Fire,Ice,Earth,Lightning,Water,Light", strong="Wind,Dark", note="" }
+	mb_data[22] = { nm="N", id="17059988", name="Jalyaat", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="S", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[23] = { nm="N", id="17059995", name="Krinahal", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[24] = { nm="N", id="17059981", name="Kudagitsune", mj="4", sj="4", mlvl="76-77", behavior="0", aggro="H,HP", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Wind,Lightning,Water,Light", strong="Physical,Ice,Dark", note="" }
+	mb_data[25] = { nm="N", id="17059983", name="Kudagitsune", mj="4", sj="4", mlvl="76-77", behavior="0", aggro="H,HP", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Wind,Lightning,Water,Light", strong="Physical,Ice,Dark", note="" }
+	mb_data[26] = { nm="N", id="17059982", name="Kudagitsune", mj="4", sj="4", mlvl="76-77", behavior="0", aggro="H,HP", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Wind,Lightning,Water,Light", strong="Physical,Ice,Dark", note="" }
+	mb_data[27] = { nm="N", id="17059977", name="Kudagitsune", mj="4", sj="4", mlvl="76-77", behavior="0", aggro="H,HP", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Wind,Lightning,Water,Light", strong="Physical,Ice,Dark", note="" }
+	mb_data[28] = { nm="N", id="17059978", name="Kudagitsune", mj="4", sj="4", mlvl="76-77", behavior="0", aggro="H,HP", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Wind,Lightning,Water,Light", strong="Physical,Ice,Dark", note="" }
+	mb_data[29] = { nm="N", id="17059980", name="Kudagitsune", mj="4", sj="4", mlvl="76-77", behavior="0", aggro="H,HP", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Wind,Lightning,Water,Light", strong="Physical,Ice,Dark", note="" }
+	mb_data[30] = { nm="N", id="17059979", name="Kudagitsune", mj="4", sj="4", mlvl="76-77", behavior="0", aggro="H,HP", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Wind,Lightning,Water,Light", strong="Physical,Ice,Dark", note="" }
+	mb_data[31] = { nm="N", id="17059971", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[32] = { nm="N", id="17059970", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[33] = { nm="N", id="17059973", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[34] = { nm="N", id="17059960", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[35] = { nm="N", id="17059972", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[36] = { nm="N", id="17059969", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[37] = { nm="N", id="17059968", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[38] = { nm="N", id="17059967", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[39] = { nm="N", id="17059966", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[40] = { nm="N", id="17059965", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[41] = { nm="N", id="17059964", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[42] = { nm="N", id="17059963", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[43] = { nm="N", id="17059962", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[44] = { nm="N", id="17059961", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[45] = { nm="N", id="17059959", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[46] = { nm="N", id="17059958", name="Kusa", mj="13", sj="13", mlvl="76-77", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[47] = { nm="N", id="17059849", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", behavior="0", aggro="H", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[48] = { nm="N", id="17059853", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", behavior="0", aggro="H", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[49] = { nm="N", id="17059843", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", behavior="0", aggro="H", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[50] = { nm="N", id="17059842", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", behavior="0", aggro="H", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[51] = { nm="N", id="17059845", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", behavior="0", aggro="H", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[52] = { nm="N", id="17059850", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", behavior="0", aggro="H", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[53] = { nm="N", id="17059855", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", behavior="0", aggro="H", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[54] = { nm="N", id="17059854", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", behavior="0", aggro="H", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[55] = { nm="N", id="17059841", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", behavior="0", aggro="H", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[56] = { nm="N", id="17059852", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", behavior="0", aggro="H", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[57] = { nm="N", id="17059851", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", behavior="0", aggro="H", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[58] = { nm="N", id="17059846", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", behavior="0", aggro="H", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[59] = { nm="N", id="17059847", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", behavior="0", aggro="H", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[60] = { nm="N", id="17059848", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", behavior="0", aggro="H", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[61] = { nm="N", id="17059844", name="Leujaoam_Worm", mj="4", sj="5", mlvl="76-78", behavior="0", aggro="H", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[62] = { nm="N", id="17059997", name="Mareyamad", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[63] = { nm="N", id="17059867", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", behavior="0", aggro="A,T(H)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[64] = { nm="N", id="17059871", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", behavior="0", aggro="A,T(H)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[65] = { nm="N", id="17059870", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", behavior="0", aggro="A,T(H)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[66] = { nm="N", id="17059869", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", behavior="0", aggro="A,T(H)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[67] = { nm="N", id="17059873", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", behavior="0", aggro="A,T(H)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[68] = { nm="N", id="17059866", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", behavior="0", aggro="A,T(H)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[69] = { nm="N", id="17059865", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", behavior="0", aggro="A,T(H)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[70] = { nm="N", id="17059864", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", behavior="0", aggro="A,T(H)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[71] = { nm="N", id="17059868", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", behavior="0", aggro="A,T(H)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[72] = { nm="N", id="17059872", name="Mineral_Eater", mj="4", sj="5", mlvl="77-78", behavior="0", aggro="A,T(H)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Lightning,Water,Light", strong="Earth", note="" }
+	mb_data[73] = { nm="N", id="17060008", name="Nareema", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[74] = { nm="N", id="17059975", name="Oko", mj="13", sj="13", mlvl="79-80", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[75] = { nm="N", id="17059862", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", behavior="0", aggro="S,SC", links="N", spawntype="0", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Water,Light", strong="Earth", note="" }
+	mb_data[76] = { nm="N", id="17059863", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", behavior="0", aggro="S,SC", links="N", spawntype="0", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Water,Light", strong="Earth", note="" }
+	mb_data[77] = { nm="N", id="17059861", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", behavior="0", aggro="S,SC", links="N", spawntype="0", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Water,Light", strong="Earth", note="" }
+	mb_data[78] = { nm="N", id="17059856", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", behavior="0", aggro="S,SC", links="N", spawntype="0", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Water,Light", strong="Earth", note="" }
+	mb_data[79] = { nm="N", id="17059860", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", behavior="0", aggro="S,SC", links="N", spawntype="0", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Water,Light", strong="Earth", note="" }
+	mb_data[80] = { nm="N", id="17059859", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", behavior="0", aggro="S,SC", links="N", spawntype="0", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Water,Light", strong="Earth", note="" }
+	mb_data[81] = { nm="N", id="17059858", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", behavior="0", aggro="S,SC", links="N", spawntype="0", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Water,Light", strong="Earth", note="" }
+	mb_data[82] = { nm="N", id="17059857", name="Qiqirn_Miner", mj="6", sj="6", mlvl="0-0", behavior="0", aggro="S,SC", links="N", spawntype="0", respawntime="0", items="", steal="", weak="Fire,Ice,Wind,Water,Light", strong="Earth", note="" }
+	mb_data[83] = { nm="N", id="17060000", name="Qudeen", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[84] = { nm="N", id="17059989", name="Rahdjab", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="S", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[85] = { nm="N", id="17059993", name="Raubahn", mj="16", sj="16", mlvl="76-78", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[86] = { nm="N", id="17059992", name="Rhushouf", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="S", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[87] = { nm="N", id="17059974", name="Saizo", mj="13", sj="13", mlvl="79-80", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[88] = { nm="N", id="17059947", name="Salimuhl", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="S", links="N", spawntype="0", respawntime="1", items="", steal="", weak="", strong="", note="" }
+	mb_data[89] = { nm="N", id="17060001", name="Salyhaar", mj="16", sj="16", mlvl="75-0", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[90] = { nm="N", id="17059984", name="Shailham", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="S", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[91] = { nm="N", id="17060002", name="Sharayaan", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[92] = { nm="N", id="17059998", name="Shayaam", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[93] = { nm="N", id="17059991", name="Tahbmar", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="S", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[94] = { nm="N", id="17060003", name="Ubdeen", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[95] = { nm="N", id="17060009", name="Udhaaman", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[96] = { nm="N", id="17059996", name="Varajahl", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[97] = { nm="N", id="17060005", name="Wharadi", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[98] = { nm="N", id="17060010", name="Yhalbin", mj="16", sj="16", mlvl="75-75", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[99] = { nm="N", id="17059986", name="Zhadjaraf", mj="1", sj="1", mlvl="75-75", behavior="0", aggro="S", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
 	return mb_data;

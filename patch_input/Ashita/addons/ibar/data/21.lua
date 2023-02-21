@@ -1,25 +1,76 @@
 --[[
- *  Zone	:: Spire_of_Mea
- *  ZoneID	:: 21
- *  Total	:: 15
+ *	Zone	::	Spire_of_Mea
+ *	ZoneID	::	21
+ *	Total	::	69
 ]]--
-
 	mb_data = {}
-
-	mb_data[1] = { nm="N", id="16863233", name="Delver", mj="1", sj="1", mlvl="37-38", aggro="A,T(S),Sc", links="N", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[2] = { nm="N", id="16863234", name="Delver", mj="1", sj="1", mlvl="37-38", aggro="A,T(S),Sc", links="N", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[3] = { nm="N", id="16863235", name="Delver", mj="1", sj="1", mlvl="37-38", aggro="A,T(S),Sc", links="N", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[4] = { nm="N", id="16863236", name="Envier", mj="1", sj="1", mlvl="30-30", aggro="A,T(S),Sc", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[5] = { nm="N", id="16863237", name="Seether", mj="1", sj="1", mlvl="30-30", aggro="A,T(S),T(H),Sc", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[6] = { nm="N", id="16863238", name="Seether", mj="1", sj="1", mlvl="30-30", aggro="A,T(S),T(H),Sc", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[7] = { nm="N", id="16863239", name="Seether", mj="1", sj="1", mlvl="30-30", aggro="A,T(S),T(H),Sc", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[8] = { nm="N", id="16863241", name="Envier", mj="1", sj="1", mlvl="30-30", aggro="A,T(S),Sc", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[9] = { nm="N", id="16863242", name="Seether", mj="1", sj="1", mlvl="30-30", aggro="A,T(S),T(H),Sc", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[10] = { nm="N", id="16863243", name="Seether", mj="1", sj="1", mlvl="30-30", aggro="A,T(S),T(H),Sc", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[11] = { nm="N", id="16863244", name="Seether", mj="1", sj="1", mlvl="30-30", aggro="A,T(S),T(H),Sc", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[12] = { nm="N", id="16863246", name="Envier", mj="1", sj="1", mlvl="30-30", aggro="A,T(S),Sc", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[13] = { nm="N", id="16863247", name="Seether", mj="1", sj="1", mlvl="30-30", aggro="A,T(S),T(H),Sc", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[14] = { nm="N", id="16863248", name="Seether", mj="1", sj="1", mlvl="30-30", aggro="A,T(S),T(H),Sc", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-	mb_data[15] = { nm="N", id="16863249", name="Seether", mj="1", sj="1", mlvl="30-30", aggro="A,T(S),T(H),Sc", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
-
+	mb_data[1] = { nm="Y", id="16863233", name="Delver", mj="1", sj="1", mlvl="37-38", behavior="0", aggro="A,T(S),SC", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[2] = { nm="Y", id="16863234", name="Delver", mj="1", sj="1", mlvl="37-38", behavior="0", aggro="A,T(S),SC", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[3] = { nm="Y", id="16863235", name="Delver", mj="1", sj="1", mlvl="37-38", behavior="0", aggro="A,T(S),SC", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[4] = { nm="N", id="16863236", name="Envier", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(S),SC", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[5] = { nm="N", id="16863246", name="Envier", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(S),SC", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[6] = { nm="N", id="16863241", name="Envier", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(S),SC", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[7] = { nm="N", id="16863271", name="Forsaken_Baelfyr", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[8] = { nm="N", id="16863253", name="Forsaken_Baelfyr", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[9] = { nm="N", id="16863289", name="Forsaken_Baelfyr", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[10] = { nm="N", id="16863256", name="Forsaken_Byrgen", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[11] = { nm="N", id="16863292", name="Forsaken_Byrgen", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[12] = { nm="N", id="16863274", name="Forsaken_Byrgen", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[13] = { nm="N", id="16863290", name="Forsaken_Gefyrst", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[14] = { nm="N", id="16863272", name="Forsaken_Gefyrst", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[15] = { nm="N", id="16863254", name="Forsaken_Gefyrst", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[16] = { nm="N", id="16863273", name="Forsaken_Ungeweder", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[17] = { nm="N", id="16863291", name="Forsaken_Ungeweder", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[18] = { nm="N", id="16863255", name="Forsaken_Ungeweder", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[19] = { nm="N", id="16863270", name="Quenchless_Craver", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[20] = { nm="N", id="16863252", name="Quenchless_Craver", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[21] = { nm="N", id="16863288", name="Quenchless_Craver", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[22] = { nm="N", id="16863283", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[23] = { nm="N", id="16863284", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[24] = { nm="N", id="16863282", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[25] = { nm="N", id="16863280", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[26] = { nm="N", id="16863279", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[27] = { nm="N", id="16863285", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[28] = { nm="N", id="16863278", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[29] = { nm="N", id="16863281", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[30] = { nm="N", id="16863286", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[31] = { nm="N", id="16863295", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[32] = { nm="N", id="16863303", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[33] = { nm="N", id="16863302", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[34] = { nm="N", id="16863301", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[35] = { nm="N", id="16863300", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[36] = { nm="N", id="16863299", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[37] = { nm="N", id="16863298", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[38] = { nm="N", id="16863297", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[39] = { nm="N", id="16863296", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[40] = { nm="N", id="16863294", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[41] = { nm="N", id="16863293", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[42] = { nm="N", id="16863304", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[43] = { nm="N", id="16863277", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[44] = { nm="N", id="16863257", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[45] = { nm="N", id="16863258", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[46] = { nm="N", id="16863259", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[47] = { nm="N", id="16863260", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[48] = { nm="N", id="16863261", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[49] = { nm="N", id="16863263", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[50] = { nm="N", id="16863264", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[51] = { nm="N", id="16863265", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[52] = { nm="N", id="16863266", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[53] = { nm="N", id="16863267", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[54] = { nm="N", id="16863268", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[55] = { nm="N", id="16863262", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[56] = { nm="N", id="16863275", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[57] = { nm="N", id="16863276", name="Quenchless_Seether", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[58] = { nm="N", id="16863287", name="Recollector", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[59] = { nm="N", id="16863251", name="Recollector", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[60] = { nm="N", id="16863269", name="Recollector", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
+	mb_data[61] = { nm="N", id="16863242", name="Seether", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(),SC", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[62] = { nm="N", id="16863238", name="Seether", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(),SC", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[63] = { nm="N", id="16863239", name="Seether", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(),SC", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[64] = { nm="N", id="16863243", name="Seether", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(),SC", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[65] = { nm="N", id="16863244", name="Seether", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(),SC", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[66] = { nm="N", id="16863247", name="Seether", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(),SC", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[67] = { nm="N", id="16863248", name="Seether", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(),SC", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[68] = { nm="N", id="16863249", name="Seether", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(),SC", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
+	mb_data[69] = { nm="N", id="16863237", name="Seether", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(),SC", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
 	return mb_data;
