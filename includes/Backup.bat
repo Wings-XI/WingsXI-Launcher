@@ -11,8 +11,8 @@ For /f "tokens=1-2 delims=/:" %%a in ("%TIME%") do (set mytime=%%a-%%b)
 
 set folder=%mydate%_%mytime%
 
-mkdir %folder%
-cd %folder%
+mkdir "%folder%"
+cd "%folder%"
 
 set params=/mir /NFL /NDL /MT:4 /S /R:2 /W:30
 robocopy %params% "..\..\SquareEnix\FINAL FANTASY XI\USER" "User"
