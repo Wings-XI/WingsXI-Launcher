@@ -22,5 +22,7 @@ timeout /t 5
 
 robocopy %params% "..\..\Ashita" "Ashita" /XF *.DAT *.PNG *.zip *.log *.7z *.wave  /XD logs
 
-echo Ashita backup complete
+echo Ashita backup complete. Now renaming any windower stub files
+powershell.exe -command "& {get-childitem %~dp0\Ashita -recurse -file | ? name -eq 'windower'} | rename-item -newname windower_old"
+
 timeout /t 5

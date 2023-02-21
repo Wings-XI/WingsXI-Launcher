@@ -74,7 +74,7 @@ local default_config =
 	layout =
 	{
 		player = ' $zone ($z_id) $name  [$level]  [$position] - $ecompass ',
-		targetNew = ' $target [$job / $level / $aggro] [ID: $id] $position  $weak  $strong  $respawn  $steal  $items ',
+		targetNew22 = ' $target [$job / $level / $aggro] [ID: $id] $position  $weak  $strong  $respawn  $steal \n $items ',
 		npc = ' $target [$position] [ID: $id / Index: $m_index] '
 	},
 	lootpools =
@@ -283,7 +283,7 @@ ashita.register_event('render', function()
 		end
 	end
 	
-	local m_target = ibar_config.layout.targetNew;
+	local m_target = ibar_config.layout.targetNew2;
 	
 		  name = string.find(m_target,'$target');
 		  zone = string.find(m_target,'$zone');
