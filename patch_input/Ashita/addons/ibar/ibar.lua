@@ -74,7 +74,7 @@ local default_config =
 	layout =
 	{
 		player = '$zone $name  [$level]  [$position] - $ecompass',
-		target = '$target  [$job / $level / $aggro]  Weak[$weak]  [$position]',
+		target = '$target  [$job / $level / $aggro] [id: $id] Weak[$weak]  [$position]',
 		npc = '$target [$position] [ID: $id / Index: $m_index]'
 	}
 };
