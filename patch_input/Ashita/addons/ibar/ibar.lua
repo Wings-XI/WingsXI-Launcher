@@ -74,7 +74,7 @@ local default_config =
 	layout =
 	{
 		player = ' $zone ($z_id) $name  [$level]  [$position] - $ecompass ',
-		targetNew22 = ' $target [$job / $level / $aggro] [ID: $id] $position  $weak  $strong  $respawn  $steal \n $items ',
+		targetNew2 = ' $target [$job / $level / $aggro] [ID: $id] $position  $weak  $strong  $respawn  $steal \n $items ',
 		npc = ' $target [$position] [ID: $id / Index: $m_index] '
 	},
 	lootpools =
