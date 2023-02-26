@@ -61,7 +61,8 @@
 /addon load barfiller
 /addon load giltracker
 /addon load expmon
-/addon load zoom
+#/addon load zoom
+/addon load xicamera
 #/addon load singlerace 
 /addon load clock
 /addon load checker
