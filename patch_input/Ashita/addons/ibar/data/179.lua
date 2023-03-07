@@ -4,9 +4,9 @@
  *	Total	::	164
 ]]--
 	mb_data = {}
-	mb_data[1] = { nm="N", id="17510415", name="Ajido-Marujido", mj="4", sj="5", mlvl="60-60", behavior="0", aggro="A,T(S,H)", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Earth", strong="", note="" }
-	mb_data[2] = { nm="N", id="17510407", name="Ajido-Marujido", mj="4", sj="5", mlvl="60-60", behavior="0", aggro="A,T(S,H)", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Earth", strong="", note="" }
-	mb_data[3] = { nm="N", id="17510411", name="Ajido-Marujido", mj="4", sj="5", mlvl="60-60", behavior="0", aggro="A,T(S,H)", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Earth", strong="", note="" }
+	mb_data[1] = { nm="N", id="17510415", name="Ajido-Marujido", mj="4", sj="5", mlvl="60-60", behavior="0", aggro="A,T(S,H)", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Earth: 1.15", strong="", note="" }
+	mb_data[2] = { nm="N", id="17510407", name="Ajido-Marujido", mj="4", sj="5", mlvl="60-60", behavior="0", aggro="A,T(S,H)", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Earth: 1.15", strong="", note="" }
+	mb_data[3] = { nm="N", id="17510411", name="Ajido-Marujido", mj="4", sj="5", mlvl="60-60", behavior="0", aggro="A,T(S,H)", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Earth: 1.15", strong="", note="" }
 	mb_data[4] = { nm="N", id="17510430", name="Ayame", mj="12", sj="12", mlvl="60-60", behavior="0", aggro="S", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
 	mb_data[5] = { nm="N", id="17510424", name="Ayame", mj="12", sj="12", mlvl="60-60", behavior="0", aggro="S", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
 	mb_data[6] = { nm="N", id="17510418", name="Ayame", mj="12", sj="12", mlvl="60-60", behavior="0", aggro="S", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
@@ -165,7 +165,7 @@
 	mb_data[159] = { nm="N", id="17510413", name="Trion", mj="7", sj="1", mlvl="60-60", behavior="0", aggro="S,H", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
 	mb_data[160] = { nm="N", id="17510409", name="Trion", mj="7", sj="1", mlvl="60-60", behavior="0", aggro="S,H", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
 	mb_data[161] = { nm="N", id="17510405", name="Trion", mj="7", sj="1", mlvl="60-60", behavior="0", aggro="S,H", links="N", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
-	mb_data[162] = { nm="N", id="17510414", name="Volker", mj="1", sj="1", mlvl="60-60", behavior="8", aggro="", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Ice", strong="", note="" }
-	mb_data[163] = { nm="N", id="17510410", name="Volker", mj="1", sj="1", mlvl="60-60", behavior="8", aggro="", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Ice", strong="", note="" }
-	mb_data[164] = { nm="N", id="17510406", name="Volker", mj="1", sj="1", mlvl="60-60", behavior="8", aggro="", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Ice", strong="", note="" }
+	mb_data[162] = { nm="N", id="17510414", name="Volker", mj="1", sj="1", mlvl="60-60", behavior="8", aggro="", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Ice: 1.15", strong="", note="" }
+	mb_data[163] = { nm="N", id="17510410", name="Volker", mj="1", sj="1", mlvl="60-60", behavior="8", aggro="", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Ice: 1.15", strong="", note="" }
+	mb_data[164] = { nm="N", id="17510406", name="Volker", mj="1", sj="1", mlvl="60-60", behavior="8", aggro="", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Ice: 1.15", strong="", note="" }
 	return mb_data;

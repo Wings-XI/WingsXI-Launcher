@@ -4,9 +4,9 @@
  *	Total	::	81
 ]]--
 	mb_data = {}
-	mb_data[1] = { nm="N", id="16846852", name="Cogitator", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Light", strong="Ice,Water,Dark", note="" }
-	mb_data[2] = { nm="N", id="16846862", name="Cogitator", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Light", strong="Ice,Water,Dark", note="" }
-	mb_data[3] = { nm="N", id="16846857", name="Cogitator", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Light", strong="Ice,Water,Dark", note="" }
+	mb_data[1] = { nm="N", id="16846852", name="Cogitator", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Light: 1.15", strong="Dark: 1.95, Water: 1.85, Ice: 1.3", note="" }
+	mb_data[2] = { nm="N", id="16846862", name="Cogitator", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Light: 1.15", strong="Dark: 1.95, Water: 1.85, Ice: 1.3", note="" }
+	mb_data[3] = { nm="N", id="16846857", name="Cogitator", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(S)", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="Light: 1.15", strong="Dark: 1.95, Water: 1.85, Ice: 1.3", note="" }
 	mb_data[4] = { nm="N", id="16846931", name="Constant_Wanderer", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
 	mb_data[5] = { nm="N", id="16846906", name="Constant_Wanderer", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
 	mb_data[6] = { nm="N", id="16846905", name="Constant_Wanderer", mj="None", sj="None", mlvl="None-None", behavior="None", aggro="", links="N", spawntype="None", respawntime="None", items="", steal="", weak="", strong="", note="" }
@@ -82,7 +82,7 @@
 	mb_data[76] = { nm="N", id="16846863", name="Weeper", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(S),SC", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
 	mb_data[77] = { nm="N", id="16846865", name="Weeper", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(S),SC", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
 	mb_data[78] = { nm="N", id="16846855", name="Weeper", mj="1", sj="1", mlvl="30-30", behavior="0", aggro="A,T(S),SC", links="Y", spawntype="128", respawntime="0", items="", steal="", weak="", strong="", note="" }
-	mb_data[79] = { nm="N", id="16846849", name="Wreaker", mj="1", sj="1", mlvl="37-38", behavior="0", aggro="A,T(S)", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Light", strong="Ice,Water,Dark", note="" }
-	mb_data[80] = { nm="N", id="16846851", name="Wreaker", mj="1", sj="1", mlvl="37-38", behavior="0", aggro="A,T(S)", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Light", strong="Ice,Water,Dark", note="" }
-	mb_data[81] = { nm="N", id="16846850", name="Wreaker", mj="1", sj="1", mlvl="37-38", behavior="0", aggro="A,T(S)", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Light", strong="Ice,Water,Dark", note="" }
+	mb_data[79] = { nm="N", id="16846849", name="Wreaker", mj="1", sj="1", mlvl="37-38", behavior="0", aggro="A,T(S)", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Light: 1.15", strong="Dark: 1.95, Water: 1.85, Ice: 1.3", note="" }
+	mb_data[80] = { nm="N", id="16846851", name="Wreaker", mj="1", sj="1", mlvl="37-38", behavior="0", aggro="A,T(S)", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Light: 1.15", strong="Dark: 1.95, Water: 1.85, Ice: 1.3", note="" }
+	mb_data[81] = { nm="N", id="16846850", name="Wreaker", mj="1", sj="1", mlvl="37-38", behavior="0", aggro="A,T(S)", links="N", spawntype="128", respawntime="0", items="", steal="", weak="Light: 1.15", strong="Dark: 1.95, Water: 1.85, Ice: 1.3", note="" }
 	return mb_data;
