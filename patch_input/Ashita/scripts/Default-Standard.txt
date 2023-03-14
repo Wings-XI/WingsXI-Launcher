@@ -34,6 +34,8 @@
 /load Packetflow
 #/load deeps
 #/addon load scoreboard
+/load statustimers
+/load hardwaremouse
 
 ##########################################################################
 # Load Common Addons
