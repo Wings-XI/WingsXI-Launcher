@@ -123,7 +123,10 @@
 
 /wait 60
 /addon load battlemod
-/addon load equipviewer
+/load equipviewer
+/equipviewer pos 800 600
+/equipviewer scale 1.2
+/equipviewer showammo on
 
 /addon load renamer
 /wait 1
