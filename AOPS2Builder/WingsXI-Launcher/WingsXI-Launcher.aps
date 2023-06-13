@@ -19,3 +19,15 @@ cachebuster_type=
 [patch_system_configuration]
 online_patch_directory=https://wingsxi.com/dl/launcher2/patch_output/
 online_patchlist_file=https://wingsxi.com/dl/launcher2/patch_output/patchlist
+update_via=Local File
+update_ini_file=
+update_local_file=version.txt
+update_reg_root=
+update_ini_group=
+update_ini_item=
+update_reg_path=
+update_reg_string=
+update_via_patch=1
+update_reg_64bit=0
+[splash]
+width=
