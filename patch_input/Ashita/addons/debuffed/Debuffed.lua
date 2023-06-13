@@ -48,7 +48,7 @@ debuffs = {
     [11] = S{258,531}, --Bind
     [12] = S{216,217,708}, --Gravity
     [13] = S{56,79,344,345,703}, --Slow
-	[19] = S{19,253,259,274,678}, --sleep2
+	[19] = S{19,98,253,259,274,678}, --sleep2
     [21] = S{286,884}, ----addle
     [28] = S{575,720,738,746}, --terror
     [31] = S{682}, --plague
@@ -274,7 +274,7 @@ function inc_action(act)
                         debuffed_mobs[target][2] = nil
                         debuffed_mobs[target][19] = nil
                     end
-				elseif T{259,274}:contains(spell) then -- Sleep II and Sleepga II
+				elseif T{98,259,274}:contains(spell) then -- Repose and Sleep II and Sleepga II
 					duration = os.clock() + 90
 					if debuffed_mobs[target] then
 						if debuffed_mobs[target][2] then
@@ -286,7 +286,7 @@ function inc_action(act)
 					end
                 elseif T{253,258,273,454,455,456,457,458,459,460,461,531,584,598,610,651,678,682,687,707,722,725}:contains(spell) then -- 1 min spells durations
                     duration = os.clock() + 60
-                elseif T{220,259,274,871,872,873,874,875,876,877,878}:contains(spell) then -- 1 min 30 secs spells durations
+                elseif T{98,220,259,274,871,872,873,874,875,876,877,878}:contains(spell) then -- 1 min 30 secs spells durations
                     duration = os.clock() + 90
               
                 elseif T{240,705}:contains(spell) then -- Drown overwrittes Burn
