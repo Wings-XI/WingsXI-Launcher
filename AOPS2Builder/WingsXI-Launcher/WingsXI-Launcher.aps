@@ -2,21 +2,20 @@
 window_title=WingsXI-Launcher Patcher
 last_version_edit=2.0.4
 name=WingsXI-Launcher Patcher
-custom_extension=glc
+custom_extension=.glc
 patch_salt_url=https://wingsxi.com/dl/launcher2/salt.txt
 scan_warning=1
 [patch_versions]
 0=2.0.4
-count=2
-1=2.1.0
+count=1
 [2.0.4]
 patch_salt=71DamarWarms
 last_scan_dir=C:\Users\les.HOSTED\AppData\Roaming\GLCV3\projects\WingsXI-Launcher\patch_input\
 ignore_compression=0
+last_output_dir=F:\GLC\patch_output
+patch_salt_url=https://wingsxi.com/dl/launcher2/salt.txt
 [options]
 cachebuster_type=
 [patch_system_configuration]
 online_patch_directory=https://wingsxi.com/dl/launcher2/patch_output/
 online_patchlist_file=https://wingsxi.com/dl/launcher2/patch_output/patchlist
-[2.1.0]
-seed=13136
