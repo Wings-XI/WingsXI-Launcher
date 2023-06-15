@@ -28,7 +28,7 @@
     </Filter>
     <FolderPairs>
         <Pair>
-            <Left>%appdata%\GLCV3\projects\WingsXI-Launcher\AOPS2Builder\WingsXI-Patcher\</Left>
+            <Left>%appdata%\GLCV3\projects\WingsXI-Launcher\AOPS2Builder\WingsXI-Patcher\2.1.0</Left>
             <Right>sftp://root@vps-1c99be1e.vps.ovh.us:22/opt/docker/revproxy/config/www/dl/launcher2/patch_output_new|chan=10|zlib|keyfile=%userprofile%\.ssh\id_rsa</Right>
             <Filter>
                 <Include>
@@ -43,6 +43,17 @@
         <Pair>
             <Left>F:\GLC\patch_output</Left>
             <Right>sftp://root@vps-1c99be1e.vps.ovh.us:22/opt/docker/revproxy/config/www/dl/launcher2/patch_output_new|chan=10|zlib|keyfile=%userprofile%\.ssh\id_rsa</Right>
+            <Filter>
+                <Include>
+                    <Item>*</Item>
+                </Include>
+                <Exclude>
+                    <Item>patch*</Item>
+                </Exclude>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+                <TimeSpan Type="None">0</TimeSpan>
+            </Filter>
         </Pair>
     </FolderPairs>
     <Errors Ignore="false" Retry="0" Delay="5"/>
