@@ -1,6 +1,6 @@
 # WingsXI Launcher
 
-
+Current version of the launcher is avilable [on our website](https://www.wingsxi.com/wings/index.php?page=play): [Direct Link](https://wingsxi.com/dl/launcher/WingsXI-Installer.exe)
 
 ## Introduction
 
