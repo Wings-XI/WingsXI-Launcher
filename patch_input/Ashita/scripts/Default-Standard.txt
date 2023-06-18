@@ -44,7 +44,6 @@
 /addon load distance
 /addon load fps
 /addon load tparty
-/addon load debuff
 /addon load enternity
 /addon load drawdistance
 /addon load macrofix
@@ -53,8 +52,8 @@
 /addon load filters
 /addon load instantah
 /addon load find
-/addon load mapdot
-/addon load logs
+#/addon load mapdot
+#/addon load logs
 /addon load hideconsole
 /addon load findall
 /addon load allmaps
@@ -84,9 +83,11 @@
 
 #/fps .5
 /fps 2
-/drawdistance setworld 10
-/drawdistance setmob 10
-/drawdistance setentity 10
+## for drawdistance addon
+#/drawdistance setworld 10
+#/drawdistance setmob 10
+#/drawdistance setentity 10
+## for xicamera addon
 /cam d 3
 /cam d 15
 /pivot add Maps-Remapster
