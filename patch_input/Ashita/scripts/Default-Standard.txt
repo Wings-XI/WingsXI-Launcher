@@ -76,6 +76,7 @@
 /addon load claimbar
 /addon load noplayername
 /addon load petinfoplus
+/addon load rolltracker
 
 ##########################################################################
 # Set Common Settings
