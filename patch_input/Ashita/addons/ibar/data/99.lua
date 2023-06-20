@@ -1,336 +1,771 @@
 --[[
- *	Zone	:: Castle_Oztroja_S
+ *  Zone	:: Castle_Oztroja_[S]
  *  ZoneID	:: 99
- *  Total	:: 326
+ *  Total	:: 761
 ]]--
 
 	mb_data = {}
 
-	mb_data[1] = { nm="N", id="17182944", name="Yagudo_Conductor", mj="10", sj="10", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[2] = { nm="N", id="17182945", name="Yagudo_Conductor", mj="10", sj="10", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[3] = { nm="N", id="17182943", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[4] = { nm="N", id="17182939", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[5] = { nm="N", id="17182942", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[6] = { nm="N", id="17182941", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[7] = { nm="N", id="17182940", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[8] = { nm="N", id="17182938", name="Yagudo_Superior", mj="15", sj="15", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[9] = { nm="N", id="17182966", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[10] = { nm="N", id="17182936", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[11] = { nm="N", id="17182935", name="Yagudo_Superior", mj="15", sj="15", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[12] = { nm="N", id="17182934", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[13] = { nm="N", id="17182933", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[14] = { nm="N", id="17182932", name="Yagudo_Superior", mj="15", sj="15", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[15] = { nm="N", id="17182946", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[16] = { nm="N", id="17182931", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[17] = { nm="N", id="17182937", name="Yagudo_Conductor", mj="10", sj="10", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[18] = { nm="N", id="17182947", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[19] = { nm="N", id="17182964", name="Yagudo_Flagellant", mj="2", sj="2", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[20] = { nm="N", id="17182949", name="Seneschal_Imp", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Piercing,Fire,Light", note="" }
-	mb_data[21] = { nm="N", id="17182930", name="Bulwark_Bat", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[22] = { nm="N", id="17182965", name="Yagudo_Conductor", mj="10", sj="10", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[23] = { nm="N", id="17182963", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[24] = { nm="N", id="17182962", name="Yagudo_Superior", mj="15", sj="15", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[25] = { nm="N", id="17182961", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[26] = { nm="N", id="17182960", name="Gnat", mj="6", sj="6", mlvl="79-83", behavior="0", aggro="S", links="N", spawntype="0", weak="???", note="" }
-	mb_data[27] = { nm="N", id="17182959", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[28] = { nm="N", id="17182948", name="Seneschal_Imp", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Piercing,Fire,Light", note="" }
-	mb_data[29] = { nm="N", id="17182958", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[30] = { nm="N", id="17182956", name="Seneschal_Imp", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Piercing,Fire,Light", note="" }
-	mb_data[31] = { nm="N", id="17182955", name="Bulwark_Bat", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[32] = { nm="N", id="17182954", name="Bulwark_Bat", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[33] = { nm="N", id="17182953", name="Gnat", mj="6", sj="6", mlvl="79-83", behavior="0", aggro="S", links="N", spawntype="0", weak="???", note="" }
-	mb_data[34] = { nm="N", id="17182952", name="Yagudo_Conductor", mj="10", sj="10", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[35] = { nm="N", id="17182951", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[36] = { nm="N", id="17182950", name="Yagudo_Flagellant", mj="2", sj="2", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[37] = { nm="N", id="17182957", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[38] = { nm="N", id="17182929", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[39] = { nm="N", id="17182893", name="Bulwark_Bat", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[40] = { nm="N", id="17182927", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[41] = { nm="N", id="17182906", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[42] = { nm="N", id="17182905", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[43] = { nm="N", id="17182904", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[44] = { nm="N", id="17182903", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[45] = { nm="N", id="17182902", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[46] = { nm="N", id="17182901", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[47] = { nm="N", id="17182900", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[48] = { nm="N", id="17182907", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[49] = { nm="N", id="17182899", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[50] = { nm="N", id="17182897", name="Bulwark_Bat", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[51] = { nm="N", id="17182896", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[52] = { nm="N", id="17182895", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[53] = { nm="N", id="17182894", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[54] = { nm="N", id="17182892", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[55] = { nm="N", id="17182891", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[56] = { nm="N", id="17182967", name="Yagudo_Conductor", mj="10", sj="10", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[57] = { nm="N", id="17182898", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[58] = { nm="N", id="17182928", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[59] = { nm="N", id="17182908", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[60] = { nm="N", id="17182910", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[61] = { nm="N", id="17182926", name="Bulwark_Bat", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="N", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[62] = { nm="N", id="17182925", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[63] = { nm="N", id="17182924", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[64] = { nm="N", id="17182923", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[65] = { nm="N", id="17182922", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[66] = { nm="N", id="17182921", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[67] = { nm="N", id="17182920", name="Gnat", mj="6", sj="6", mlvl="79-83", behavior="0", aggro="S", links="N", spawntype="0", weak="???", note="" }
-	mb_data[68] = { nm="N", id="17182909", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[69] = { nm="N", id="17182919", name="Yagudo_Conductor", mj="10", sj="10", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[70] = { nm="N", id="17182917", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[71] = { nm="N", id="17182916", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[72] = { nm="N", id="17182915", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[73] = { nm="N", id="17182914", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[74] = { nm="N", id="17182913", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[75] = { nm="N", id="17182912", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", behavior="0", aggro="M", links="N", spawntype="4", weak="Water", note="" }
-	mb_data[76] = { nm="N", id="17182911", name="Earth_Elemental", mj="4", sj="5", mlvl="80-80", behavior="0", aggro="M", links="N", spawntype="4", weak="Wind", note="" }
-	mb_data[77] = { nm="N", id="17182918", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[78] = { nm="N", id="17182968", name="Yagudo_Flagellant", mj="2", sj="2", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[79] = { nm="N", id="17183043", name="Duu_Nazo_the_Spryfooted", mj="2", sj="2", mlvl="85-95", behavior="0", aggro="S", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[80] = { nm="N", id="17182970", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[81] = { nm="N", id="17183026", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[82] = { nm="N", id="17183025", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[83] = { nm="N", id="17183024", name="Yagudo_Flagellant", mj="2", sj="2", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[84] = { nm="N", id="17183023", name="Yagudo_Flagellant", mj="2", sj="2", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[85] = { nm="N", id="17183022", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[86] = { nm="N", id="17183021", name="Yagudo_Superior", mj="15", sj="15", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[87] = { nm="N", id="17183020", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[88] = { nm="N", id="17183027", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[89] = { nm="N", id="17183019", name="Yagudo_Superior", mj="15", sj="15", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[90] = { nm="N", id="17183017", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[91] = { nm="N", id="17183016", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[92] = { nm="N", id="17183015", name="Yagudo_Conductor", mj="10", sj="10", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[93] = { nm="N", id="17183014", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[94] = { nm="N", id="17183013", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[95] = { nm="N", id="17183012", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[96] = { nm="N", id="17183011", name="Yagudo_Flagellant", mj="2", sj="2", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[97] = { nm="N", id="17183018", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[98] = { nm="N", id="17183010", name="Gnat", mj="6", sj="6", mlvl="79-83", behavior="0", aggro="S", links="N", spawntype="0", weak="???", note="" }
-	mb_data[99] = { nm="N", id="17183028", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[100] = { nm="N", id="17183030", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[101] = { nm="N", id="17182890", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[102] = { nm="N", id="17183046", name="Duu_Nazo_the_Spryfooted", mj="2", sj="2", mlvl="85-95", behavior="0", aggro="S", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[103] = { nm="N", id="17183045", name="Duu_Nazo_the_Spryfooted", mj="2", sj="2", mlvl="85-95", behavior="0", aggro="S", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[104] = { nm="N", id="17183044", name="Duu_Nazo_the_Spryfooted", mj="2", sj="2", mlvl="85-95", behavior="0", aggro="S", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[105] = { nm="N", id="17183042", name="Vee_Ladu_the_Titterer", mj="13", sj="13", mlvl="0-0", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[106] = { nm="N", id="17183041", name="Vee_Ladu_the_Titterer", mj="13", sj="13", mlvl="0-0", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[107] = { nm="N", id="17183040", name="Vee_Ladu_the_Titterer", mj="13", sj="13", mlvl="0-0", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[108] = { nm="N", id="17183029", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[109] = { nm="N", id="17183039", name="Vee_Ladu_the_Titterer", mj="13", sj="13", mlvl="0-0", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[110] = { nm="N", id="17183037", name="Asterion", mj="2", sj="4", mlvl="80-85", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Hand-To-Hand,Impact,Light", note="" }
-	mb_data[111] = { nm="N", id="17183036", name="Maa_Illmu_the_Bestower", mj="3", sj="3", mlvl="0-0", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[112] = { nm="N", id="17183035", name="Vee_Ladu_the_Titterer", mj="13", sj="13", mlvl="0-0", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[113] = { nm="N", id="17183034", name="Fleshgnasher", mj="6", sj="6", mlvl="80-85", behavior="0", aggro="T(S)", links="N", spawntype="0", weak="???", note="" }
-	mb_data[114] = { nm="N", id="17183033", name="Loo_Kutto_the_Pensive", mj="12", sj="12", mlvl="0-0", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[115] = { nm="N", id="17183032", name="Marquis_Forneus", mj="8", sj="8", mlvl="80-85", behavior="0", aggro="T(S),Sc", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[116] = { nm="N", id="17183031", name="Dee_Zelko_the_Esoteric", mj="4", sj="4", mlvl="0-0", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[117] = { nm="N", id="17183038", name="Suu_Xicu_the_Cantabile", mj="10", sj="10", mlvl="0-0", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[118] = { nm="N", id="17182969", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[119] = { nm="N", id="17183009", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[120] = { nm="N", id="17183007", name="Yagudo_Conductor", mj="10", sj="10", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[121] = { nm="N", id="17182986", name="Yagudo_Conductor", mj="10", sj="10", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[122] = { nm="N", id="17182985", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[123] = { nm="N", id="17182984", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[124] = { nm="N", id="17182983", name="Yagudo_Flagellant", mj="2", sj="2", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[125] = { nm="N", id="17182982", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[126] = { nm="N", id="17182981", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[127] = { nm="N", id="17182980", name="Yagudo_Flagellant", mj="2", sj="2", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[128] = { nm="N", id="17182987", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[129] = { nm="N", id="17182979", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[130] = { nm="N", id="17182977", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[131] = { nm="N", id="17182976", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[132] = { nm="N", id="17182975", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[133] = { nm="N", id="17182974", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[134] = { nm="N", id="17182973", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[135] = { nm="N", id="17182972", name="Yagudo_Superior", mj="15", sj="15", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[136] = { nm="N", id="17182971", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[137] = { nm="N", id="17182978", name="Yagudo_Conductor", mj="10", sj="10", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[138] = { nm="N", id="17183008", name="Yagudo_Superior", mj="15", sj="15", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[139] = { nm="N", id="17182988", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[140] = { nm="N", id="17182990", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[141] = { nm="N", id="17183006", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[142] = { nm="N", id="17183005", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[143] = { nm="N", id="17183004", name="Gnat", mj="6", sj="6", mlvl="79-83", behavior="0", aggro="S", links="N", spawntype="0", weak="???", note="" }
-	mb_data[144] = { nm="N", id="17183003", name="Yagudo_Conductor", mj="10", sj="10", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[145] = { nm="N", id="17183002", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[146] = { nm="N", id="17183001", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[147] = { nm="N", id="17183000", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[148] = { nm="N", id="17182989", name="Yagudo_Superior", mj="15", sj="15", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[149] = { nm="N", id="17182999", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[150] = { nm="N", id="17182997", name="Gnat", mj="6", sj="6", mlvl="79-83", behavior="0", aggro="S", links="N", spawntype="0", weak="???", note="" }
-	mb_data[151] = { nm="N", id="17182996", name="Yagudo_Conductor", mj="10", sj="10", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[152] = { nm="N", id="17182995", name="Yagudo_Abbot", mj="3", sj="3", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[153] = { nm="N", id="17182994", name="Yagudo_Parasite", mj="1", sj="1", mlvl="65-67", behavior="0", aggro="H,Sc", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[154] = { nm="N", id="17182993", name="Yagudo_Parasite", mj="1", sj="1", mlvl="65-67", behavior="0", aggro="H,Sc", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[155] = { nm="N", id="17182992", name="Yagudo_Parasite", mj="1", sj="1", mlvl="65-67", behavior="0", aggro="H,Sc", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[156] = { nm="N", id="17182991", name="Yagudo_Parasite", mj="1", sj="1", mlvl="65-67", behavior="0", aggro="H,Sc", links="Y", spawntype="0", weak="Light", note="" }
-	mb_data[157] = { nm="N", id="17182998", name="Yagudo_Flagellant", mj="2", sj="2", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[158] = { nm="N", id="17182889", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[159] = { nm="N", id="17182728", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[160] = { nm="N", id="17182887", name="Seneschal_Imp", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Piercing,Fire,Light", note="" }
-	mb_data[161] = { nm="N", id="17182781", name="Antlion_Fly", mj="1", sj="1", mlvl="65-68", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[162] = { nm="N", id="17182780", name="Antlion_Fly", mj="1", sj="1", mlvl="65-68", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[163] = { nm="N", id="17182779", name="Antlion_Fly", mj="1", sj="1", mlvl="65-68", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[164] = { nm="N", id="17182778", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[165] = { nm="N", id="17182777", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[166] = { nm="N", id="17182776", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[167] = { nm="N", id="17182775", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[168] = { nm="N", id="17182774", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[169] = { nm="N", id="17182773", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[170] = { nm="N", id="17182772", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[171] = { nm="N", id="17182771", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[172] = { nm="N", id="17182770", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[173] = { nm="N", id="17182769", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[174] = { nm="N", id="17182768", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[175] = { nm="N", id="17182767", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[176] = { nm="N", id="17182766", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[177] = { nm="N", id="17182765", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[178] = { nm="N", id="17182782", name="Antlion_Fly", mj="1", sj="1", mlvl="65-68", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[179] = { nm="N", id="17182764", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[180] = { nm="N", id="17182783", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[181] = { nm="N", id="17182785", name="Antlion_Fly", mj="1", sj="1", mlvl="65-68", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[182] = { nm="N", id="17182802", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[183] = { nm="N", id="17182801", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[184] = { nm="N", id="17182800", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[185] = { nm="N", id="17182799", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[186] = { nm="N", id="17182798", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[187] = { nm="N", id="17182797", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[188] = { nm="N", id="17182796", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[189] = { nm="N", id="17182795", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[190] = { nm="N", id="17182794", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[191] = { nm="N", id="17182793", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[192] = { nm="N", id="17182792", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[193] = { nm="N", id="17182791", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[194] = { nm="N", id="17182790", name="Duu_Masa_the_Onecut", mj="12", sj="12", mlvl="0-0", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[195] = { nm="N", id="17182789", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", behavior="0", aggro="M", links="N", spawntype="4", weak="Water", note="" }
-	mb_data[196] = { nm="N", id="17182788", name="Earth_Elemental", mj="4", sj="5", mlvl="80-80", behavior="0", aggro="M", links="N", spawntype="4", weak="Wind", note="" }
-	mb_data[197] = { nm="N", id="17182787", name="Antlion_Fly", mj="1", sj="1", mlvl="65-68", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[198] = { nm="N", id="17182786", name="Antlion_Fly", mj="1", sj="1", mlvl="65-68", behavior="0", aggro="NA", links="Y", spawntype="0", weak="Piercing,Ice", note="" }
-	mb_data[199] = { nm="N", id="17182784", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[200] = { nm="N", id="17182763", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", behavior="0", aggro="H", links="N", spawntype="0", weak="Fire", note="" }
-	mb_data[201] = { nm="N", id="17182762", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[202] = { nm="N", id="17182761", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[203] = { nm="N", id="17182737", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[204] = { nm="N", id="17182736", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[205] = { nm="N", id="17182735", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[206] = { nm="N", id="17182734", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[207] = { nm="N", id="17182733", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[208] = { nm="N", id="17182732", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[209] = { nm="N", id="17182731", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[210] = { nm="N", id="17182730", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[211] = { nm="N", id="17182729", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[212] = { nm="N", id="17182727", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[213] = { nm="N", id="17182726", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[214] = { nm="N", id="17182725", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[215] = { nm="N", id="17182724", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[216] = { nm="N", id="17182723", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[217] = { nm="N", id="17182722", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[218] = { nm="N", id="17182721", name="Odontotyrannus", mj="1", sj="1", mlvl="66-70", behavior="0", aggro="H", links="N", spawntype="128", weak="Ice,Lightning", note="" }
-	mb_data[219] = { nm="N", id="17182888", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[220] = { nm="N", id="17182738", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[221] = { nm="N", id="17182739", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[222] = { nm="N", id="17182740", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[223] = { nm="N", id="17182741", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[224] = { nm="N", id="17182760", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[225] = { nm="N", id="17182759", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[226] = { nm="N", id="17182758", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[227] = { nm="N", id="17182757", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[228] = { nm="N", id="17182756", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[229] = { nm="N", id="17182755", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[230] = { nm="N", id="17182754", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[231] = { nm="N", id="17182753", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[232] = { nm="N", id="17182803", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[233] = { nm="N", id="17182752", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[234] = { nm="N", id="17182750", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[235] = { nm="N", id="17182749", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[236] = { nm="N", id="17182748", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[237] = { nm="N", id="17182747", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[238] = { nm="N", id="17182746", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[239] = { nm="N", id="17182745", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[240] = { nm="N", id="17182744", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[241] = { nm="N", id="17182743", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[242] = { nm="N", id="17182751", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[243] = { nm="N", id="17182804", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[244] = { nm="N", id="17182742", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[245] = { nm="N", id="17182806", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[246] = { nm="N", id="17182865", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[247] = { nm="N", id="17182864", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[248] = { nm="N", id="17182863", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[249] = { nm="N", id="17182862", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[250] = { nm="N", id="17182861", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[251] = { nm="N", id="17182860", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[252] = { nm="N", id="17182859", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[253] = { nm="N", id="17182858", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[254] = { nm="N", id="17182857", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[255] = { nm="N", id="17182856", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[256] = { nm="N", id="17182855", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[257] = { nm="N", id="17182854", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[258] = { nm="N", id="17182853", name="Seneschal_Imp", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Piercing,Fire,Light", note="" }
-	mb_data[259] = { nm="N", id="17182852", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[260] = { nm="N", id="17182851", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[261] = { nm="N", id="17182850", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[262] = { nm="N", id="17182849", name="Seneschal_Imp", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Piercing,Fire,Light", note="" }
-	mb_data[263] = { nm="N", id="17182866", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[264] = { nm="N", id="17182848", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[265] = { nm="N", id="17182867", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[266] = { nm="N", id="17182869", name="Yagudo_Chanter", mj="10", sj="10", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[267] = { nm="N", id="17182805", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[268] = { nm="N", id="17182886", name="Seneschal_Imp", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Piercing,Fire,Light", note="" }
-	mb_data[269] = { nm="N", id="17182885", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[270] = { nm="N", id="17182884", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[271] = { nm="N", id="17182883", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[272] = { nm="N", id="17182882", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[273] = { nm="N", id="17182881", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[274] = { nm="N", id="17182880", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[275] = { nm="N", id="17182879", name="Yagudo_Flagellant", mj="2", sj="2", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[276] = { nm="N", id="17182878", name="Yagudo_Flagellant", mj="2", sj="2", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[277] = { nm="N", id="17182877", name="Yagudo_Flagellant", mj="2", sj="2", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[278] = { nm="N", id="17182876", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[279] = { nm="N", id="17182874", name="Yagudo_Flagellant", mj="2", sj="2", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[280] = { nm="N", id="17182873", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="79-82", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[281] = { nm="N", id="17182872", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[282] = { nm="N", id="17182871", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[283] = { nm="N", id="17182870", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[284] = { nm="N", id="17182868", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[285] = { nm="N", id="17182847", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[286] = { nm="N", id="17182875", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[287] = { nm="N", id="17182845", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[288] = { nm="N", id="17182824", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[289] = { nm="N", id="17182823", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[290] = { nm="N", id="17182822", name="War_Lynx", mj="1", sj="1", mlvl="71-73", behavior="0", aggro="T(S),Sc", links="N", spawntype="0", weak="Earth", note="" }
-	mb_data[291] = { nm="N", id="17182821", name="War_Lynx", mj="1", sj="1", mlvl="71-73", behavior="0", aggro="T(S),Sc", links="N", spawntype="0", weak="Earth", note="" }
-	mb_data[292] = { nm="N", id="17182820", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[293] = { nm="N", id="17182819", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[294] = { nm="N", id="17182818", name="War_Lynx", mj="1", sj="1", mlvl="71-73", behavior="0", aggro="T(S),Sc", links="N", spawntype="0", weak="Earth", note="" }
-	mb_data[295] = { nm="N", id="17182817", name="War_Lynx", mj="1", sj="1", mlvl="71-73", behavior="0", aggro="T(S),Sc", links="N", spawntype="0", weak="Earth", note="" }
-	mb_data[296] = { nm="N", id="17182825", name="War_Lynx", mj="1", sj="1", mlvl="71-73", behavior="0", aggro="T(S),Sc", links="N", spawntype="0", weak="Earth", note="" }
-	mb_data[297] = { nm="N", id="17182816", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[298] = { nm="N", id="17182813", name="Zhuu_Buxu_the_Silent", mj="13", sj="13", mlvl="0-0", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[299] = { nm="N", id="17182812", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[300] = { nm="N", id="17182811", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[301] = { nm="N", id="17182810", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[302] = { nm="N", id="17182809", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[303] = { nm="N", id="17182846", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", behavior="0", aggro="H", links="Y", spawntype="0", weak="Piercing,Ice,Wind,Lightning,Light", note="" }
-	mb_data[304] = { nm="N", id="17182808", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[305] = { nm="N", id="17182807", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[306] = { nm="N", id="17182814", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[307] = { nm="N", id="17182826", name="War_Lynx", mj="1", sj="1", mlvl="71-73", behavior="0", aggro="T(S),Sc", links="N", spawntype="0", weak="Earth", note="" }
-	mb_data[308] = { nm="N", id="17182815", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[309] = { nm="N", id="17182827", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[310] = { nm="N", id="17182843", name="Aa_Xalmo_the_Savage", mj="2", sj="2", mlvl="0-0", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[311] = { nm="N", id="17182844", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[312] = { nm="N", id="17182841", name="Earth_Elemental", mj="4", sj="5", mlvl="80-80", behavior="0", aggro="M", links="N", spawntype="4", weak="Wind", note="" }
-	mb_data[313] = { nm="N", id="17182840", name="Yagudo_s_Elemental", mj="4", sj="4", mlvl="70-79", behavior="0", aggro="NA", links="Y", spawntype="128", weak="Ice", note="" }
-	mb_data[314] = { nm="N", id="17182839", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[315] = { nm="N", id="17182842", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", behavior="0", aggro="M", links="N", spawntype="4", weak="Water", note="" }
-	mb_data[316] = { nm="N", id="17182837", name="Immolatory_Pugil", mj="1", sj="1", mlvl="65-67", behavior="0", aggro="H", links="Y", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[317] = { nm="N", id="17182836", name="Immolatory_Pugil", mj="1", sj="1", mlvl="65-67", behavior="0", aggro="H", links="Y", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[318] = { nm="N", id="17182835", name="Immolatory_Pugil", mj="1", sj="1", mlvl="65-67", behavior="0", aggro="H", links="Y", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[319] = { nm="N", id="17182838", name="Yagudo_Sentinel", mj="2", sj="2", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[320] = { nm="N", id="17182833", name="Immolatory_Pugil", mj="1", sj="1", mlvl="65-67", behavior="0", aggro="H", links="Y", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[321] = { nm="N", id="17182834", name="Immolatory_Pugil", mj="1", sj="1", mlvl="65-67", behavior="0", aggro="H", links="Y", spawntype="0", weak="Ice,Lightning", note="" }
-	mb_data[322] = { nm="N", id="17182829", name="War_Lynx", mj="1", sj="1", mlvl="71-73", behavior="0", aggro="T(S),Sc", links="N", spawntype="0", weak="Earth", note="" }
-	mb_data[323] = { nm="N", id="17182830", name="War_Lynx", mj="1", sj="1", mlvl="71-73", behavior="0", aggro="T(S),Sc", links="N", spawntype="0", weak="Earth", note="" }
-	mb_data[324] = { nm="N", id="17182828", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[325] = { nm="N", id="17182832", name="Yagudo_Prelate", mj="4", sj="4", mlvl="77-79", behavior="0", aggro="S", links="Y", spawntype="0", weak="Ice", note="" }
-	mb_data[326] = { nm="N", id="17182831", name="Yagudo_High_Priest", mj="3", sj="3", mlvl="76-79", behavior="0", aggro="T(S)", links="Y", spawntype="0", weak="Ice", note="" }
+	mb_data[1] = { nm="N", id="16932912", name="Earth_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Wind", strong="Melee,Earth,Lightning", respawntime="960", items="Earth Cluster", steal="" }
+	mb_data[2] = { nm="N", id="16932913", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[3] = { nm="N", id="16932920", name="Earth_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Wind", strong="Melee,Earth,Lightning", respawntime="960", items="Earth Cluster", steal="" }
+	mb_data[4] = { nm="N", id="16932921", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[5] = { nm="N", id="16932928", name="Earth_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Wind", strong="Melee,Earth,Lightning", respawntime="960", items="Earth Cluster", steal="" }
+	mb_data[6] = { nm="N", id="16932929", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[7] = { nm="N", id="17027138", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[8] = { nm="N", id="17027182", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[9] = { nm="N", id="17027236", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[10] = { nm="N", id="17027287", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[11] = { nm="N", id="17027325", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[12] = { nm="N", id="17027330", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[13] = { nm="N", id="17027352", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[14] = { nm="N", id="17174535", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[15] = { nm="N", id="17174544", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[16] = { nm="N", id="17174550", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[17] = { nm="N", id="17182721", name="Odontotyrannus", mj="1", sj="1", mlvl="66-70", aggro="A,H", links="N", weak="Ice,Lightning", strong="Water", respawntime="0", items="", steal="" }
+	mb_data[18] = { nm="N", id="17182722", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[19] = { nm="N", id="17182723", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[20] = { nm="N", id="17182724", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[21] = { nm="N", id="17182725", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[22] = { nm="N", id="17182726", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[23] = { nm="N", id="17182727", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[24] = { nm="N", id="17182728", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[25] = { nm="N", id="17182729", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[26] = { nm="N", id="17182730", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[27] = { nm="N", id="17182731", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[28] = { nm="N", id="17182732", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[29] = { nm="N", id="17182733", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Air Spirit", steal="Plt. Beastcoin" }
+	mb_data[30] = { nm="N", id="17182734", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[31] = { nm="N", id="17182735", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[32] = { nm="N", id="17182736", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[33] = { nm="N", id="17182737", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[34] = { nm="N", id="17182738", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[35] = { nm="N", id="17182739", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[36] = { nm="N", id="17182740", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[37] = { nm="N", id="17182741", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[38] = { nm="N", id="17182742", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[39] = { nm="N", id="17182743", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[40] = { nm="N", id="17182744", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[41] = { nm="N", id="17182745", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[42] = { nm="N", id="17182746", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[43] = { nm="N", id="17182747", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Air Spirit", steal="Plt. Beastcoin" }
+	mb_data[44] = { nm="N", id="17182748", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[45] = { nm="N", id="17182749", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[46] = { nm="N", id="17182750", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[47] = { nm="N", id="17182751", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[48] = { nm="N", id="17182752", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[49] = { nm="N", id="17182753", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[50] = { nm="N", id="17182754", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[51] = { nm="N", id="17182755", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[52] = { nm="N", id="17182756", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[53] = { nm="N", id="17182757", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[54] = { nm="N", id="17182758", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[55] = { nm="N", id="17182759", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[56] = { nm="N", id="17182760", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[57] = { nm="N", id="17182761", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[58] = { nm="N", id="17182762", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[59] = { nm="N", id="17182763", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", aggro="A,H", links="N", weak="Fire", strong="Earth,Light,Lightning", respawntime="960", items="Rafflesia Vine, Rafflesia Petal", steal="" }
+	mb_data[60] = { nm="N", id="17182764", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", aggro="A,H", links="N", weak="Fire", strong="Earth,Light,Lightning", respawntime="960", items="Rafflesia Vine, Rafflesia Petal", steal="" }
+	mb_data[61] = { nm="N", id="17182765", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[62] = { nm="N", id="17182766", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[63] = { nm="N", id="17182767", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", aggro="A,H", links="N", weak="Fire", strong="Earth,Light,Lightning", respawntime="960", items="Rafflesia Vine, Rafflesia Petal", steal="" }
+	mb_data[64] = { nm="N", id="17182768", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", aggro="A,H", links="N", weak="Fire", strong="Earth,Light,Lightning", respawntime="960", items="Rafflesia Vine, Rafflesia Petal", steal="" }
+	mb_data[65] = { nm="N", id="17182769", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[66] = { nm="N", id="17182770", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[67] = { nm="N", id="17182771", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", aggro="A,H", links="N", weak="Fire", strong="Earth,Light,Lightning", respawntime="960", items="Rafflesia Vine, Rafflesia Petal", steal="" }
+	mb_data[68] = { nm="N", id="17182772", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", aggro="A,H", links="N", weak="Fire", strong="Earth,Light,Lightning", respawntime="960", items="Rafflesia Vine, Rafflesia Petal", steal="" }
+	mb_data[69] = { nm="N", id="17182773", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[70] = { nm="N", id="17182774", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[71] = { nm="N", id="17182775", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", aggro="A,H", links="N", weak="Fire", strong="Earth,Light,Lightning", respawntime="960", items="Rafflesia Vine, Rafflesia Petal", steal="" }
+	mb_data[72] = { nm="N", id="17182776", name="Blooming_Rafflesia", mj="9", sj="9", mlvl="71-72", aggro="A,H", links="N", weak="Fire", strong="Earth,Light,Lightning", respawntime="960", items="Rafflesia Vine, Rafflesia Petal", steal="" }
+	mb_data[73] = { nm="N", id="17182777", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[74] = { nm="N", id="17182778", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[75] = { nm="N", id="17182779", name="Antlion_Fly", mj="1", sj="1", mlvl="65-68", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="960", items="Insect Wing", steal="" }
+	mb_data[76] = { nm="N", id="17182780", name="Antlion_Fly", mj="1", sj="1", mlvl="65-68", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="960", items="Insect Wing", steal="" }
+	mb_data[77] = { nm="N", id="17182781", name="Antlion_Fly", mj="1", sj="1", mlvl="65-68", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="960", items="Insect Wing", steal="" }
+	mb_data[78] = { nm="N", id="17182782", name="Antlion_Fly", mj="1", sj="1", mlvl="65-68", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="960", items="Insect Wing", steal="" }
+	mb_data[79] = { nm="N", id="17182783", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[80] = { nm="N", id="17182784", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[81] = { nm="N", id="17182785", name="Antlion_Fly", mj="1", sj="1", mlvl="65-68", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="960", items="Insect Wing", steal="" }
+	mb_data[82] = { nm="N", id="17182786", name="Antlion_Fly", mj="1", sj="1", mlvl="65-68", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="960", items="Insect Wing", steal="" }
+	mb_data[83] = { nm="N", id="17182787", name="Antlion_Fly", mj="1", sj="1", mlvl="65-68", aggro="H", links="Y", weak="Piercing,Ice", strong="", respawntime="960", items="Insect Wing", steal="" }
+	mb_data[84] = { nm="N", id="17182788", name="Earth_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Wind", strong="Melee,Earth,Lightning", respawntime="960", items="Earth Cluster", steal="" }
+	mb_data[85] = { nm="N", id="17182789", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[86] = { nm="Y", id="17182790", name="Duu_Masa_the_Onecut", mj="12", sj="12", mlvl="80-80", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="Naraenten Beads", steal="" }
+	mb_data[87] = { nm="N", id="17182791", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[88] = { nm="N", id="17182792", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[89] = { nm="N", id="17182793", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[90] = { nm="N", id="17182794", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[91] = { nm="N", id="17182795", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Air Spirit", steal="Plt. Beastcoin" }
+	mb_data[92] = { nm="N", id="17182796", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[93] = { nm="N", id="17182797", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[94] = { nm="N", id="17182798", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[95] = { nm="N", id="17182799", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Air Spirit", steal="Plt. Beastcoin" }
+	mb_data[96] = { nm="N", id="17182800", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[97] = { nm="N", id="17182801", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[98] = { nm="N", id="17182802", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[99] = { nm="N", id="17182803", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[100] = { nm="N", id="17182804", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[101] = { nm="N", id="17182805", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[102] = { nm="N", id="17182806", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[103] = { nm="N", id="17182807", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[104] = { nm="N", id="17182808", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[105] = { nm="N", id="17182809", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[106] = { nm="N", id="17182810", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[107] = { nm="N", id="17182811", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[108] = { nm="N", id="17182812", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[109] = { nm="Y", id="17182813", name="Zhuu_Buxu_the_Silent_S", mj="13", sj="13", mlvl="80-84", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="Sangoma Lappa, Yagudo Kote", steal="" }
+	mb_data[110] = { nm="N", id="17182814", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[111] = { nm="N", id="17182815", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[112] = { nm="N", id="17182816", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[113] = { nm="N", id="17182817", name="War_Lynx", mj="1", sj="1", mlvl="71-73", aggro="A,S,Sc", links="N", weak="Earth", strong="", respawntime="960", items="Lynx Hide, Lynx Meat", steal="" }
+	mb_data[114] = { nm="N", id="17182818", name="War_Lynx", mj="1", sj="1", mlvl="71-73", aggro="A,S,Sc", links="N", weak="Earth", strong="", respawntime="960", items="Lynx Hide, Lynx Meat", steal="" }
+	mb_data[115] = { nm="N", id="17182819", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Air Spirit", steal="Plt. Beastcoin" }
+	mb_data[116] = { nm="N", id="17182820", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[117] = { nm="N", id="17182821", name="War_Lynx", mj="1", sj="1", mlvl="71-73", aggro="A,S,Sc", links="N", weak="Earth", strong="", respawntime="960", items="Lynx Hide, Lynx Meat", steal="" }
+	mb_data[118] = { nm="N", id="17182822", name="War_Lynx", mj="1", sj="1", mlvl="71-73", aggro="A,S,Sc", links="N", weak="Earth", strong="", respawntime="960", items="Lynx Hide, Lynx Meat", steal="" }
+	mb_data[119] = { nm="N", id="17182823", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[120] = { nm="N", id="17182824", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[121] = { nm="N", id="17182825", name="War_Lynx", mj="1", sj="1", mlvl="71-73", aggro="A,S,Sc", links="N", weak="Earth", strong="", respawntime="960", items="Lynx Hide, Lynx Meat", steal="" }
+	mb_data[122] = { nm="N", id="17182826", name="War_Lynx", mj="1", sj="1", mlvl="71-73", aggro="A,S,Sc", links="N", weak="Earth", strong="", respawntime="960", items="Lynx Hide, Lynx Meat", steal="" }
+	mb_data[123] = { nm="N", id="17182827", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[124] = { nm="N", id="17182828", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[125] = { nm="N", id="17182829", name="War_Lynx", mj="1", sj="1", mlvl="71-73", aggro="A,S,Sc", links="N", weak="Earth", strong="", respawntime="960", items="Lynx Hide, Lynx Meat", steal="" }
+	mb_data[126] = { nm="N", id="17182830", name="War_Lynx", mj="1", sj="1", mlvl="71-73", aggro="A,S,Sc", links="N", weak="Earth", strong="", respawntime="960", items="Lynx Hide, Lynx Meat", steal="" }
+	mb_data[127] = { nm="N", id="17182831", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[128] = { nm="N", id="17182832", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[129] = { nm="N", id="17182833", name="Immolatory_Pugil", mj="1", sj="1", mlvl="65-67", aggro="A,H", links="Y", weak="Ice,Lightning", strong="Water", respawntime="960", items="Shall Shell", steal="Fish Scales" }
+	mb_data[130] = { nm="N", id="17182834", name="Immolatory_Pugil", mj="1", sj="1", mlvl="65-67", aggro="A,H", links="Y", weak="Ice,Lightning", strong="Water", respawntime="960", items="Shall Shell", steal="Fish Scales" }
+	mb_data[131] = { nm="N", id="17182835", name="Immolatory_Pugil", mj="1", sj="1", mlvl="65-67", aggro="A,H", links="Y", weak="Ice,Lightning", strong="Water", respawntime="960", items="Shall Shell", steal="Fish Scales" }
+	mb_data[132] = { nm="N", id="17182836", name="Immolatory_Pugil", mj="1", sj="1", mlvl="65-67", aggro="A,H", links="Y", weak="Ice,Lightning", strong="Water", respawntime="960", items="Shall Shell", steal="Fish Scales" }
+	mb_data[133] = { nm="N", id="17182837", name="Immolatory_Pugil", mj="1", sj="1", mlvl="65-67", aggro="A,H", links="Y", weak="Ice,Lightning", strong="Water", respawntime="960", items="Shall Shell", steal="Fish Scales" }
+	mb_data[134] = { nm="N", id="17182838", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[135] = { nm="N", id="17182839", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Air Spirit", steal="Plt. Beastcoin" }
+	mb_data[136] = { nm="N", id="17182840", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[137] = { nm="N", id="17182841", name="Earth_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Wind", strong="Melee,Earth,Lightning", respawntime="960", items="Earth Cluster", steal="" }
+	mb_data[138] = { nm="N", id="17182842", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[139] = { nm="Y", id="17182843", name="Aa_Xalmo_the_Savage", mj="2", sj="2", mlvl="80-84", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="Deae Gratia", steal="" }
+	mb_data[140] = { nm="N", id="17182844", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[141] = { nm="N", id="17182845", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[142] = { nm="N", id="17182846", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[143] = { nm="N", id="17182847", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[144] = { nm="N", id="17182848", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[145] = { nm="N", id="17182849", name="Seneschal_Imp", mj="4", sj="4", mlvl="77-79", aggro="A,T(S),H", links="Y", weak="Piercing,Light", strong="Dark,Wind", respawntime="960", items="Imp Horn, Imp Wing", steal="" }
+	mb_data[146] = { nm="N", id="17182850", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[147] = { nm="N", id="17182851", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[148] = { nm="N", id="17182852", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[149] = { nm="N", id="17182853", name="Seneschal_Imp", mj="4", sj="4", mlvl="77-79", aggro="A,T(S),H", links="Y", weak="Piercing,Light", strong="Dark,Wind", respawntime="960", items="Imp Horn, Imp Wing", steal="" }
+	mb_data[150] = { nm="N", id="17182854", name="Bastion_Bats", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="Y", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing, Fiend Blood, Beastman Blood", steal="" }
+	mb_data[151] = { nm="N", id="17182855", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[152] = { nm="N", id="17182856", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[153] = { nm="N", id="17182857", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[154] = { nm="N", id="17182858", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[155] = { nm="N", id="17182859", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[156] = { nm="N", id="17182860", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[157] = { nm="N", id="17182861", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[158] = { nm="N", id="17182862", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Air Spirit", steal="Plt. Beastcoin" }
+	mb_data[159] = { nm="N", id="17182863", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[160] = { nm="N", id="17182864", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[161] = { nm="N", id="17182865", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[162] = { nm="N", id="17182866", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[163] = { nm="N", id="17182867", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[164] = { nm="N", id="17182868", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[165] = { nm="N", id="17182869", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[166] = { nm="N", id="17182870", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Air Spirit", steal="Plt. Beastcoin" }
+	mb_data[167] = { nm="N", id="17182871", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[168] = { nm="N", id="17182872", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[169] = { nm="N", id="17182873", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[170] = { nm="N", id="17182874", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[171] = { nm="N", id="17182875", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[172] = { nm="N", id="17182876", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[173] = { nm="N", id="17182877", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[174] = { nm="N", id="17182878", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[175] = { nm="N", id="17182879", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[176] = { nm="N", id="17182880", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[177] = { nm="N", id="17182881", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[178] = { nm="N", id="17182882", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[179] = { nm="N", id="17182883", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[180] = { nm="N", id="17182884", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[181] = { nm="N", id="17182885", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[182] = { nm="N", id="17182886", name="Seneschal_Imp", mj="4", sj="4", mlvl="77-79", aggro="A,T(S),H", links="Y", weak="Piercing,Light", strong="Dark,Wind", respawntime="960", items="Imp Horn, Imp Wing", steal="" }
+	mb_data[183] = { nm="N", id="17182887", name="Seneschal_Imp", mj="4", sj="4", mlvl="77-79", aggro="A,T(S),H", links="Y", weak="Piercing,Light", strong="Dark,Wind", respawntime="960", items="Imp Horn, Imp Wing", steal="" }
+	mb_data[184] = { nm="N", id="17182888", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[185] = { nm="N", id="17182889", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[186] = { nm="N", id="17182890", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[187] = { nm="N", id="17182891", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[188] = { nm="N", id="17182892", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[189] = { nm="N", id="17182893", name="Bulwark_Bat", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[190] = { nm="N", id="17182894", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[191] = { nm="N", id="17182895", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[192] = { nm="N", id="17182896", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[193] = { nm="N", id="17182897", name="Bulwark_Bat", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[194] = { nm="N", id="17182898", name="Yagudo_Sentinel_past", mj="2", sj="2", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[195] = { nm="N", id="17182899", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[196] = { nm="N", id="17182900", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[197] = { nm="N", id="17182901", name="Yagudo_Knight_Templar", mj="12", sj="12", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[198] = { nm="N", id="17182902", name="Yagudo_Eradicator", mj="13", sj="13", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Kote, Bottled Pixie, Dorter Key", steal="Plt. Beastcoin" }
+	mb_data[199] = { nm="N", id="17182903", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[200] = { nm="N", id="17182904", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[201] = { nm="N", id="17182905", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[202] = { nm="N", id="17182906", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[203] = { nm="N", id="17182907", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Air Spirit", steal="Plt. Beastcoin" }
+	mb_data[204] = { nm="N", id="17182908", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[205] = { nm="N", id="17182909", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Air Spirit", steal="Plt. Beastcoin" }
+	mb_data[206] = { nm="N", id="17182910", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[207] = { nm="N", id="17182911", name="Earth_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Wind", strong="Melee,Earth,Lightning", respawntime="960", items="Earth Cluster", steal="" }
+	mb_data[208] = { nm="N", id="17182912", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[209] = { nm="N", id="17182913", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Air Spirit", steal="Plt. Beastcoin" }
+	mb_data[210] = { nm="N", id="17182914", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[211] = { nm="N", id="17182915", name="Yagudo_Prioress", mj="15", sj="15", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Air Spirit", steal="Plt. Beastcoin" }
+	mb_data[212] = { nm="N", id="17182916", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[213] = { nm="N", id="17182917", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[214] = { nm="N", id="17182918", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[215] = { nm="N", id="17182919", name="Yagudo_Conductor_past", mj="10", sj="10", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[216] = { nm="N", id="17182920", name="Gnat", mj="6", sj="6", mlvl="79-83", aggro="A,S", links="N", weak="Light", strong="Dark,Wind", respawntime="960", items="Gnat Wing", steal="" }
+	mb_data[217] = { nm="N", id="17182921", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[218] = { nm="N", id="17182922", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[219] = { nm="N", id="17182923", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[220] = { nm="N", id="17182924", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[221] = { nm="N", id="17182925", name="Yagudo_High_Priest_past", mj="3", sj="3", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="900", items="Yagudo Feather, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[222] = { nm="N", id="17182926", name="Bulwark_Bat", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[223] = { nm="N", id="17182927", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[224] = { nm="N", id="17182928", name="Yagudo_Prelate_past", mj="4", sj="4", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Dorter Key, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[225] = { nm="N", id="17182929", name="Yagudo_Chanter_past", mj="10", sj="10", mlvl="77-79", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Yagudo Glue, Warding Round, Goddess's Hymnus", steal="Plt. Beastcoin" }
+	mb_data[226] = { nm="N", id="17182930", name="Bulwark_Bat", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[227] = { nm="N", id="17182931", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[228] = { nm="N", id="17182932", name="Yagudo_Superior", mj="15", sj="15", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[229] = { nm="N", id="17182933", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[230] = { nm="N", id="17182934", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[231] = { nm="N", id="17182935", name="Yagudo_Superior", mj="15", sj="15", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[232] = { nm="N", id="17182936", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[233] = { nm="N", id="17182937", name="Yagudo_Conductor_past", mj="10", sj="10", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[234] = { nm="N", id="17182938", name="Yagudo_Superior", mj="15", sj="15", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[235] = { nm="N", id="17182939", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[236] = { nm="N", id="17182940", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[237] = { nm="N", id="17182941", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[238] = { nm="N", id="17182942", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[239] = { nm="N", id="17182943", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[240] = { nm="N", id="17182944", name="Yagudo_Conductor_past", mj="10", sj="10", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[241] = { nm="N", id="17182945", name="Yagudo_Conductor_past", mj="10", sj="10", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[242] = { nm="N", id="17182946", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[243] = { nm="N", id="17182947", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[244] = { nm="N", id="17182948", name="Seneschal_Imp", mj="4", sj="4", mlvl="77-79", aggro="A,T(S),H", links="Y", weak="Piercing,Light", strong="Dark,Wind", respawntime="960", items="Imp Horn, Imp Wing", steal="" }
+	mb_data[245] = { nm="N", id="17182949", name="Seneschal_Imp", mj="4", sj="4", mlvl="77-79", aggro="A,T(S),H", links="Y", weak="Piercing,Light", strong="Dark,Wind", respawntime="960", items="Imp Horn, Imp Wing", steal="" }
+	mb_data[246] = { nm="N", id="17182950", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[247] = { nm="N", id="17182951", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[248] = { nm="N", id="17182952", name="Yagudo_Conductor_past", mj="10", sj="10", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[249] = { nm="N", id="17182953", name="Gnat", mj="6", sj="6", mlvl="79-83", aggro="A,S", links="N", weak="Light", strong="Dark,Wind", respawntime="960", items="Gnat Wing", steal="" }
+	mb_data[250] = { nm="N", id="17182954", name="Bulwark_Bat", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[251] = { nm="N", id="17182955", name="Bulwark_Bat", mj="1", sj="1", mlvl="70-72", aggro="A,H", links="N", weak="Piercing,Light,Wind", strong="Dark", respawntime="960", items="Bat Fang, Bat Wing", steal="" }
+	mb_data[252] = { nm="N", id="17182956", name="Seneschal_Imp", mj="4", sj="4", mlvl="77-79", aggro="A,T(S),H", links="Y", weak="Piercing,Light", strong="Dark,Wind", respawntime="960", items="Imp Horn, Imp Wing", steal="" }
+	mb_data[253] = { nm="N", id="17182957", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[254] = { nm="N", id="17182958", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[255] = { nm="N", id="17182959", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[256] = { nm="N", id="17182960", name="Gnat", mj="6", sj="6", mlvl="79-83", aggro="A,S", links="N", weak="Light", strong="Dark,Wind", respawntime="960", items="Gnat Wing", steal="" }
+	mb_data[257] = { nm="N", id="17182961", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[258] = { nm="N", id="17182962", name="Yagudo_Superior", mj="15", sj="15", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[259] = { nm="N", id="17182963", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[260] = { nm="N", id="17182964", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[261] = { nm="N", id="17182965", name="Yagudo_Conductor_past", mj="10", sj="10", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[262] = { nm="N", id="17182966", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[263] = { nm="N", id="17182967", name="Yagudo_Conductor_past", mj="10", sj="10", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[264] = { nm="N", id="17182968", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[265] = { nm="N", id="17182969", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[266] = { nm="N", id="17182970", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[267] = { nm="N", id="17182971", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[268] = { nm="N", id="17182972", name="Yagudo_Superior", mj="15", sj="15", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[269] = { nm="N", id="17182973", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[270] = { nm="N", id="17182974", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[271] = { nm="N", id="17182975", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[272] = { nm="N", id="17182976", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[273] = { nm="N", id="17182977", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[274] = { nm="N", id="17182978", name="Yagudo_Conductor_past", mj="10", sj="10", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[275] = { nm="N", id="17182979", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[276] = { nm="N", id="17182980", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[277] = { nm="N", id="17182981", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[278] = { nm="N", id="17182982", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[279] = { nm="N", id="17182983", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[280] = { nm="N", id="17182984", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[281] = { nm="N", id="17182985", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[282] = { nm="N", id="17182986", name="Yagudo_Conductor_past", mj="10", sj="10", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[283] = { nm="N", id="17182987", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[284] = { nm="N", id="17182988", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[285] = { nm="N", id="17182989", name="Yagudo_Superior", mj="15", sj="15", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[286] = { nm="N", id="17182990", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[287] = { nm="N", id="17182991", name="Yagudo_Parasite", mj="1", sj="1", mlvl="45-48", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="960", items="Fiend Blood, Parasite Skin", steal="" }
+	mb_data[288] = { nm="N", id="17182992", name="Yagudo_Parasite", mj="1", sj="1", mlvl="45-48", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="960", items="Fiend Blood, Parasite Skin", steal="" }
+	mb_data[289] = { nm="N", id="17182993", name="Yagudo_Parasite", mj="1", sj="1", mlvl="45-48", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="960", items="Fiend Blood, Parasite Skin", steal="" }
+	mb_data[290] = { nm="N", id="17182994", name="Yagudo_Parasite", mj="1", sj="1", mlvl="45-48", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="960", items="Fiend Blood, Parasite Skin", steal="" }
+	mb_data[291] = { nm="N", id="17182995", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[292] = { nm="N", id="17182996", name="Yagudo_Conductor_past", mj="10", sj="10", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[293] = { nm="N", id="17182997", name="Gnat", mj="6", sj="6", mlvl="79-83", aggro="A,S", links="N", weak="Light", strong="Dark,Wind", respawntime="960", items="Gnat Wing", steal="" }
+	mb_data[294] = { nm="N", id="17182998", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[295] = { nm="N", id="17182999", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[296] = { nm="N", id="17183000", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[297] = { nm="N", id="17183001", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[298] = { nm="N", id="17183002", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[299] = { nm="N", id="17183003", name="Yagudo_Conductor_past", mj="10", sj="10", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[300] = { nm="N", id="17183004", name="Gnat", mj="6", sj="6", mlvl="79-83", aggro="A,S", links="N", weak="Light", strong="Dark,Wind", respawntime="960", items="Gnat Wing", steal="" }
+	mb_data[301] = { nm="N", id="17183005", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[302] = { nm="N", id="17183006", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[303] = { nm="N", id="17183007", name="Yagudo_Conductor_past", mj="10", sj="10", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[304] = { nm="N", id="17183008", name="Yagudo_Superior", mj="15", sj="15", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[305] = { nm="N", id="17183009", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[306] = { nm="N", id="17183010", name="Gnat", mj="6", sj="6", mlvl="79-83", aggro="A,S", links="N", weak="Light", strong="Dark,Wind", respawntime="960", items="Gnat Wing", steal="" }
+	mb_data[307] = { nm="N", id="17183011", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[308] = { nm="N", id="17183012", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[309] = { nm="N", id="17183013", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[310] = { nm="N", id="17183014", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[311] = { nm="N", id="17183015", name="Yagudo_Conductor_past", mj="10", sj="10", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[312] = { nm="N", id="17183016", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[313] = { nm="N", id="17183017", name="Yagudo_Nokizaru", mj="13", sj="13", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[314] = { nm="N", id="17183018", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[315] = { nm="N", id="17183019", name="Yagudo_Superior", mj="15", sj="15", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[316] = { nm="N", id="17183020", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[317] = { nm="N", id="17183021", name="Yagudo_Superior", mj="15", sj="15", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[318] = { nm="N", id="17183022", name="Yagudos_Elemental", mj="4", sj="4", mlvl="70-79", aggro="M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[319] = { nm="N", id="17183023", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[320] = { nm="N", id="17183024", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[321] = { nm="N", id="17183025", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[322] = { nm="N", id="17183026", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[323] = { nm="N", id="17183027", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[324] = { nm="N", id="17183028", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[325] = { nm="N", id="17183029", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[326] = { nm="N", id="17183030", name="Yagudo_Hierogrammat", mj="4", sj="4", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Bottled Pixie, Aero III, Aero IV, Aeroga II, Aeroga III, Tornado", steal="Plt. Beastcoin" }
+	mb_data[327] = { nm="Y", id="17183031", name="Dee_Zelko_the_Esoteric", mj="4", sj="4", mlvl="83-83", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="Bam. Grass Basket, Grenadier Belt, Grandeur", steal="" }
+	mb_data[328] = { nm="Y", id="17183032", name="Marquis_Forneus", mj="8", sj="8", mlvl="80-85", aggro="A,T(S),Sc", links="Y", weak="Light", strong="", respawntime="0", items="Bam. Med. Basket, Faucheuse, Shark Strap", steal="" }
+	mb_data[329] = { nm="Y", id="17183033", name="Loo_Kutto_the_Pensive", mj="12", sj="12", mlvl="83-83", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="Bamboo Bugcage, Skirmisher's Ring, Mukademaru", steal="" }
+	mb_data[330] = { nm="Y", id="17183034", name="Fleshgnasher", mj="6", sj="6", mlvl="80-85", aggro="A,T(S)", links="N", weak="Light", strong="Dark,Wind", respawntime="0", items="Bam. Flwr. Basket, Caloyer Cape, Basilisk", steal="" }
+	mb_data[331] = { nm="Y", id="17183035", name="Vee_Ladu_the_Titterer", mj="13", sj="13", mlvl="83-83", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="Bamboo Birdcage, Harpy Shield, Yagentoshiro", steal="" }
+	mb_data[332] = { nm="Y", id="17183036", name="Maa_Illmu_the_Bestower", mj="3", sj="3", mlvl="83-83", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="Bam. Char. Basket, Clearpath, Cruadin", steal="" }
+	mb_data[333] = { nm="Y", id="17183037", name="Asterion", mj="2", sj="2", mlvl="80-85", aggro="A,T(S)", links="Y", weak="Hand-to-Hand,Blunt,Light", strong="Dark", respawntime="0", items="Bam. Tea Basket, Bedivere's Hose, Alastor", steal="" }
+	mb_data[334] = { nm="Y", id="17183038", name="Suu_Xicu_the_Cantabile", mj="10", sj="10", mlvl="83-83", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="Bam. Snakecage, Silktone, Failnaught", steal="" }
+	mb_data[335] = { nm="N", id="17183039", name="Vee_Ladu_the_Titterer", mj="13", sj="13", mlvl="83-83", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[336] = { nm="N", id="17183040", name="Vee_Ladu_the_Titterer", mj="13", sj="13", mlvl="83-83", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[337] = { nm="N", id="17183041", name="Vee_Ladu_the_Titterer", mj="13", sj="13", mlvl="83-83", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[338] = { nm="N", id="17183042", name="Vee_Ladu_the_Titterer", mj="13", sj="13", mlvl="83-83", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[339] = { nm="N", id="17183043", name="Duu_Nazo_the_Spryfooted", mj="2", sj="2", mlvl="83-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[340] = { nm="N", id="17183044", name="Duu_Nazo_the_Spryfooted", mj="2", sj="2", mlvl="83-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[341] = { nm="N", id="17183045", name="Duu_Nazo_the_Spryfooted", mj="2", sj="2", mlvl="83-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[342] = { nm="N", id="17183046", name="Duu_Nazo_the_Spryfooted", mj="2", sj="2", mlvl="83-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[343] = { nm="N", id="17183047", name="Soo_Luma_the_Ascended", mj="1", sj="1", mlvl="85-90", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[344] = { nm="N", id="17183049", name="Roo_Beju_the_Eulogizer", mj="1", sj="1", mlvl="0-0", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[345] = { nm="N", id="17183050", name="Zjaa_Bao_the_Wrathherald", mj="1", sj="1", mlvl="0-0", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[346] = { nm="N", id="17183051", name="Jii_Xai_the_Rimebladed", mj="1", sj="1", mlvl="0-0", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[347] = { nm="N", id="17183052", name="Soo_Luma_the_Ascended", mj="1", sj="1", mlvl="85-90", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[348] = { nm="N", id="17183054", name="Roo_Beju_the_Eulogizer", mj="1", sj="1", mlvl="0-0", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[349] = { nm="N", id="17183055", name="Zjaa_Bao_the_Wrathherald", mj="1", sj="1", mlvl="0-0", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[350] = { nm="N", id="17183056", name="Jii_Xai_the_Rimebladed", mj="1", sj="1", mlvl="0-0", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[351] = { nm="N", id="17183057", name="Soo_Luma_the_Ascended", mj="1", sj="1", mlvl="85-90", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[352] = { nm="N", id="17183059", name="Roo_Beju_the_Eulogizer", mj="1", sj="1", mlvl="0-0", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[353] = { nm="N", id="17183060", name="Zjaa_Bao_the_Wrathherald", mj="1", sj="1", mlvl="0-0", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[354] = { nm="N", id="17183061", name="Jii_Xai_the_Rimebladed", mj="1", sj="1", mlvl="0-0", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[355] = { nm="N", id="17183062", name="Tzee_Xicu_the_Manifest", mj="15", sj="15", mlvl="0-0", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[356] = { nm="N", id="17183063", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[357] = { nm="N", id="17183064", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[358] = { nm="N", id="17183065", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[359] = { nm="N", id="17183066", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[360] = { nm="N", id="17183068", name="Tzee_Xicu_the_Manifest", mj="15", sj="15", mlvl="0-0", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[361] = { nm="N", id="17183069", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[362] = { nm="N", id="17183070", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[363] = { nm="N", id="17183071", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[364] = { nm="N", id="17183072", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[365] = { nm="N", id="17183074", name="Tzee_Xicu_the_Manifest", mj="15", sj="15", mlvl="0-0", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[366] = { nm="N", id="17183075", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[367] = { nm="N", id="17183076", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[368] = { nm="N", id="17183077", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[369] = { nm="N", id="17183078", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[370] = { nm="N", id="17183080", name="Kayeel-Payeel", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[371] = { nm="N", id="17183081", name="Ice_Fiend", mj="4", sj="5", mlvl="1-1", aggro="M", links="N", weak="Fire", strong="Melee,Ice,Wind", respawntime="1", items="", steal="" }
+	mb_data[372] = { nm="N", id="17183082", name="Thunder_Fiend", mj="4", sj="5", mlvl="1-1", aggro="M", links="N", weak="Earth", strong="Melee,Lightning,Water", respawntime="1", items="", steal="" }
+	mb_data[373] = { nm="N", id="17183083", name="Aquarian_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[374] = { nm="N", id="17183084", name="Aquarian_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[375] = { nm="N", id="17183085", name="Aquarian_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[376] = { nm="N", id="17183086", name="Aquarian_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[377] = { nm="N", id="17183087", name="Aquarian_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[378] = { nm="N", id="17183088", name="Aquarian_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[379] = { nm="N", id="17183089", name="Aquarian_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[380] = { nm="N", id="17183090", name="Aquarian_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[381] = { nm="N", id="17183091", name="Aquarian_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[382] = { nm="N", id="17183092", name="Gariri", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[383] = { nm="N", id="17183093", name="Flame_Giant", mj="1", sj="1", mlvl="1-1", aggro="S,H,Assists,???", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[384] = { nm="N", id="17183094", name="Scorpion_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[385] = { nm="N", id="17183095", name="Scorpion_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[386] = { nm="N", id="17183096", name="Scorpion_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[387] = { nm="N", id="17183097", name="Scorpion_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[388] = { nm="N", id="17183098", name="Scorpion_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[389] = { nm="N", id="17183099", name="Scorpion_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[390] = { nm="N", id="17183100", name="Scorpion_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[391] = { nm="N", id="17183101", name="Scorpion_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[392] = { nm="N", id="17183102", name="Scorpion_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[393] = { nm="N", id="17183103", name="Zolku-Azolku", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[394] = { nm="N", id="17183104", name="Libran_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[395] = { nm="N", id="17183105", name="Libran_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[396] = { nm="N", id="17183106", name="Libran_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[397] = { nm="N", id="17183107", name="Libran_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[398] = { nm="N", id="17183108", name="Libran_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[399] = { nm="N", id="17183109", name="Libran_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[400] = { nm="N", id="17183110", name="Libran_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[401] = { nm="N", id="17183111", name="Libran_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[402] = { nm="N", id="17183112", name="Libran_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[403] = { nm="N", id="17183113", name="Lhu_Mhakaracca", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[404] = { nm="N", id="17183114", name="Pya", mj="1", sj="1", mlvl="1-1", aggro="A,S", links="Y", weak="Piercing,Ice", strong="Slashing,Blunt,Wind,Fire,Earth,Lightning,Water,Light,Dark", respawntime="1", items="", steal="" }
+	mb_data[405] = { nm="N", id="17183115", name="Kyo", mj="1", sj="1", mlvl="1-1", aggro="A,S", links="Y", weak="Piercing,Ice", strong="Slashing,Blunt,Wind,Fire,Earth,Lightning,Water,Light,Dark", respawntime="1", items="", steal="" }
+	mb_data[406] = { nm="N", id="17183116", name="Python_Mercenary", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[407] = { nm="N", id="17183117", name="Python_Mercenary", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[408] = { nm="N", id="17183118", name="Python_Mercenary", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[409] = { nm="N", id="17183119", name="Python_Mercenary", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[410] = { nm="N", id="17183120", name="Python_Mercenary", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[411] = { nm="N", id="17183121", name="Python_Mercenary", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[412] = { nm="N", id="17183122", name="Python_Mercenary", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[413] = { nm="N", id="17183123", name="Python_Mercenary", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[414] = { nm="N", id="17183124", name="Python_Mercenary", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[415] = { nm="N", id="17183125", name="Haja_Zhwan", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[416] = { nm="N", id="17183126", name="Wildcat_Volunteer", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[417] = { nm="N", id="17183127", name="Wildcat_Volunteer", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[418] = { nm="N", id="17183128", name="Wildcat_Volunteer", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[419] = { nm="N", id="17183129", name="Wildcat_Volunteer", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[420] = { nm="N", id="17183130", name="Wildcat_Volunteer", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[421] = { nm="N", id="17183131", name="Wildcat_Volunteer", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[422] = { nm="N", id="17183132", name="Wildcat_Volunteer", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[423] = { nm="N", id="17183133", name="Wildcat_Volunteer", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[424] = { nm="N", id="17183134", name="Wildcat_Volunteer", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[425] = { nm="N", id="17183135", name="Piscean_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[426] = { nm="N", id="17183136", name="Piscean_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[427] = { nm="N", id="17183137", name="Piscean_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[428] = { nm="N", id="17183138", name="Piscean_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[429] = { nm="N", id="17183139", name="Piscean_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[430] = { nm="N", id="17183140", name="Piscean_Caster", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[431] = { nm="N", id="17183141", name="Allied_Mantelet", mj="1", sj="1", mlvl="1-1", aggro="L,S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[432] = { nm="N", id="17183142", name="Allied_Mantelet", mj="1", sj="1", mlvl="1-1", aggro="L,S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[433] = { nm="N", id="17183143", name="Allied_Mantelet", mj="1", sj="1", mlvl="1-1", aggro="L,S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[434] = { nm="N", id="17183144", name="Allied_Mantelet", mj="1", sj="1", mlvl="1-1", aggro="L,S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[435] = { nm="N", id="17183145", name="Allied_Mantelet", mj="1", sj="1", mlvl="1-1", aggro="L,S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[436] = { nm="N", id="17183146", name="Allied_Mantelet", mj="1", sj="1", mlvl="1-1", aggro="L,S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[437] = { nm="N", id="17183147", name="Nail_Bomb", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[438] = { nm="N", id="17183148", name="Nail_Bomb", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[439] = { nm="N", id="17183149", name="Nail_Bomb", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[440] = { nm="N", id="17183150", name="Nail_Bomb", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[441] = { nm="N", id="17183151", name="Nail_Bomb", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[442] = { nm="N", id="17183152", name="Nail_Bomb", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[443] = { nm="N", id="17183153", name="Allied_Belfry", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[444] = { nm="N", id="17183154", name="Wildcat_Vanguard", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[445] = { nm="N", id="17183155", name="Wildcat_Vanguard", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[446] = { nm="N", id="17183156", name="Wildcat_Vanguard", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[447] = { nm="N", id="17183157", name="Wildcat_Vanguard", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[448] = { nm="N", id="17183158", name="Wildcat_Vanguard", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[449] = { nm="N", id="17183159", name="Wildcat_Vanguard", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[450] = { nm="N", id="17183160", name="Allied_Armored_Belfry", mj="1", sj="1", mlvl="0-0", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[451] = { nm="N", id="17183161", name="Cardian_Prototype", mj="4", sj="4", mlvl="1-1", aggro="A,H,M", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[452] = { nm="N", id="17183162", name="Cardian_Prototype", mj="4", sj="4", mlvl="1-1", aggro="A,H,M", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[453] = { nm="N", id="17183163", name="Cardian_Prototype", mj="4", sj="4", mlvl="1-1", aggro="A,H,M", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[454] = { nm="N", id="17183164", name="Cardian_Prototype", mj="4", sj="4", mlvl="1-1", aggro="A,H,M", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[455] = { nm="N", id="17183165", name="Cardian_Prototype", mj="4", sj="4", mlvl="1-1", aggro="A,H,M", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[456] = { nm="N", id="17183166", name="Cardian_Prototype", mj="4", sj="4", mlvl="1-1", aggro="A,H,M", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[457] = { nm="N", id="17183167", name="Combat_Salvemixer", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[458] = { nm="N", id="17183168", name="Combat_Salvemixer", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[459] = { nm="N", id="17183169", name="Combat_Salvemixer", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[460] = { nm="N", id="17183170", name="Combat_Salvemixer", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[461] = { nm="N", id="17183171", name="Combat_Salvemixer", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[462] = { nm="N", id="17183172", name="Combat_Salvemixer", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[463] = { nm="N", id="17183173", name="Vee_Qiqa_the_Decreer", mj="15", sj="15", mlvl="0-0", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="L. Jadeshell", steal="" }
+	mb_data[464] = { nm="N", id="17183174", name="Vee_Qiqas_Elemental", mj="4", sj="5", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[465] = { nm="N", id="17183175", name="Vee_Qiqas_Elemental", mj="4", sj="5", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[466] = { nm="N", id="17183176", name="Vee_Qiqas_Elemental", mj="4", sj="5", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[467] = { nm="N", id="17183177", name="Vee_Qiqas_Elemental", mj="4", sj="5", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[468] = { nm="N", id="17183178", name="Divine_Templar", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[469] = { nm="N", id="17183179", name="Divine_Templar", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[470] = { nm="N", id="17183180", name="Divine_Templar", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[471] = { nm="N", id="17183181", name="Divine_Templar", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[472] = { nm="N", id="17183182", name="Divine_Templar", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[473] = { nm="N", id="17183183", name="Divine_Templar", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[474] = { nm="N", id="17183184", name="Divine_Templar", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[475] = { nm="N", id="17183185", name="Divine_Templar", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[476] = { nm="N", id="17183186", name="Divine_Templar", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[477] = { nm="N", id="17183187", name="Moo_Ouzi_the_Swiftblade", mj="12", sj="12", mlvl="0-0", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[478] = { nm="N", id="17183188", name="Divine_Disseminator", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[479] = { nm="N", id="17183189", name="Divine_Disseminator", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[480] = { nm="N", id="17183190", name="Divine_Disseminator", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[481] = { nm="N", id="17183191", name="Divine_Disseminator", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[482] = { nm="N", id="17183192", name="Divine_Disseminator", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[483] = { nm="N", id="17183193", name="Divine_Disseminator", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[484] = { nm="N", id="17183194", name="Divine_Disseminator", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[485] = { nm="N", id="17183195", name="Divine_Disseminator", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[486] = { nm="N", id="17183196", name="Divine_Disseminator", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[487] = { nm="N", id="17183197", name="Muu_Buxu_the_Elusive", mj="13", sj="13", mlvl="0-0", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="Tsukumo", steal="" }
+	mb_data[488] = { nm="N", id="17183198", name="Divine_Assassin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[489] = { nm="N", id="17183199", name="Divine_Assassin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[490] = { nm="N", id="17183200", name="Divine_Assassin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[491] = { nm="N", id="17183201", name="Divine_Assassin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[492] = { nm="N", id="17183202", name="Divine_Assassin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[493] = { nm="N", id="17183203", name="Divine_Assassin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[494] = { nm="N", id="17183204", name="Divine_Assassin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[495] = { nm="N", id="17183205", name="Divine_Assassin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[496] = { nm="N", id="17183206", name="Divine_Assassin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[497] = { nm="N", id="17183207", name="Dee_Xalmo_the_Grim", mj="2", sj="2", mlvl="0-0", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="Silk Thread, Dragon Scales, Max-Potion, Vitality Potion", steal="" }
+	mb_data[498] = { nm="N", id="17183208", name="Divine_Ascetic", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[499] = { nm="N", id="17183209", name="Divine_Ascetic", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[500] = { nm="N", id="17183210", name="Divine_Ascetic", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[501] = { nm="N", id="17183211", name="Divine_Ascetic", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[502] = { nm="N", id="17183212", name="Divine_Ascetic", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[503] = { nm="N", id="17183213", name="Divine_Ascetic", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[504] = { nm="N", id="17183214", name="Divine_Ascetic", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[505] = { nm="N", id="17183215", name="Divine_Ascetic", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[506] = { nm="N", id="17183216", name="Divine_Ascetic", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[507] = { nm="N", id="17183217", name="Kazan_the_Peerless", mj="13", sj="12", mlvl="0-0", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="Wind Cluster, Hyoton: Ni, Doton: Ni, Agaricus, Juji Shuriken", steal="" }
+	mb_data[508] = { nm="N", id="17183218", name="Plenilune_Ronin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[509] = { nm="N", id="17183219", name="Plenilune_Ronin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[510] = { nm="N", id="17183220", name="Plenilune_Ronin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[511] = { nm="N", id="17183221", name="Plenilune_Ronin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[512] = { nm="N", id="17183222", name="Plenilune_Ronin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[513] = { nm="N", id="17183223", name="Plenilune_Ronin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[514] = { nm="N", id="17183224", name="Plenilune_Ronin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[515] = { nm="N", id="17183225", name="Plenilune_Ronin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[516] = { nm="N", id="17183226", name="Plenilune_Ronin", mj="13", sj="13", mlvl="60-60", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[517] = { nm="N", id="17183227", name="Vuu_Puqu_the_Beguiler", mj="10", sj="10", mlvl="0-0", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="0", items="Bird Whistle, Bonze's Circlet", steal="" }
+	mb_data[518] = { nm="N", id="17183228", name="Divine_Inspirer", mj="10", sj="10", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[519] = { nm="N", id="17183229", name="Divine_Inspirer", mj="10", sj="10", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[520] = { nm="N", id="17183230", name="Divine_Inspirer", mj="10", sj="10", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[521] = { nm="N", id="17183231", name="Divine_Inspirer", mj="10", sj="10", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[522] = { nm="N", id="17183232", name="Divine_Inspirer", mj="10", sj="10", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[523] = { nm="N", id="17183233", name="Divine_Inspirer", mj="10", sj="10", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[524] = { nm="N", id="17183234", name="Divine_Inspirer", mj="10", sj="10", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[525] = { nm="N", id="17183235", name="Divine_Inspirer", mj="10", sj="10", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[526] = { nm="N", id="17183236", name="Divine_Inspirer", mj="10", sj="10", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[527] = { nm="N", id="17183237", name="Yuu_Mjuu_the_Awakened", mj="3", sj="15", mlvl="0-0", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[528] = { nm="N", id="17183238", name="Yuu_Mjuus_Elemental", mj="3", sj="3", mlvl="0-0", aggro="A,M", links="Y", weak="Dark", strong="Melee,Light", respawntime="0", items="", steal="" }
+	mb_data[529] = { nm="N", id="17183239", name="Yuu_Mjuus_Elemental", mj="3", sj="3", mlvl="0-0", aggro="A,M", links="Y", weak="Dark", strong="Melee,Light", respawntime="0", items="", steal="" }
+	mb_data[530] = { nm="N", id="17183240", name="Divine_Sentinel", mj="3", sj="3", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[531] = { nm="N", id="17183241", name="Divine_Sentinel", mj="3", sj="3", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[532] = { nm="N", id="17183242", name="Divine_Sentinel", mj="3", sj="3", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[533] = { nm="N", id="17183243", name="Divine_Sentinel", mj="3", sj="3", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[534] = { nm="N", id="17183244", name="Divine_Sentinel", mj="3", sj="3", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[535] = { nm="N", id="17183245", name="Divine_Sentinel", mj="3", sj="3", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[536] = { nm="N", id="17183246", name="Divine_Sentinel", mj="3", sj="3", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[537] = { nm="N", id="17183247", name="Divine_Sentinel", mj="3", sj="3", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[538] = { nm="N", id="17183248", name="Divine_Sentinel", mj="3", sj="3", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[539] = { nm="N", id="17183249", name="Vaa_Oozu_the_Redolent", mj="1", sj="9", mlvl="0-0", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="C. Blood Broth, Erlking's Tabar", steal="" }
+	mb_data[540] = { nm="N", id="17183250", name="Vaa_Oozus_Scolopendrid", mj="1", sj="1", mlvl="0-0", aggro="A,T(H),Sc", links="Y", weak="Ice,Light", strong="", respawntime="0", items="", steal="" }
+	mb_data[541] = { nm="N", id="17183251", name="Vaa_Oozus_Scolopendrid", mj="1", sj="1", mlvl="0-0", aggro="A,T(H),Sc", links="Y", weak="Ice,Light", strong="", respawntime="0", items="", steal="" }
+	mb_data[542] = { nm="N", id="17183252", name="Divine_Inciter", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[543] = { nm="N", id="17183253", name="Divine_Inciter", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[544] = { nm="N", id="17183254", name="Divine_Inciter", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[545] = { nm="N", id="17183255", name="Divine_Inciter", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[546] = { nm="N", id="17183256", name="Divine_Inciter", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[547] = { nm="N", id="17183257", name="Divine_Inciter", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[548] = { nm="N", id="17183258", name="Divine_Inciter", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[549] = { nm="N", id="17183259", name="Divine_Inciter", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[550] = { nm="N", id="17183260", name="Divine_Inciter", mj="12", sj="12", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[551] = { nm="N", id="17183261", name="Yaa_Haqa_the_Pious", mj="4", sj="5", mlvl="0-0", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="Aero IV, Tornado", steal="" }
+	mb_data[552] = { nm="N", id="17183262", name="Divine_Liturgist", mj="4", sj="4", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[553] = { nm="N", id="17183263", name="Divine_Liturgist", mj="4", sj="4", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[554] = { nm="N", id="17183264", name="Divine_Liturgist", mj="4", sj="4", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[555] = { nm="N", id="17183265", name="Divine_Liturgist", mj="4", sj="4", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[556] = { nm="N", id="17183266", name="Divine_Liturgist", mj="4", sj="4", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[557] = { nm="N", id="17183267", name="Divine_Liturgist", mj="4", sj="4", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[558] = { nm="N", id="17183268", name="Divine_Liturgist", mj="4", sj="4", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[559] = { nm="N", id="17183269", name="Divine_Liturgist", mj="4", sj="4", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[560] = { nm="N", id="17183270", name="Divine_Liturgist", mj="4", sj="4", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[561] = { nm="N", id="17183271", name="Vee_Seju_the_Consumed", mj="2", sj="15", mlvl="0-0", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="Ice Spirit, Thunder Spirit", steal="" }
+	mb_data[562] = { nm="N", id="17183272", name="Vee_Sejus_Elemental", mj="4", sj="5", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[563] = { nm="N", id="17183273", name="Vee_Sejus_Elemental", mj="4", sj="5", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[564] = { nm="N", id="17183274", name="Divine_Martyr", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[565] = { nm="N", id="17183275", name="Divine_Martyr", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[566] = { nm="N", id="17183276", name="Divine_Martyr", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[567] = { nm="N", id="17183277", name="Divine_Martyr", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[568] = { nm="N", id="17183278", name="Divine_Martyr", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[569] = { nm="N", id="17183279", name="Divine_Martyr", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[570] = { nm="N", id="17183280", name="Divine_Martyr", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[571] = { nm="N", id="17183281", name="Divine_Martyr", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[572] = { nm="N", id="17183282", name="Divine_Martyr", mj="15", sj="15", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[573] = { nm="N", id="17183283", name="Divine_Pilgrim", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[574] = { nm="N", id="17183284", name="Divine_Pilgrim", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[575] = { nm="N", id="17183285", name="Divine_Pilgrim", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[576] = { nm="N", id="17183286", name="Divine_Pilgrim", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[577] = { nm="N", id="17183287", name="Divine_Pilgrim", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[578] = { nm="N", id="17183288", name="Divine_Pilgrim", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[579] = { nm="N", id="17183289", name="Confederate_Mantelet", mj="1", sj="1", mlvl="75-80", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[580] = { nm="N", id="17183290", name="Confederate_Mantelet", mj="1", sj="1", mlvl="75-80", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[581] = { nm="N", id="17183291", name="Confederate_Mantelet", mj="1", sj="1", mlvl="75-80", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[582] = { nm="N", id="17183292", name="Confederate_Mantelet", mj="1", sj="1", mlvl="75-80", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[583] = { nm="N", id="17183293", name="Confederate_Mantelet", mj="1", sj="1", mlvl="75-80", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[584] = { nm="N", id="17183294", name="Confederate_Mantelet", mj="1", sj="1", mlvl="75-80", aggro="L,S", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[585] = { nm="N", id="17183295", name="Iron_Bomb", mj="1", sj="1", mlvl="75-75", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[586] = { nm="N", id="17183296", name="Iron_Bomb", mj="1", sj="1", mlvl="75-75", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[587] = { nm="N", id="17183297", name="Iron_Bomb", mj="1", sj="1", mlvl="75-75", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[588] = { nm="N", id="17183298", name="Iron_Bomb", mj="1", sj="1", mlvl="75-75", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[589] = { nm="N", id="17183299", name="Iron_Bomb", mj="1", sj="1", mlvl="75-75", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[590] = { nm="N", id="17183300", name="Iron_Bomb", mj="1", sj="1", mlvl="75-75", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[591] = { nm="N", id="17183301", name="Confederate_Belfry", mj="1", sj="1", mlvl="75-80", aggro="H", links="N", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[592] = { nm="N", id="17183302", name="Yagudo_Genja", mj="13", sj="13", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[593] = { nm="N", id="17183303", name="Yagudo_Genja", mj="13", sj="13", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[594] = { nm="N", id="17183304", name="Yagudo_Genja", mj="13", sj="13", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[595] = { nm="N", id="17183305", name="Yagudo_Genja", mj="13", sj="13", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[596] = { nm="N", id="17183306", name="Yagudo_Genja", mj="13", sj="13", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[597] = { nm="N", id="17183307", name="Yagudo_Genja", mj="13", sj="13", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Ice", strong="", respawntime="0", items="", steal="" }
+	mb_data[598] = { nm="N", id="17183308", name="Yagudo_Turret", mj="11", sj="11", mlvl="75-80", aggro="A,S", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[599] = { nm="N", id="17183309", name="War_Lynx", mj="1", sj="1", mlvl="71-73", aggro="A,S,Sc", links="N", weak="Earth", strong="", respawntime="960", items="Lynx Hide, Lynx Meat", steal="" }
+	mb_data[600] = { nm="N", id="17183310", name="War_Lynx", mj="1", sj="1", mlvl="71-73", aggro="A,S,Sc", links="N", weak="Earth", strong="", respawntime="960", items="Lynx Hide, Lynx Meat", steal="" }
+	mb_data[601] = { nm="N", id="17183311", name="War_Lynx", mj="1", sj="1", mlvl="71-73", aggro="A,S,Sc", links="N", weak="Earth", strong="", respawntime="960", items="Lynx Hide, Lynx Meat", steal="" }
+	mb_data[602] = { nm="N", id="17183312", name="War_Lynx", mj="1", sj="1", mlvl="71-73", aggro="A,S,Sc", links="N", weak="Earth", strong="", respawntime="960", items="Lynx Hide, Lynx Meat", steal="" }
+	mb_data[603] = { nm="N", id="17183313", name="War_Lynx", mj="1", sj="1", mlvl="71-73", aggro="A,S,Sc", links="N", weak="Earth", strong="", respawntime="960", items="Lynx Hide, Lynx Meat", steal="" }
+	mb_data[604] = { nm="N", id="17183314", name="War_Lynx", mj="1", sj="1", mlvl="71-73", aggro="A,S,Sc", links="N", weak="Earth", strong="", respawntime="960", items="Lynx Hide, Lynx Meat", steal="" }
+	mb_data[605] = { nm="N", id="17183315", name="Fiendish_Leechkeeper", mj="20", sj="5", mlvl="75-80", aggro="A,T(S),T(H)", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[606] = { nm="N", id="17183316", name="Fiendish_Leechkeeper", mj="20", sj="5", mlvl="75-80", aggro="A,T(S),T(H)", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[607] = { nm="N", id="17183317", name="Fiendish_Leechkeeper", mj="20", sj="5", mlvl="75-80", aggro="A,T(S),T(H)", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[608] = { nm="N", id="17183318", name="Fiendish_Leechkeeper", mj="20", sj="5", mlvl="75-80", aggro="A,T(S),T(H)", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[609] = { nm="N", id="17183319", name="Fiendish_Leechkeeper", mj="20", sj="5", mlvl="75-80", aggro="A,T(S),T(H)", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[610] = { nm="N", id="17183320", name="Fiendish_Leechkeeper", mj="20", sj="5", mlvl="75-80", aggro="A,T(S),T(H)", links="N", weak="Piercing,Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[611] = { nm="N", id="17183321", name="Shadowhorn", mj="2", sj="4", mlvl="75-80", aggro="A,T(S)", links="Y", weak="Hand-to-Hand,Blunt,Light", strong="Dark", respawntime="0", items="Silver Ore, Deathstone, Rainbow Thread, Taurus Horn, Taurus Wing", steal="" }
+	mb_data[612] = { nm="N", id="17183322", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[613] = { nm="N", id="17183323", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[614] = { nm="N", id="17183324", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[615] = { nm="N", id="17183325", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[616] = { nm="N", id="17183326", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[617] = { nm="N", id="17183327", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[618] = { nm="N", id="17183328", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[619] = { nm="N", id="17183329", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[620] = { nm="N", id="17183330", name="Shadowhorn_Stormer", mj="2", sj="2", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[621] = { nm="N", id="17183331", name="Shadowhand", mj="1", sj="4", mlvl="75-80", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="Steel Ingot, Smilodon Hide, Stun, Ogre Sickle", steal="" }
+	mb_data[622] = { nm="N", id="17183332", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[623] = { nm="N", id="17183333", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[624] = { nm="N", id="17183334", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[625] = { nm="N", id="17183335", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[626] = { nm="N", id="17183336", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[627] = { nm="N", id="17183337", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[628] = { nm="N", id="17183338", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[629] = { nm="N", id="17183339", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[630] = { nm="N", id="17183340", name="Shadowhand_Cuirassier", mj="1", sj="4", mlvl="60-60", aggro="A,T(H),HP", links="Y", weak="Fire,Light", strong="Ice,Dark", respawntime="0", items="", steal="" }
+	mb_data[631] = { nm="N", id="17183341", name="Shadowfang", mj="15", sj="8", mlvl="75-80", aggro="A,T(S),Sc", links="Y", weak="Light", strong="", respawntime="0", items="Dread Spikes, Absorb-ACC", steal="" }
+	mb_data[632] = { nm="N", id="17183342", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[633] = { nm="N", id="17183343", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[634] = { nm="N", id="17183344", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[635] = { nm="N", id="17183345", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[636] = { nm="N", id="17183346", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[637] = { nm="N", id="17183347", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[638] = { nm="N", id="17183348", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[639] = { nm="N", id="17183349", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[640] = { nm="N", id="17183350", name="Shadowfang_Void", mj="8", sj="5", mlvl="60-60", aggro="A,M", links="Y", weak="Light", strong="Melee,Dark", respawntime="0", items="", steal="" }
+	mb_data[641] = { nm="N", id="17183352", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[642] = { nm="N", id="17183353", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[643] = { nm="N", id="17183354", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[644] = { nm="N", id="17183355", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[645] = { nm="N", id="17183356", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[646] = { nm="N", id="17183357", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[647] = { nm="N", id="17183358", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[648] = { nm="N", id="17183359", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[649] = { nm="N", id="17183360", name="Shadoweye_Gnat", mj="6", sj="6", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Light", strong="Dark,Wind", respawntime="0", items="", steal="" }
+	mb_data[650] = { nm="N", id="17183361", name="Fortification", mj="1", sj="1", mlvl="50-50", aggro="S", links="N", weak="", strong="", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[651] = { nm="N", id="17183362", name="Fortification", mj="1", sj="1", mlvl="50-50", aggro="S", links="N", weak="", strong="", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[652] = { nm="N", id="17183363", name="Fortification", mj="1", sj="1", mlvl="50-50", aggro="S", links="N", weak="", strong="", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[653] = { nm="N", id="17183364", name="Fortification", mj="1", sj="1", mlvl="50-50", aggro="S", links="N", weak="", strong="", respawntime="0", items="Pugil Scales", steal="Fish Scales" }
+	mb_data[654] = { nm="N", id="17183365", name="Rikoh_Wahcondalo", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[655] = { nm="N", id="17183366", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[656] = { nm="N", id="17183367", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[657] = { nm="N", id="17183368", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[658] = { nm="N", id="17183369", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[659] = { nm="N", id="17183370", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[660] = { nm="N", id="17183371", name="Kagetora", mj="13", sj="13", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[661] = { nm="N", id="17183372", name="Dalzakk", mj="2", sj="2", mlvl="1-1", aggro="L,S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[662] = { nm="N", id="17183373", name="Oggbi", mj="2", sj="2", mlvl="1-1", aggro="L,S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[663] = { nm="N", id="17183374", name="Rainemard", mj="5", sj="5", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[664] = { nm="N", id="17183375", name="Maat", mj="2", sj="0", mlvl="1-1", aggro="S,H", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[665] = { nm="N", id="17183376", name="Degenhard", mj="2", sj="2", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[666] = { nm="N", id="17183377", name="Azima", mj="4", sj="4", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[667] = { nm="N", id="17183378", name="Choh_Moui", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[668] = { nm="N", id="17183379", name="Chigoe", mj="6", sj="6", mlvl="1-1", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="1", items="", steal="" }
+	mb_data[669] = { nm="N", id="17183380", name="Chigoe", mj="6", sj="6", mlvl="1-1", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="1", items="", steal="" }
+	mb_data[670] = { nm="N", id="17183381", name="Chigoe", mj="6", sj="6", mlvl="1-1", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="1", items="", steal="" }
+	mb_data[671] = { nm="N", id="17183382", name="Chigoe", mj="6", sj="6", mlvl="1-1", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="1", items="", steal="" }
+	mb_data[672] = { nm="N", id="17183383", name="Chigoe", mj="6", sj="6", mlvl="1-1", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="1", items="", steal="" }
+	mb_data[673] = { nm="N", id="17183384", name="Chigoe", mj="6", sj="6", mlvl="1-1", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="1", items="", steal="" }
+	mb_data[674] = { nm="N", id="17183385", name="Chigoe", mj="6", sj="6", mlvl="1-1", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="1", items="", steal="" }
+	mb_data[675] = { nm="N", id="17183386", name="Chigoe", mj="6", sj="6", mlvl="1-1", aggro="A,S,H", links="N", weak="Fire,Water", strong="Earth,Ice,Wind,Lightning,Light,Dark", respawntime="1", items="", steal="" }
+	mb_data[676] = { nm="N", id="17183387", name="Azo", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Ice", strong="", respawntime="1", items="", steal="" }
+	mb_data[677] = { nm="N", id="17183388", name="Vahi", mj="1", sj="1", mlvl="1-1", aggro="H,Sc", links="N", weak="Ice,Light", strong="", respawntime="1", items="", steal="" }
+	mb_data[678] = { nm="N", id="17183389", name="Rongo-Nango", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[679] = { nm="N", id="17183390", name="Lerren", mj="1", sj="1", mlvl="1-1", aggro="S,Sc", links="N", weak="Fire,Lightning", strong="", respawntime="1", items="", steal="" }
+	mb_data[680] = { nm="N", id="17183391", name="Jajaro", mj="1", sj="1", mlvl="1-1", aggro="A,S", links="N", weak="Water", strong="Ice", respawntime="1", items="", steal="" }
+	mb_data[681] = { nm="N", id="17183392", name="Popochu", mj="3", sj="3", mlvl="1-1", aggro="S,Sc", links="N", weak="Wind,Lightning", strong="", respawntime="1", items="", steal="" }
+	mb_data[682] = { nm="N", id="17183393", name="Papako", mj="1", sj="1", mlvl="1-1", aggro="S,Sc", links="N", weak="Water", strong="Fire,Wind", respawntime="1", items="", steal="" }
+	mb_data[683] = { nm="N", id="17183394", name="Momowa", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Piercing,Ice", strong="", respawntime="1", items="", steal="" }
+	mb_data[684] = { nm="N", id="17183395", name="Ulla", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[685] = { nm="N", id="17183396", name="Kilhwch", mj="7", sj="7", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[686] = { nm="N", id="17183397", name="Alfons", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[687] = { nm="N", id="17183398", name="Achtelle", mj="14", sj="14", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[688] = { nm="N", id="17183399", name="Bravo", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="Dark", strong="Light,Fire,Wind", respawntime="1", items="", steal="" }
+	mb_data[689] = { nm="N", id="17183400", name="Duskraven", mj="8", sj="4", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[690] = { nm="N", id="17183401", name="Dusk_Raider", mj="8", sj="8", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[691] = { nm="N", id="17183402", name="Dusk_Raider", mj="8", sj="8", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[692] = { nm="N", id="17183403", name="Dusk_Raider", mj="8", sj="8", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[693] = { nm="N", id="17183404", name="Dusk_Raider", mj="8", sj="8", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[694] = { nm="N", id="17183405", name="Dusk_Raider", mj="8", sj="8", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[695] = { nm="N", id="17183406", name="Areuhat", mj="7", sj="7", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[696] = { nm="N", id="17183407", name="Odzmanouk", mj="1", sj="1", mlvl="1-1", aggro="S", links="N", weak="Lightning,Water", strong="", respawntime="1", items="", steal="" }
+	mb_data[697] = { nm="N", id="17183408", name="Boodlix", mj="1", sj="1", mlvl="75-80", aggro="A,T(S)", links="Y", weak="Light", strong="", respawntime="0", items="", steal="" }
+	mb_data[698] = { nm="N", id="17183409", name="Goblin_Lansquenet", mj="1", sj="1", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Light", strong="", respawntime="0", items="", steal="" }
+	mb_data[699] = { nm="N", id="17183410", name="Goblin_Lansquenet", mj="1", sj="1", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Light", strong="", respawntime="0", items="", steal="" }
+	mb_data[700] = { nm="N", id="17183411", name="Goblin_Lansquenet", mj="1", sj="1", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Light", strong="", respawntime="0", items="", steal="" }
+	mb_data[701] = { nm="N", id="17183412", name="Titania", mj="1", sj="1", mlvl="1-1", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="1", items="", steal="" }
+	mb_data[702] = { nm="N", id="17183413", name="Faerie", mj="1", sj="1", mlvl="1-1", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="1", items="", steal="" }
+	mb_data[703] = { nm="N", id="17183414", name="Faerie", mj="1", sj="1", mlvl="1-1", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="1", items="", steal="" }
+	mb_data[704] = { nm="N", id="17183415", name="Faerie", mj="1", sj="1", mlvl="1-1", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="1", items="", steal="" }
+	mb_data[705] = { nm="N", id="17183416", name="Faerie", mj="1", sj="1", mlvl="1-1", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="1", items="", steal="" }
+	mb_data[706] = { nm="N", id="17183417", name="Faerie", mj="1", sj="1", mlvl="1-1", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="1", items="", steal="" }
+	mb_data[707] = { nm="N", id="17183418", name="Faerie", mj="1", sj="1", mlvl="1-1", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="1", items="", steal="" }
+	mb_data[708] = { nm="N", id="17183419", name="Faerie", mj="1", sj="1", mlvl="1-1", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="1", items="", steal="" }
+	mb_data[709] = { nm="N", id="17183420", name="Faerie", mj="1", sj="1", mlvl="1-1", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="1", items="", steal="" }
+	mb_data[710] = { nm="N", id="17183421", name="Faerie", mj="1", sj="1", mlvl="1-1", aggro="A,S,HP", links="N", weak="", strong="Melee,Wind,Light,Fire,Ice,Earth,Lightning,Water,Dark", respawntime="1", items="", steal="" }
+	mb_data[711] = { nm="N", id="17183422", name="Babban_Ny_Mheillea", mj="2", sj="2", mlvl="0-0", aggro="H", links="N", weak="Piercing,Fire,Ice,Wind,Lightning,Dark", strong="", respawntime="0", items="", steal="" }
+	mb_data[712] = { nm="N", id="17183423", name="Abenzio", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Fire,Dark", strong="", respawntime="1", items="", steal="" }
+	mb_data[713] = { nm="N", id="17183424", name="Bryher", mj="1", sj="1", mlvl="1-1", aggro="A,H", links="N", weak="Fire", strong="Water,Dark", respawntime="1", items="", steal="" }
+	mb_data[714] = { nm="N", id="17183425", name="Camlin", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Ice", strong="Water,Light,Wind,Earth", respawntime="1", items="", steal="" }
+	mb_data[715] = { nm="N", id="17183426", name="Darach", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Fire,Dark", strong="", respawntime="1", items="", steal="" }
+	mb_data[716] = { nm="N", id="17183428", name="Ancient_Royal_Knight", mj="1", sj="1", mlvl="0-0", aggro="A,T(H),HP", links="Y", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="0", items="", steal="" }
+	mb_data[717] = { nm="N", id="17183429", name="Ancient_Royal_Knight", mj="1", sj="1", mlvl="0-0", aggro="A,T(H),HP", links="Y", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="0", items="", steal="" }
+	mb_data[718] = { nm="N", id="17183430", name="Ancient_Royal_Knight", mj="1", sj="1", mlvl="0-0", aggro="A,T(H),HP", links="Y", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="0", items="", steal="" }
+	mb_data[719] = { nm="N", id="17183431", name="Ancient_Royal_Knight", mj="1", sj="1", mlvl="0-0", aggro="A,T(H),HP", links="Y", weak="Hand-to-Hand,Blunt,Light", strong="Slashing,Piercing,Dark,Ice", respawntime="0", items="", steal="" }
+	mb_data[720] = { nm="N", id="17183432", name="Eurytos", mj="11", sj="1", mlvl="75-75", aggro="A,S", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[721] = { nm="N", id="17183433", name="Gigas_Mercenary", mj="11", sj="11", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[722] = { nm="N", id="17183434", name="Gigas_Mercenary", mj="11", sj="11", mlvl="60-60", aggro="A,T(S)", links="Y", weak="Earth", strong="Lightning", respawntime="0", items="", steal="" }
+	mb_data[723] = { nm="N", id="17183435", name="Poroggo_Prince", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Lightning", strong="Water,Light,Ice,Earth", respawntime="1", items="", steal="" }
+	mb_data[724] = { nm="N", id="17183436", name="Poroggo_Servant", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Lightning", strong="Water,Light,Ice,Earth", respawntime="1", items="", steal="" }
+	mb_data[725] = { nm="N", id="17183437", name="Poroggo_Servant", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Lightning", strong="Water,Light,Ice,Earth", respawntime="1", items="", steal="" }
+	mb_data[726] = { nm="N", id="17183438", name="Poroggo_Servant", mj="1", sj="1", mlvl="1-1", aggro="H", links="N", weak="Lightning", strong="Water,Light,Ice,Earth", respawntime="1", items="", steal="" }
+	mb_data[727] = { nm="N", id="17183439", name="Kaiser_Behemoth", mj="1", sj="1", mlvl="60-60", aggro="A,T(S)", links="Y", weak="", strong="", respawntime="0", items="", steal="" }
+	mb_data[728] = { nm="N", id="17183440", name="Ferreous_Coffin", mj="3", sj="3", mlvl="1-1", aggro="L,S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[729] = { nm="N", id="17183441", name="Lewenhart", mj="10", sj="10", mlvl="1-1", aggro="S", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[730] = { nm="N", id="17183442", name="Auroral_Alicorn", mj="1", sj="1", mlvl="1-1", aggro="S,H,Assists,???", links="N", weak="", strong="", respawntime="1", items="", steal="" }
+	mb_data[731] = { nm="N", id="17183443", name="Tzee_Xicu_the_Manifest", mj="15", sj="15", mlvl="0-0", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[732] = { nm="N", id="17183444", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[733] = { nm="N", id="17183445", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[734] = { nm="N", id="17183447", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[735] = { nm="N", id="17183448", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[736] = { nm="N", id="17183449", name="Tzee_Xicu_the_Manifest", mj="15", sj="15", mlvl="0-0", aggro="A,T(S)", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[737] = { nm="N", id="17183450", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[738] = { nm="N", id="17183451", name="Tzee_Xicus_Elemental", mj="4", sj="4", mlvl="0-0", aggro="A,M", links="Y", weak="Ice", strong="Melee,Wind,Earth", respawntime="0", items="", steal="" }
+	mb_data[739] = { nm="N", id="17240123", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[740] = { nm="N", id="17240144", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[741] = { nm="N", id="17240303", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[742] = { nm="N", id="17240314", name="Fire_Elemental", mj="4", sj="5", mlvl="80-80", aggro="A,M", links="N", weak="Water", strong="Melee,Fire,Ice", respawntime="960", items="Fire Cluster", steal="" }
+	mb_data[743] = { nm="N", id="17395943", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[744] = { nm="N", id="17395949", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[745] = { nm="N", id="17396070", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[746] = { nm="N", id="17396074", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[747] = { nm="N", id="17396078", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[748] = { nm="N", id="17396079", name="Yagudo_Parasite", mj="1", sj="1", mlvl="45-48", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="960", items="Fiend Blood, Parasite Skin", steal="" }
+	mb_data[749] = { nm="N", id="17396080", name="Yagudo_Parasite", mj="1", sj="1", mlvl="45-48", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="960", items="Fiend Blood, Parasite Skin", steal="" }
+	mb_data[750] = { nm="N", id="17396081", name="Yagudo_Parasite", mj="1", sj="1", mlvl="45-48", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="960", items="Fiend Blood, Parasite Skin", steal="" }
+	mb_data[751] = { nm="N", id="17396082", name="Yagudo_Parasite", mj="1", sj="1", mlvl="45-48", aggro="A,H", links="Y", weak="Light", strong="Hand-to-Hand,Blunt,Water,Dark", respawntime="960", items="Fiend Blood, Parasite Skin", steal="" }
+	mb_data[752] = { nm="N", id="17396086", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[753] = { nm="N", id="17396090", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[754] = { nm="N", id="17396094", name="Yagudo_Abbot_past", mj="3", sj="3", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="Water,Wind,Earth", respawntime="960", items="Yagudo Feather, Bottled Pixie, 108-Knot Quipu", steal="Plt. Beastcoin" }
+	mb_data[755] = { nm="N", id="17412192", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[756] = { nm="N", id="17412197", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[757] = { nm="N", id="17412202", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[758] = { nm="N", id="17412204", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
+	mb_data[759] = { nm="N", id="17412206", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[760] = { nm="N", id="17412208", name="Yagudo_Flagellant_past", mj="2", sj="2", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Feather, Yagudo Kote, Bottled Pixie", steal="Plt. Beastcoin" }
+	mb_data[761] = { nm="N", id="17412210", name="Yagudo_Yojimbo", mj="12", sj="12", mlvl="81-83", aggro="A,S", links="Y", weak="Ice", strong="", respawntime="960", items="Yagudo Osode, Yagudo Kote, Bottled Pixie, Gnat Pellets", steal="Plt. Beastcoin" }
 
 	return mb_data;
