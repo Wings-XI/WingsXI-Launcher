@@ -1,6 +1,7 @@
 @echo off
 echo NOTE: Make sure this .bat file is located in the \PlayOnline\SquareEnix\ directory for the install you wish to play on. Example: C:\Program Files (x86)\PlayOnline\SquareEnix\Switch.bat
 echo.
+pause
 net session >nul 2>&1
 if %errorLevel% == 0 (
     echo Administrative permissions confirmed.
