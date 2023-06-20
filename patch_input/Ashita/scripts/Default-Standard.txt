@@ -84,7 +84,7 @@
 /drawdistance setmob 10
 /drawdistance setentity 10
 /cam d 3
-/cam b 15
+/cam d 15
 /pivot add Maps-Remapster
 /pivot add WingsXI-Custom
 /pivot add AshenbubsHD
@@ -125,3 +125,4 @@
 /addon load renamer
 /wait 1
 /renamer load wings
+/addon load skillchains
