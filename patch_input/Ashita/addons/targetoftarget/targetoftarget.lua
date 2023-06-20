@@ -23,8 +23,8 @@
 * No warranties are given.
 ]]--
 
-_addon.author   = 'Created by atom0s Modified by Tornac';
-_addon.name     = 'petinfo';
+_addon.author   = 'MowFord (based on addon created by atom0s and Tornac)';
+_addon.name     = 'targetoftarget';
 _addon.version  = '3.0.1';
 
 require 'common'
