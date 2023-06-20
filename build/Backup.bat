@@ -22,7 +22,10 @@ timeout /t 5
 
 robocopy %params% "..\..\Ashita" "Ashita" /XF *.DAT *.PNG *.zip *.log *.7z *.wave  /XD logs
 
+cd %~dp0
 echo Ashita backup complete. Now renaming any windower stub files
-powershell.exe -command "& {get-childitem %~dp0\Ashita -recurse -file | ? name -eq 'windower'} | rename-item -newname windower_old"
+powershell.exe -command "& {get-childitem %cd%\Ashita -recurse -file | ? name -eq 'windower'} | rename-item -newname windower_old"
+echo Now removing all Dats\WingsXI-Custom files to ensure compliance
+powershell.exe -command "& {get-childitem %cd%\Ashita\plugins\DATs\WingsXI-Custom -directory | remove-item -confirm:$false -force -recurse}"
 
 timeout /t 5

@@ -8,12 +8,13 @@
 ##########################################################################
 
 /load xipivot
-/load Dats
+#/load Dats
 /wait 3
 
-/load WindowerInput
+## My attempt at bypassing the "accept to continue" button.. doesn't work :(
+#/load WindowerInput
 #/setkey enter down
-/wait 1
+#/wait 1
 #/setkey enter up
 /wait 3
 
@@ -61,7 +62,6 @@
 /addon load giltracker
 /addon load expmon
 /addon load zoom
-/addon load peekaboo
 #/addon load singlerace 
 /addon load clock
 /addon load checker
@@ -72,6 +72,7 @@
 /addon load hmptimer
 /addon load claimbar
 /addon load noplayername
+/addon load petinfoplus
 
 ##########################################################################
 # Set Common Settings
@@ -87,6 +88,8 @@
 /pivot add Maps-Remapster
 /pivot add WingsXI-Custom
 /pivot add AshenbubsHD
+/pivot add XI-View-16x9
+#/pivot add XI-View-4x3
 #/Affinity 63 Only enable this if you know what you are doing and understand how many treads your CPU has
 
 ##########################################################################
