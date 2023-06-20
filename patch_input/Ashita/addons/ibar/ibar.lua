@@ -63,8 +63,8 @@ local default_config =
 {
     font =
     {
-        name        = 'Calibri',
-        size        = 10,
+        nameNew     = 'Calibri',
+        sizeNew     = 10,
         color		= '255,255,255,255',
         position    = { 130, 0 },
         bgcolor     = '100,0,0,0',
@@ -74,7 +74,7 @@ local default_config =
 	layout =
 	{
 		player = ' $zone ($z_id) $name  [$level]  [$position] - $ecompass ',
-		targetNew = ' $target [$job / $level / $aggro] [ID: $id] $position  $weak  $strong  $respawn  $steal  $items ',
+		targetNew2 = ' $target [$job / $level / $aggro] [ID: $id] $position  $weak  $strong  $respawn  $steal \n $items ',
 		npc = ' $target [$position] [ID: $id / Index: $m_index] '
 	},
 	lootpools =
@@ -104,8 +104,8 @@ ashita.register_event('load', function()
 	
     f:SetBold( ibar_config.font.bold );
     f:SetColor( fcolor );
-    f:SetFontFamily( ibar_config.font.name );
-	f:SetFontHeight( ibar_config.font.size );
+    f:SetFontFamily( ibar_config.font.nameNew );
+	f:SetFontHeight( ibar_config.font.sizeNew );
     f:SetPositionX( ibar_config.font.position[1] );
 	f:SetPositionY( ibar_config.font.position[2] );
 	f:SetText( '' );
@@ -283,7 +283,7 @@ ashita.register_event('render', function()
 		end
 	end
 	
-	local m_target = ibar_config.layout.targetNew;
+	local m_target = ibar_config.layout.targetNew2;
 	
 		  name = string.find(m_target,'$target');
 		  zone = string.find(m_target,'$zone');

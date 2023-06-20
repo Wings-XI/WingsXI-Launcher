@@ -16,3 +16,10 @@ The launcher is intended to be installed after the base WingsXI install, though 
    - Note that updates are _NOT_ done automatically, and only ever when clicking the button (which performs a backup first)
 
 
+## Update Process
+ - Make changes to launcher, build new
+ - Make changes to `patch_input` files, run `CreateInstaller.bat`
+ - Generate new patch, incrementing middle value for launcher changes and 3rd value for addon changes
+  - E.g. addon changes would bump 1.3.2 -> 1.3.3 and changes to the launcher would bump 1.3.2 -> 1.4.2
+ - Sync `patch_output` to web server under a new folder
+ - When all data is synced to web server, replace existing `patch_output` folder and update `version.txt` to cause launchers to detect an available update
