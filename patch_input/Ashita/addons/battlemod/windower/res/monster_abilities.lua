@@ -2133,7 +2133,7 @@ return {
     [2495] = {id=2495,en="Water Overload",ja="水属性暴発"},
     [2496] = {id=2496,en="Light Overload",ja="光属性暴発"},
     [2497] = {id=2497,en="Dark Overload",ja="闇属性暴発"},
-    [2497] = {id=2498,en="Altana's Favor",ja=""},
+    [2498] = {id=2498,en="Altana's Favor",ja=""},
     [2509] = {id=2509,en="Hypothermal Combustion",ja="砕氷"},
     [2511] = {id=2511,en="Corpse Breath",ja="コープスブレス"},
     [2512] = {id=2512,en="Venom Shower",ja="ベノムシャワー"},

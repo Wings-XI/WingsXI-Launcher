@@ -30,7 +30,7 @@ update_reg_string=
 update_via_patch=1
 update_reg_64bit=0
 [window]
-url=
+#background_url=https://wingsxi.com/dl/launcher2/patch_output/Galka.png
 [splash]
 width=512
 height=384
@@ -39,4 +39,4 @@ timer=10000
 enabled=1
 [postrequisites]
 count=1
-0=EXE:WingsXI-Launcher.exe|RUN:Relaunch-er.bat
+0=Check Local File Exists:Relaunch-er.bat|Execute the File:Relaunch-er.bat

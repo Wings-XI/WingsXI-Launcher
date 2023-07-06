@@ -28,8 +28,8 @@
 /load Minimap
 /load Shorthand
 /load Ashitacast
-/load Affinity
-/load dressme
+#/load Affinity
+#/load dressme
 /load duration
 /load Packetflow
 #/load deeps
