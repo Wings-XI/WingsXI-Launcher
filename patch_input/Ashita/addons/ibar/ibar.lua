@@ -314,7 +314,7 @@ ashita.register_event('render', function()
 				pY = string.format('%2.3f',tentity.Movement.LocalPosition.Y);
 				pZ = string.format('%2.3f',tentity.Movement.LocalPosition.Z);
 
-				if (name ~= nil) then m_target = string.gsub(m_target,'$target',tentity.Name); end
+				if (name ~= nil) then m_target = string.gsub(m_target,'$target',mb_data[i].name); end
 				if (zone ~= nil) then m_target = string.gsub(m_target,'$zone',ZoneName); end
 				if (m_id ~= nil) then m_target = string.gsub(m_target,'$id',target:GetTargetServerId()); end
 				if (m_ix ~= nil) then m_target = string.gsub(m_target,'$m_index',target:GetTargetIndex()); end
