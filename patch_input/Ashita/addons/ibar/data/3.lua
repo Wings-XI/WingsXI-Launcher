@@ -4,8 +4,8 @@
  *	Total	::	14
 ]]--
 	mb_data = {}
-	mb_data[1] = { nm="N", id="16789516", name="Clot", mj="1", sj="1", mlvl="30-35", behavior="0", aggro="H,SC", links="N", spawntype="128", respawntime="0", items="handful of clot plasma", steal="", weak="Fire: 1.25", strong="H2H/Blunt: 1.75, Slash/Pierce/Water: 1.5", note="" }
-	mb_data[2] = { nm="N", id="16789515", name="Clot", mj="1", sj="1", mlvl="30-35", behavior="0", aggro="H,SC", links="N", spawntype="128", respawntime="0", items="handful of clot plasma", steal="", weak="Fire: 1.25", strong="H2H/Blunt: 1.75, Slash/Pierce/Water: 1.5", note="" }
+	mb_data[1] = { nm="N", id="16789515", name="Clot", mj="1", sj="1", mlvl="30-35", behavior="0", aggro="H,SC", links="N", spawntype="128", respawntime="0", items="handful of clot plasma", steal="", weak="Fire: 1.25", strong="H2H/Blunt: 1.75, Slash/Pierce/Water: 1.5", note="" }
+	mb_data[2] = { nm="N", id="16789516", name="Clot", mj="1", sj="1", mlvl="30-35", behavior="0", aggro="H,SC", links="N", spawntype="128", respawntime="0", items="handful of clot plasma", steal="", weak="Fire: 1.25", strong="H2H/Blunt: 1.75, Slash/Pierce/Water: 1.5", note="" }
 	mb_data[3] = { nm="N", id="16789517", name="Colossal_Calamari", mj="2", sj="2", mlvl="40-42", behavior="0", aggro="H", links="N", spawntype="128", respawntime="0", items="seashell,shall shell", steal="", weak="Ice/Lightning: 1.5, Fire/Wind/Earth/Light/Dark: 1.3", strong="Water: 1.5", note="" }
 	mb_data[4] = { nm="N", id="16789511", name="Cutter", mj="7", sj="7", mlvl="25-35", behavior="0", aggro="H", links="N", spawntype="128", respawntime="0", items="chunk of rock salt,crab shell,slice of land crab meat", steal="rock salt", weak="Ice/Lightning: 1.5, Fire/Wind/Earth/Light/Dark: 1.3", strong="Water: 1.3", note="" }
 	mb_data[5] = { nm="Y", id="16789510", name="Cyclopean_Conch", mj="1", sj="1", mlvl="44-46", behavior="0", aggro="H", links="N", spawntype="128", respawntime="0", items="uragnite shell", steal="", weak="Lightning: 1.5, Ice/Wind/Earth/Light/Dark: 1.15", strong="Fire/Water: 1.4", note="" }
