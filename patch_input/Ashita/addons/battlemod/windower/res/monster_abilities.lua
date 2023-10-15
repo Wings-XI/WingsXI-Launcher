@@ -2765,6 +2765,7 @@ return {
     [3296] = {id=3296,en="Temblor Blade",ja="テンブラーブレード"},
     [3297] = {id=3297,en="Cobra Clamp",ja="コブラホールド"},
     [3298] = {id=3298,en="Illustrious Aid",ja="イラストリアスアイド"},
+    [3299] = {id=3299,en="Fleet Wind",ja=""},
     [3303] = {id=3303,en="Feast of Arrows",ja="フィーストオブアロー"},
     [3304] = {id=3304,en="Cruel Joke",ja="クルエルジョーク"},
     [3305] = {id=3305,en="Regurgitated Swarm",ja="レガジテイトスウァーム"},
